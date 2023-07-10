@@ -12,18 +12,16 @@ c = cp.Variable(5)
 tar = cp.maximum(0, c - D)
 
 obj = cp.Minimize(W.T @ tar)
-cons = [
-    cp.sum(x, axis=1) == 1,
-]
-
-for j in range(5):
-    cons.append(c[j] == cp.sum((T_INDEX + P[j]) @ x[j]))
-
-for i in T_INDEX:
-    total = []
-    for j in range(5):
-        total.append(cp.sum(x[j, max(0, i - P[j] + 1) : i + 1]))
-    cons.append(cp.sum(total) <= 1)
+cons = (
+    [
+        cp.sum(x, axis=1) == 1,
+    ]
+    + [c[j] == cp.sum((T_INDEX + P[j]) @ x[j]) for j in range(5)]
+    + [
+        cp.sum([cp.sum(x[j, max(0, i - P[j] + 1) : i + 1]) for j in range(5)]) <= 1
+        for i in T_INDEX
+    ]
+)
 
 prob = cp.Problem(obj, cons)
 prob.solve()
