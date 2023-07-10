@@ -5,7 +5,7 @@ W = np.array([0.2, 0.2, 0.2, 0.2, 0.2])
 P = np.array([2, 3, 1, 4, 3])
 D = np.array([4, 5, 2, 7, 6])
 T = np.sum(P)
-T_INDEX = np.arange(0, T)
+T_INDEX = np.arange(T)
 
 x = cp.Variable((5, T), boolean=True)
 c = cp.Variable(5)
