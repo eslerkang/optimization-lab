@@ -20,7 +20,7 @@ cons = (
     ]
     + [x[i][j] + x[j][i] == 1 for i in range(5) for j in range(i + 1, 5)]
     + [
-        c[i] == cp.sum([P[j] * x[j][i] if j != i else 0 for j in range(5)]) + P[i]
+        c[i] == cp.sum([P[j] * x[j][i] for j in range(5) if i != j]) + P[i]
         for i in range(5)
     ]
 )
