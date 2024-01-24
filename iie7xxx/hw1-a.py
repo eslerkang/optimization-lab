@@ -1,24 +1,22 @@
+import numpy as np
 from gurobipy import GRB, Model, quicksum
+
+resource = np.array([[8, 6, 1], [4, 2, 1.5], [2, 1.5, 0.5]])
+available = np.array([3500, 1500, 1000])
+profit = np.array([58, 36, 4.8])
+demand = np.array([150, 125, 300])
 
 # Create a new model
 m = Model("hw1")
 
 # Create variables
-x_d = m.addVar(name="x1")
-x_t = m.addVar(name="x2")
-x_c = m.addVar(name="x3")
+x = m.addMVar((3,), name="x")
 
-m.addConstr(8 * x_d + 6 * x_t + x_c <= 3500, name="lumber")
-m.addConstr(4 * x_d + 2 * x_t + 1.5 * x_c <= 1500, name="finishing")
-m.addConstr(2 * x_d + 1.5 * x_t + 0.5 * x_c <= 1000, name="carpentry")
-m.addConstr(x_d >= 0, name="x_d")
-m.addConstr(x_t >= 0, name="x_t")
-m.addConstr(x_c >= 0, name="x_c")
-m.addConstr(x_d <= 150, name="x_d_max")
-m.addConstr(x_t <= 125, name="x_t_max")
-m.addConstr(x_c <= 300, name="x_c_max")
+# Create constraints
+m.addConstr(resource @ x <= available, name="resource")
+m.addConstr(x >= 0, name="x")
 
-m.setObjective(58 * x_d + 36 * x_t + 4.8 * x_c, GRB.MAXIMIZE)
+m.setObjective(profit @ x, GRB.MAXIMIZE)
 
 m.optimize()
 
