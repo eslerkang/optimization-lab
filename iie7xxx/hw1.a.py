@@ -1,5 +1,5 @@
 import numpy as np
-from gurobipy import GRB, Model, quicksum
+from gurobipy import GRB, Model
 
 resource = np.array([[8, 6, 1], [4, 2, 1.5], [2, 1.5, 0.5]])
 available = np.array([3500, 1500, 1000])

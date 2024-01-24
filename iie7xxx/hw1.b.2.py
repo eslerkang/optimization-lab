@@ -1,4 +1,4 @@
-from gurobipy import GRB, Model, quicksum
+from gurobipy import GRB, Model
 
 desks = [50, 150, 250]
 tables = [20, 110, 250]
@@ -28,8 +28,11 @@ for desk in desks:
             m.addConstr(x_c <= chair, name="x_c_max")
 
             m.setObjective(58 * x_d + 36 * x_t + 4.8 * x_c, GRB.MAXIMIZE)
+            m.setParam("outputFlag", 0)
 
             m.optimize()
 
+            print(f"For D={desk}, T={table}, C={chair}")
             for v in m.getVars():
                 print(v.varName, v.x)
+            print()

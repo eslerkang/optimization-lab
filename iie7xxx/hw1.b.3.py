@@ -1,4 +1,4 @@
-from gurobipy import GRB, Model, quicksum
+from gurobipy import GRB, Model
 
 desks = [50, 150, 250]
 tables = [20, 110, 250]
