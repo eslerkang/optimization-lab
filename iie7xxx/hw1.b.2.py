@@ -27,7 +27,7 @@ for desk in desks:
             m.addConstr(x_t <= table, name="x_t_max")
             m.addConstr(x_c <= chair, name="x_c_max")
 
-            m.setObjective(58 * x_d + 36 * x_t + 4.8 * x_c, GRB.MAXIMIZE)
+            m.setObjective(17.6 * x_d + 12.2 * x_t - 0.6 * x_c, GRB.MAXIMIZE)
             m.setParam("outputFlag", 0)
 
             m.optimize()

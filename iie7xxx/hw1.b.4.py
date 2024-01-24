@@ -13,8 +13,8 @@ p_s = np.array([p_d * p_t * p_c for p_d in p for p_t in p for p_c in p])
 
 resource = np.array([[8, 6, 1], [4, 2, 1.5], [2, 1.5, 0.5]])
 available = np.array([3500, 1500, 1000])
-profit = np.array([58, 36, 4.8])
-cost = np.array([2, 4, 5.2])
+profit = np.array([17.6, 12.2, -0.6])
+cost = np.array([42.4, 27.8, 10.6])
 
 # Create a new model
 m = Model("hw1")

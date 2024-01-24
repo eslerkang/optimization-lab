@@ -3,7 +3,7 @@ from gurobipy import GRB, Model
 
 resource = np.array([[8, 6, 1], [4, 2, 1.5], [2, 1.5, 0.5]])
 available = np.array([3500, 1500, 1000])
-profit = np.array([58, 36, 4.8])
+profit = np.array([17.6, 12.2, -0.6])
 demand = np.array([150, 125, 300])
 
 # Create a new model
