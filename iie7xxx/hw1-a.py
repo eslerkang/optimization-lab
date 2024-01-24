@@ -14,6 +14,7 @@ x = m.addMVar((3,), name="x")
 
 # Create constraints
 m.addConstr(resource @ x <= available, name="resource")
+m.addConstr(x <= demand, name="demand")
 m.addConstr(x >= 0, name="x")
 
 m.setObjective(profit @ x, GRB.MAXIMIZE)
