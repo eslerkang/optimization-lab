@@ -19,7 +19,7 @@ m.addConstr(x_d <= (0.3 * 50 + 150 * 0.4 + 0.3 * 250), name="x_d_max")
 m.addConstr(x_t <= (0.3 * 20 + 0.4 * 110 + 0.3 * 250), name="x_t_max")
 m.addConstr(x_c <= (0.3 * 200 + 0.4 * 225 + 0.3 * 500), name="x_c_max")
 
-m.setObjective(58 * x_d + 36 * x_t + 4.8 * x_c, GRB.MAXIMIZE)
+m.setObjective(17.6 * x_d + 12.2 * x_t - 0.6 * x_c, GRB.MAXIMIZE)
 
 m.optimize()
 

@@ -33,6 +33,7 @@ for desk in desks:
             m.optimize()
 
             print(f"For D={desk}, T={table}, C={chair}")
+            print(m.getObjective().getValue())
             for v in m.getVars():
                 print(v.varName, v.x)
             print()
