@@ -17,6 +17,9 @@ matplotlib = "^3.7.2"
 nbformat = "^5.9.1"
 flask = "^2.3.2"
 gurobipy = "^11.0.0"
+ortools = "^9.9.3963"
+scikit-learn = "^1.4.2"
+deap = "^1.4.1"
 
 
 [tool.poetry.group.dev.dependencies]
