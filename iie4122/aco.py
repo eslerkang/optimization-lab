@@ -2,8 +2,6 @@ from math import exp, sin
 
 import numpy as np
 
-np.random.seed(486)
-
 
 class AntColony:
     def __init__(
