@@ -3,12 +3,12 @@ import numpy as np
 
 
 def objective_function(x):
-    P_n = []
-    p_i = []
-    m_n = []
-    q_i = []
-    s_i = []
-    A_i = []
+    P_n = x[0]
+    m_n = x[1]
+    q_i = x[2]
+    p_i = x[3]
+    s_i = x[4]
+    A_i = x[5]
     w_n = [1.5, 1.2, 1]
     wtm_n = [0.25, 0.25, 0.25]
     wem_n = []
@@ -181,7 +181,13 @@ def PSO(objective_function, bounds, num_particles, maxiter):
 
 # Example of running the PSO
 if __name__ == "__main__":
-    bounds = [(-10, 10), (-10, 10)]  # Define bounds for x and y
+    bounds = [
+        [(-10, 10), (-10, 10), (-10, 10)],
+        [(-10, 10), (-10, 10), (-10, 10)],
+        [(-10, 10), (-10, 10), (-10, 10)],
+        [(-10, 10), (-10, 10), (-10, 10)],
+        [(-10, 10), (-10, 10), (-10, 10)],
+    ]  # Define bounds for x and y
     num_particles = 50
     maxiter = 100
 
