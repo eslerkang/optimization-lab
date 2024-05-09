@@ -181,13 +181,7 @@ def PSO(objective_function, bounds, num_particles, maxiter):
 
 # Example of running the PSO
 if __name__ == "__main__":
-    bounds = [
-        [(-10, 10), (-10, 10), (-10, 10)],
-        [(-10, 10), (-10, 10), (-10, 10)],
-        [(-10, 10), (-10, 10), (-10, 10)],
-        [(-10, 10), (-10, 10), (-10, 10)],
-        [(-10, 10), (-10, 10), (-10, 10)],
-    ]  # Define bounds for x and y
+    bounds = [(-10, 10), (-10, 10)]  # Define bounds for x and y
     num_particles = 50
     maxiter = 100
 
