@@ -3,112 +3,194 @@ import numpy as np
 
 
 def objective_function(x):
-    P_n = x[0]
-    m_n = x[1]
-    q_i = x[2]
-    p_i = x[3]
-    s_i = x[4]
-    A_i = x[5]
-    w_n = [1.5, 1.2, 1]
-    wtm_n = [0.25, 0.25, 0.25]
-    wem_n = []
-    psi_n = [81.54, 81.5, 81.65]
-    d_i = [
-        3.99 * pow(s_i[i], 0.01) + 2.5 * (770 - p_i[i]) / (p_i[i] - 100)
-        for i in range(3)
-    ]
-    chi_n_i = [[0.33, 0.36, 0.35], [0.32, 0.24, 0.3], [0.35, 0.4, 0.36]]
-    D_n = [sum(chi_n_i[n][i] * d_i[i] for i in range(3)) for n in range(3)]
-    S_n = [450, 500, 480]
-    Q_n = []
-    C_n_m = [25, 20, 27]
-    C_n_d = [700.45, 1780.13, 1610.89]
-    e_n = [1, 1, 1]
-    h_m_n = [2.3, 3, 4]
-    phi_n = [4, 3, 4.2]
-    g_n = [0.9, 0.9, 0.9]
-    F_n_c = [1, 1, 1]
-    G_n = [1, 1, 1]
-    F_n_L = [1, 1, 1]
-    wer_i = [1, 1, 1]
-    x_n = [7, 6, 7]
-    eta_n_M = [0.3, 0.3, 0.3]
-    wtr_i = [0.1, 0.1, 0.1]
-    v_n = [1, 1, 1]
-    f_n = [1, 1, 1]
-    C_n_t = [0.5, 0.6, 0.58]
-    AA_i = [200, 205, 208]
-    eta_i_R = [0.1, 0.1, 0.1]
-    c_ri_p = [81.54, 81.5, 81.65]
-    d_ri = [1, 1, 1]
-    sigma_i = [1, 1, 1]
-    h_ri = [1, 1, 1]
-    Ce_n_R = [0.1, 0.14, 0.18]
-    t_n_S = [1, 1, 1]
-    C_i = [1, 1, 1]
-    L1_i = [1, 1, 1]
-    sigma_i = [1, 1, 1]
-    lambda_i_R = [1, 1, 1]
-    I_i = [1, 1, 1]
-    k_i = [1, 1, 1]
-    K_ui = [1, 1, 1]
-    X_i = [1, 1, 1]
-    R_i = [1, 1, 1]
-    K_i = [1, 1, 1]
+    n = x[0]
+    I_B = x[1]
+    Y = x[2]
+    lambda_11 = x[3]
+    lambda_12 = x[4]
+    S_1on = x[5]
+    S_1off = x[6]
+    S_2on = x[7]
+    S_2off = x[8]
 
-    return sum(
-        (1 - wtm_n[i])
-        * (
-            wem_n[i] * psi_n[i] * D_n[i]
-            - wem_n[i] * S_n[i] * D_n[i] / m_n[i] / Q_n[i]
-            - (C_n_m[i] + C_n_d[i] / P_n[i] + e_n[i] * P_n[i])
-            * wem_n[i]
-            * m_n[i]
-            * D_n[i]
-            - wem_n[i]
-            * h_m_n[i]
-            * Q_n[i]
+    alpha_1on = 0.2
+    alpha_1off = 0.2
+    alpha_2on = 0.35
+    alpha_2off = 0.25
+    c_11 = 0.01
+    c_12 = 0.03
+    lambda_11_g = 1
+    lambda_12_g = 1
+    ksi_1 = 150
+    ksi_2 = 155
+    c_21 = 100
+    c_22 = 105
+    Gamma_O2O = 1
+    A_m = 120
+    A_m_prime = 2
+    X_m = 150
+    mu = 0.4
+    X_m_prime = 10
+    H_c1 = 5
+    H_c2 = 7
+    H_D1 = 0.2
+    H_D2 = 0.3
+    H_c_prime = 0.08
+    V_1 = 0.02
+    V_2 = 0.02
+    Z_1 = 0.02
+    Z_2 = 0.02
+    E_beta_i = 0.01
+    R_1 = 30
+    R_2 = 30
+    R_1_prime = 0.1
+    R_2_prime = 0.1
+    h_1 = 10
+    h_2 = 15
+    C_h_1_prime = 0.5
+    lambda_21 = 111
+    lambda_22 = 108
+    C_h_2_prime = 0.6
+    C_h_21_prime = 0.8
+    C_h_22_prime = 0.7
+    h_21 = 70
+    h_22 = 68
+    C_h_11_prime = 0.7
+    C_h_12_prime = 0.5
+    C_E = 2.48
+    C_E_prime = 0.2
+    sum_f = 155
+    sum_E_hp = 2.18
+    seta_1 = 10
+    sum_area = 145_450
+    sum_M = 150
+    sum_J = 150
+    sum_E_bulb = 20
+    seta_2 = 10
+    rho = 100
+    U_tr = 1200
+    v = 15
+    F_wifi = 700
+    U_l = 1000
+    s = 4
+    U_sw = 1
+    G_B = 3 * 10**5
+    P_B = 0.02
+    C_D_prime = 0.07
+    h_11 = 30
+    h_12 = 31
+    delta = 0.83
+
+    fit = (
+        (
+            alpha_1on * S_1on
+            + alpha_1off * S_1off
+            + alpha_2on * S_2on
+            + alpha_2off * S_2off
+            - (c_11 * np.power(lambda_11, delta) + ksi_1 / lambda_11 + c_21) * Gamma_O2O
+            - (c_12 * np.power(lambda_12, delta) + ksi_2 / lambda_12 + c_22) * Gamma_O2O
+        )
+        - (
+            (A_m + A_m_prime) / Y
+            + (X_m * math.exp(-mu * I_B) + X_m_prime) / Y
+            + I_B
+            + (n * H_c1 / Y + H_D1 * Gamma_O2O) * H_c_prime
+            + (V_1 + Z_1 * E_beta_i) * Gamma_O2O
+            + (R_1 + R_1_prime) * (E_beta_i * Gamma_O2O)
+            + (h_1 + C_h_1_prime)
             / 2
-            * (m_n[i] * (1 - D_n[i] / P_n[i]) - 1 + 2 * D_n[i] / P_n[i])
-            - wem_n[i] * phi_n[i] * D_n[i] * m_n[i] * Q_n[i] * g_n[i] / 2
-            - wem_n[i]
-            * D_n[i]
-            / Q_n[i]
-            * (F_n_c[i] * x_n[i] + G_n[i] * (w_n[i] + F_n_L[i]))
-            - wem_n[i] * Ce_n_R[i] * x_n[i] * D_n[i] / Q_n[i]
-            - wem_n[i] * (1 + eta_n_M[i]) * v_n[i] * D_n[i] / m_n[i] / Q_n[i]
-            - (f_n[i] + C_n_t[i] * D_n[i])
-        )
-        for i in range(3)
-    ) + sum(
-        (1 - wtr_i[i])
-        * wer_i[i]
-        * (
-            p_i[i] * d_i[i]
-            - d_i[i] * (AA_i[i] + eta_i_R[i]) / q_i[i]
-            - wer_i[i] * c_ri_p[i] * d_ri[i]
-            - h_ri[i]
             * (
-                q_i[i] / 2
-                + A_i[i]
-                * sigma_i[i]
-                * math.sqrt(sum(t_n_S[n] + Q_n[n] / m_n[n] / P_n[n] for n in range(3)))
+                Gamma_O2O * Y * (1 - 1 / n)
+                + Gamma_O2O * Gamma_O2O * Y / n / lambda_11
+                + Gamma_O2O * Gamma_O2O * Y * E_beta_i / lambda_21 * (1 + 1 / n)
+                + Gamma_O2O * Gamma_O2O * Y * E_beta_i * E_beta_i / lambda_21
             )
-            - d_i[i] * C_i[i] * L1_i[i] / q_i[i]
-            - lambda_i_R[i] * d_i[i] / q_i[i]
-            - I_i[i] * s_i[i] * s_i[i] / 2
-            - (
-                k_i[i] * d_i[i] * max(0, (X_i[i] - R_i[i]) / q_i)
-                + k_i[i]
-                * d_i[i]
-                * sum((m_n[n] - 1) * max(0, X_i[i] - R_i[i] ** 2) for n in range(3))
-                / q_i[i]
+            + (h_21 + C_h_21_prime)
+            / 2
+            * (
+                Gamma_O2O * Y / n
+                + Gamma_O2O * Gamma_O2O * Y / lambda_11 * (1 - 1 / n)
+                + Gamma_O2O * Gamma_O2O * Y * E_beta_i / lambda_21 * (1 - 1 / n)
             )
-            - Ce_n_R[i] * d_i[i] / q_i[i]
-            - d_i[i] * (K_i[i] / q_i[i] + K_ui[i])
+            + (h_11 + C_h_11_prime)
+            * Gamma_O2O
+            * Gamma_O2O
+            * Y
+            * E_beta_i
+            / 2
+            / lambda_21
+            + (C_E + C_E_prime)
+            * sum_f
+            * sum_E_hp
+            * 746
+            * seta_1
+            * 365
+            / 1000
+            / Y
+            / sum_area
+            + (C_E + C_E_prime)
+            * sum_M
+            * sum_J
+            * sum_E_bulb
+            * seta_2
+            * 365
+            / 1000
+            / Y
+            / sum_area
         )
-        for i in range(3)
-    )
+        - (
+            (A_m + A_m_prime) / Y
+            + (X_m * math.exp(-mu * I_B) + X_m_prime) / Y
+            + I_B
+            + (n * H_c2 / Y + H_D2 * Gamma_O2O) * H_c_prime
+            + (V_2 + Z_2 * E_beta_i) * Gamma_O2O
+            + (R_2 + R_2_prime) * (E_beta_i * Gamma_O2O)
+            + (h_2 + C_h_2_prime)
+            / 2
+            * (
+                Gamma_O2O * Y * (1 - 1 / n)
+                + Gamma_O2O * Gamma_O2O * Y / n / lambda_12
+                + Gamma_O2O * Gamma_O2O * Y * E_beta_i / lambda_22 * (1 + 1 / n)
+                + Gamma_O2O * Gamma_O2O * Y * E_beta_i * E_beta_i / lambda_22
+            )
+            + (h_22 + C_h_22_prime)
+            / 2
+            * (
+                Gamma_O2O * Y / n
+                + Gamma_O2O * Gamma_O2O * Y / lambda_12 * (1 - 1 / n)
+                + Gamma_O2O * Gamma_O2O * Y * E_beta_i / lambda_22 * (1 - 1 / n)
+            )
+            + (h_12 + C_h_12_prime)
+            * Gamma_O2O
+            * Gamma_O2O
+            * Y
+            * E_beta_i
+            / 2
+            / lambda_22
+            + (C_E + C_E_prime)
+            * sum_f
+            * sum_E_hp
+            * 746
+            * seta_1
+            * 365
+            / 1000
+            / Y
+            / sum_area
+            + (C_E + C_E_prime)
+            * sum_M
+            * sum_J
+            * sum_E_bulb
+            * seta_2
+            * 365
+            / 1000
+            / Y
+            / sum_area
+        )
+    ) - (
+        rho * U_tr + (rho - v) * F_wifi + v * U_l + v / s * U_sw + G_B * P_B + C_D_prime
+    ) / Y
+
+    return fit
 
 
 class Particle:
@@ -181,7 +263,17 @@ def PSO(objective_function, bounds, num_particles, maxiter):
 
 # Example of running the PSO
 if __name__ == "__main__":
-    bounds = [(-10, 10), (-10, 10)]  # Define bounds for x and y
+    bounds = [
+        (-10, 10),
+        (-10, 10),
+        (-10, 10),
+        (-10, 10),
+        (-10, 10),
+        (-10, 10),
+        (-10, 10),
+        (-10, 10),
+        (-10, 10),
+    ]
     num_particles = 50
     maxiter = 100
 
