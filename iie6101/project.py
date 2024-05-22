@@ -85,6 +85,10 @@ def update_slack(lot, stage, time):
                 lambda x: x["start"] + 1 <= stage and x["end"] >= stage, lot["qtime"]
             )
         )[0]
+    return lot
+
+
+# TODO: Implement the update_slack function
 
 
 generate_due()
@@ -106,3 +110,4 @@ for stage in range(4):
                 for lot in lots_to_process:
                     if lot["release"] <= TIME:
                         lot = update_slack(lot, stage, TIME)
+# TODO: Implement the machine_lot_score calculation
