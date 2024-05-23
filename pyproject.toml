@@ -20,6 +20,7 @@ gurobipy = "^11.0.0"
 ortools = "^9.9.3963"
 scikit-learn = "^1.4.2"
 deap = "^1.4.1"
+dash = "^2.17.0"
 
 
 [tool.poetry.group.dev.dependencies]

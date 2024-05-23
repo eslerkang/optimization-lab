@@ -64,7 +64,6 @@ def bfs_tsp(distance_matrix, start_index=0):
 start_index = df[df["Airport"] == "Incheon International Airport"].index[0]
 best_solution, best_distance = bfs_tsp(distance_matrix, start_index)
 
-print(best_distance, best_solution)
 best_route = [df.iloc[i]["Airport"] for i in best_solution]
 
 print("Best route:", best_route)

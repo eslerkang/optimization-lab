@@ -159,15 +159,19 @@ for stage in range(4):
     # 현재 스테이지로 들어온 작업들 중 가장 빨리 들어온 작업의 시간을 기준으로 시뮬레이션 진행
     TIME = np.min([lot["release"] for lot in lot_data])
     machines_in_stage = machines[stage]
+    # 스테이지 내에서 작업해야 할 Lot 정보
     lots_to_process = lot_data.copy()
     for lot in lots_to_process:
+        # 스테이지에 들어온 작업들의 Queue time 상태 업데이트
         update_queue_time_state(lot, stage)
     while True:
+        # 작업중인 기계들의 작업이 끝난 경우, 해당 작업의 Queue time 종료 시간 업데이트 및 Lot 정보 업데이트
         for busy_machine in filter(lambda x: x["busy"], machines_in_stage):
             if busy_machine["history"][-1]["end"] == TIME:
                 busy_machine["history"][-1]["lot"]["release"] = TIME
                 busy_machine["busy"] = False
         if lots_to_process:
+            # 작업중이지 않은 기계들에 대해 Priority score 계산 후 가장 높은 Priority score를 가진 Lot 선택 후 작업 시작
             for machine in filter(lambda x: not x["busy"], machines_in_stage):
                 lot_scores = []
                 q_safe_lots = list(
@@ -177,6 +181,7 @@ for stage in range(4):
                         lots_to_process,
                     )
                 )
+                # Queue time을 이미 어긴 작업의 경우 우선순위를 후순위로 설정
                 if q_safe_lots:
                     for lot_index, lot in enumerate(lots_to_process):
                         if lot["release"] <= TIME and (
@@ -205,11 +210,13 @@ for stage in range(4):
                     if selected_lot["active_q_time"] is not None:
                         selected_lot["active_q_time"]["end_time"] = TIME
                     del lots_to_process[selected_lot_index]
+        # 모든 작업이 끝난 경우 다음 스테이지로 이동 또는 시뮬레이션 종료
         elif not any([machine["busy"] for machine in machines_in_stage]):
             break
         TIME += 1
 
 
+# 결과 시각화 - 코드 내용 확인 불필요
 def plot_result():
     results = []
     for stage, machine_list in enumerate(machines):
