@@ -55,7 +55,8 @@ def generate_due():
 def generate_queue_time():
     for lot in lot_data:
         lot["qtime"] = []
-        q_info = list(filter(lambda x: x["type"] == lot["type"], q_time))
+        lot_type = lot["type"]
+        q_info = list(filter(lambda x: x["type"] == lot_type, q_time))
         for q in q_info:
             total_processing_time_in_q_time_range = 0
             for i in range(q["start"], q["end"]):
@@ -64,7 +65,7 @@ def generate_queue_time():
                 {
                     "start": q["start"],
                     "end": q["end"],
-                    "qtime": total_processing_time_in_q_time_range
+                    "limit": total_processing_time_in_q_time_range
                     + np.rint(
                         np.random.uniform(
                             0, BETA * total_processing_time_in_q_time_range
@@ -76,38 +77,46 @@ def generate_queue_time():
     print(lot_data)
 
 
+def update_queue_time_state(lot, stage):
+    active_q_time = list(
+        filter(lambda x: x["start"] + 1 <= stage and x["end"] >= stage, lot["qtime"])
+    )
+    active_q_time = active_q_time[0] if active_q_time else None
+    if active_q_time is not None:
+        if active_q_time["start"] == stage + 1:
+            active_q_time["start_time"] = lot["release"]
+    lot["active_q_time"] = active_q_time
+
+
 def update_slack(lot, stage, time):
     due_slack = lot["due"] - time - sum([processing_times[i] for i in range(stage, 4)])
-    activated_q_time = None
-    if filter(lambda x: x["start"] + 1 <= stage and x["end"] >= stage, lot["qtime"]):
-        activated_q_time = list(
-            filter(
-                lambda x: x["start"] + 1 <= stage and x["end"] >= stage, lot["qtime"]
-            )
-        )[0]
-    return lot
+    active_q_time = lot["active_q_time"]
 
 
-# TODO: Implement the update_slack function
+def calculate_score(lot, stage, time):
+    return 0
 
 
 generate_due()
 generate_queue_time()
 
-# Main algorithm
 
+# Main algorithm
 for stage in range(4):
     TIME = np.min([lot["release"] for lot in lot_data])
     machines_in_stage = machines[stage]
     lots_to_process = lot_data.copy()
+    for lot in lots_to_process:
+        update_queue_time_state(lot, stage)
     while True:
         for busy_machine in filter(lambda x: x["busy"], machines_in_stage):
             if busy_machine["history"][-1]["end"] == TIME:
                 busy_machine["busy"] = False
-        machine_lot_score = []
         if lots_to_process:
             for machine in filter(lambda x: not x["busy"], machines_in_stage):
+                lot_scores = []
                 for lot in lots_to_process:
                     if lot["release"] <= TIME:
-                        lot = update_slack(lot, stage, TIME)
-# TODO: Implement the machine_lot_score calculation
+                        pass
+                    # TODO: Calculate score
+        TIME += 1
