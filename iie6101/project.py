@@ -1,5 +1,10 @@
+import datetime
+
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
+import plotly.express as px
 
 # Hyperparameters
 SEED = 486
@@ -74,8 +79,6 @@ def generate_queue_time():
                 }
             )
 
-    print(lot_data)
-
 
 def update_queue_time_state(lot, stage):
     active_q_time = list(
@@ -83,22 +86,54 @@ def update_queue_time_state(lot, stage):
     )
     active_q_time = active_q_time[0] if active_q_time else None
     if active_q_time is not None:
-        if active_q_time["start"] == stage + 1:
+        if active_q_time["start"] + 1 == stage:
             active_q_time["start_time"] = lot["release"]
+            active_q_time["due"] = active_q_time["start_time"] + active_q_time["limit"]
     lot["active_q_time"] = active_q_time
 
 
-def update_slack(lot, stage, time):
-    due_slack = lot["due"] - time - sum([processing_times[i] for i in range(stage, 4)])
+def get_slack(lot, stage, time):
+    total_remaining_processing_time = sum(
+        [processing_times[i] for i in range(stage, 4)]
+    )
+    due_slack = lot["due"] - time - total_remaining_processing_time
     active_q_time = lot["active_q_time"]
 
-    return 0, 0
+    current_stage_processing_time = processing_times[stage]
+    fraction_of_current_stage_processing_time = (
+        current_stage_processing_time / total_remaining_processing_time
+    )
+
+    current_stage_due_slack = due_slack * fraction_of_current_stage_processing_time
+
+    q_range_remaining_processing_time = (
+        sum([processing_times[i] for i in range(stage, active_q_time["end"])])
+        if active_q_time is not None
+        else 0
+    )
+    fraction_of_current_stage_processing_time = 1
+    if q_range_remaining_processing_time != 0:
+        fraction_of_current_stage_processing_time = (
+            q_range_remaining_processing_time
+            / (
+                q_range_remaining_processing_time
+                + processing_times[active_q_time["end"]]
+            )
+        )
+    q_slack = (
+        active_q_time["due"] - time - q_range_remaining_processing_time
+        if active_q_time is not None
+        else current_stage_due_slack
+    )
+    current_stage_q_slack = q_slack * fraction_of_current_stage_processing_time
+
+    return current_stage_due_slack, current_stage_q_slack
 
 
 def calculate_score(lot, stage, time):
-    due_slack, q_slack = update_slack(lot, stage, time)
+    due_slack, q_slack = get_slack(lot, stage, time)
 
-    return 0
+    return np.exp(-K * due_slack) * np.exp(-(1 - K) * max(0, q_slack))
 
 
 generate_due()
@@ -115,13 +150,90 @@ for stage in range(4):
     while True:
         for busy_machine in filter(lambda x: x["busy"], machines_in_stage):
             if busy_machine["history"][-1]["end"] == TIME:
+                busy_machine["history"][-1]["lot"]["release"] = TIME
                 busy_machine["busy"] = False
         if lots_to_process:
             for machine in filter(lambda x: not x["busy"], machines_in_stage):
                 lot_scores = []
-                for lot in lots_to_process:
-                    if lot["release"] <= TIME:
-                        score = calculate_score(lot, stage, TIME)
-                        lot_scores.append([lot, score])
-                sorted_lot_scores = sorted(lot_scores, key=lambda x: x[1], reverse=True)
+                q_safe_lots = list(
+                    filter(
+                        lambda x: x["active_q_time"] is None
+                        or x["active_q_time"]["due"] >= TIME,
+                        lots_to_process,
+                    )
+                )
+                if q_safe_lots:
+                    for lot_index, lot in enumerate(lots_to_process):
+                        if lot["release"] <= TIME and (
+                            lot["active_q_time"] is None
+                            or lot["active_q_time"]["due"] >= TIME
+                        ):
+                            score = calculate_score(lot, stage, TIME)
+                            lot_scores.append([lot_index, lot, score])
+                else:
+                    for lot_index, lot in enumerate(lots_to_process):
+                        if lot["release"] <= TIME:
+                            score = calculate_score(lot, stage, TIME)
+                            lot_scores.append([lot_index, lot, score])
+                sorted_lot_scores = sorted(lot_scores, key=lambda x: x[2], reverse=True)
+                if sorted_lot_scores:
+                    selected_lot = sorted_lot_scores[0][1]
+                    selected_lot_index = sorted_lot_scores[0][0]
+                    machine["busy"] = True
+                    machine["history"].append(
+                        {
+                            "lot": selected_lot,
+                            "start": TIME,
+                            "end": TIME + processing_times[stage],
+                        }
+                    )
+                    if selected_lot["active_q_time"] is not None:
+                        selected_lot["active_q_time"]["end_time"] = TIME
+                    del lots_to_process[selected_lot_index]
+        elif not any([machine["busy"] for machine in machines_in_stage]):
+            break
         TIME += 1
+
+for lot in lot_data:
+    print(lot)
+
+results = []
+
+for stage, machine_list in enumerate(machines):
+    for machine in machine_list:
+        for history in machine["history"]:
+            results.append(
+                {
+                    "Stage": stage + 1,
+                    "Machine": f"Stage {stage + 1} - Machine {machine['id']}",
+                    "Lot": history["lot"]["name"],
+                    "Start": history["start"],
+                    "End": history["end"],
+                    "Duration": history["end"] - history["start"],
+                }
+            )
+
+# Convert results to DataFrame
+df = pd.DataFrame(results)
+
+# Convert 'Start' and 'End' to datetime
+base_date = datetime.datetime.combine(datetime.date.today(), datetime.time.min)
+df["Start"] = df["Start"].apply(lambda x: base_date + datetime.timedelta(minutes=x))
+df["End"] = df["End"].apply(lambda x: base_date + datetime.timedelta(minutes=x))
+
+# Create Gantt chart using Plotly
+fig = px.timeline(
+    df, x_start="Start", x_end="End", y="Machine", color="Lot", text="Lot"
+)
+fig.update_yaxes(categoryorder="category ascending")
+fig.update_layout(
+    title="Gantt Chart",
+    xaxis_title="Time",
+    yaxis_title="Machines",
+    legend_title="Lots",
+    font=dict(size=12),
+    showlegend=True,
+)
+
+# Show the figure
+fig.show()
