@@ -58,24 +58,24 @@ def generate_due():
 
 
 def generate_queue_time():
+    for q in q_time:
+        total_processing_time_in_q_time_range = 0
+        for i in range(q["start"], q["end"]):
+            total_processing_time_in_q_time_range += processing_times[i + 1]
+        q["limit"] = total_processing_time_in_q_time_range + np.rint(
+            np.random.uniform(0, BETA * total_processing_time_in_q_time_range)
+        )
+
     for lot in lot_data:
         lot["qtime"] = []
         lot_type = lot["type"]
         q_info = list(filter(lambda x: x["type"] == lot_type, q_time))
         for q in q_info:
-            total_processing_time_in_q_time_range = 0
-            for i in range(q["start"], q["end"]):
-                total_processing_time_in_q_time_range += processing_times[i + 1]
             lot["qtime"].append(
                 {
                     "start": q["start"],
                     "end": q["end"],
-                    "limit": total_processing_time_in_q_time_range
-                    + np.rint(
-                        np.random.uniform(
-                            0, BETA * total_processing_time_in_q_time_range
-                        )
-                    ),
+                    "limit": q["limit"],
                 }
             )
 
