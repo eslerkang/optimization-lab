@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from collections import deque
 
-csv_file_path = "./international_airports.csv"
+csv_file_path = "./international_airports_simple.csv"
 df = pd.read_csv(csv_file_path)
 
 coordinates = df[["Latitude", "Longitude"]].values
@@ -64,6 +64,7 @@ def bfs_tsp(distance_matrix, start_index=0):
 start_index = df[df["Airport"] == "Incheon International Airport"].index[0]
 best_solution, best_distance = bfs_tsp(distance_matrix, start_index)
 
+print(best_distance, best_solution)
 best_route = [df.iloc[i]["Airport"] for i in best_solution]
 
 print("Best route:", best_route)
