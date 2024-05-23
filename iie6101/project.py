@@ -92,8 +92,12 @@ def update_slack(lot, stage, time):
     due_slack = lot["due"] - time - sum([processing_times[i] for i in range(stage, 4)])
     active_q_time = lot["active_q_time"]
 
+    return 0, 0
+
 
 def calculate_score(lot, stage, time):
+    due_slack, q_slack = update_slack(lot, stage, time)
+
     return 0
 
 
@@ -117,6 +121,7 @@ for stage in range(4):
                 lot_scores = []
                 for lot in lots_to_process:
                     if lot["release"] <= TIME:
-                        pass
-                    # TODO: Calculate score
+                        score = calculate_score(lot, stage, TIME)
+                        lot_scores.append([lot, score])
+                sorted_lot_scores = sorted(lot_scores, key=lambda x: x[1], reverse=True)
         TIME += 1
