@@ -10,9 +10,9 @@ from dash.dependencies import Input, Output
 
 # Hyperparameters 설정
 SEED = 486
-ALPHA_S = 0.05
-ALPHA_E = 0.1
-BETA = 0.05
+ALPHA_S = 0.5
+ALPHA_E = 1
+BETA = 0.5
 K = 0.5
 
 # 재현성을 위한 시드 설정
@@ -244,6 +244,7 @@ def plot_result():
     lot_qtime_violation = {}
     lot_tardiness = {}
     lot_details = []
+    total_tardiness = 0
 
     for lot in lot_data:
         lot_id = lot["name"]
@@ -254,6 +255,7 @@ def plot_result():
             end_time - (base_date + datetime.timedelta(minutes=due_time))
         ).total_seconds() / 60
         tardiness = max(0, tardiness)
+        total_tardiness += tardiness
 
         qtime_info = []
         qtime_violations = []
@@ -413,6 +415,7 @@ def plot_result():
             dcc.Graph(figure=fig_table),
             html.Br(),
             html.Div(f"Number of late lots: {late_lots_count}"),
+            html.Div(f"Mean tardiness of lots: {total_tardiness / len(lot_data)}"),
             html.Div(f"Number of q-time violations: {qtime_violations_count}"),
             html.Br(),
             dcc.Link("Go to Gantt Chart", href="/gantt-chart"),
