@@ -21,6 +21,7 @@ ortools = "^9.9.3963"
 scikit-learn = "^1.4.2"
 deap = "^1.4.1"
 dash = "^2.17.0"
+seaborn = "^0.13.2"
 
 
 [tool.poetry.group.dev.dependencies]
