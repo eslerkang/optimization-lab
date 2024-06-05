@@ -1,22 +1,24 @@
-import random
-import numpy as np
 import pandas as pd
-from deap import base, creator, tools, algorithms
-from ortools.constraint_solver import pywrapcp, routing_enums_pb2
 
 # CSV 파일 경로 설정
-DISTANCE_PATH = "./tour_distances_matrix.csv"
+file_path = "./tour_distances_matrix.csv"
 DURATION_PATH = "./residence_time.csv"
 
 # CSV 파일 로드
-distance_matrix_df = pd.read_csv(DISTANCE_PATH, index_col=0)
+duration_matrix_df = pd.read_csv(file_path, index_col=0)
+
+driving_time_matrix = duration_matrix_df.values
+travel_point_name = duration_matrix_df.columns.to_list()
+
 duration_matrix_df = pd.read_csv(DURATION_PATH, index_col=0)
-
-
-moving_time_matrix = distance_matrix_df.values
 duration_time_list = duration_matrix_df["Avg_Stay_Duration"].values
-travel_point_name = distance_matrix_df.columns.to_list()
 
+
+import numpy as np
+import random
+from deap import base, creator, tools, algorithms
+from ortools.constraint_solver import routing_enums_pb2
+from ortools.constraint_solver import pywrapcp
 
 random.seed(64)
 algorithms.random.seed(64)
@@ -33,7 +35,7 @@ toolbox = base.Toolbox()
 # 각 관광지를 무작위 군집에 할당하는 함수
 def create_individual():
     return [
-        random.randint(0, total_day - 1) for _ in range(len(moving_time_matrix) - 1)
+        random.randint(0, total_day - 1) for _ in range(len(driving_time_matrix) - 1)
     ]
 
 
@@ -56,10 +58,9 @@ def calculate_cluster_time(cluster):
     def distance_callback(from_index, to_index):
         from_node = manager.IndexToNode(from_index)
         to_node = manager.IndexToNode(to_index)
-        return (
-            moving_time_matrix[cluster_with_base[from_node], cluster_with_base[to_node]]
-            + duration_time_list[cluster_with_base[to_node]]
-        )
+        return driving_time_matrix[
+            cluster_with_base[from_node], cluster_with_base[to_node]
+        ]
 
     transit_callback_index = routing.RegisterTransitCallback(distance_callback)
     routing.SetArcCostEvaluatorOfAllVehicles(transit_callback_index)
@@ -94,7 +95,7 @@ def evalTour(individual):
     else:
         travel_time_std = 0  # 단일 군집의 경우 표준 편차는 0
 
-    alpha = 0.4
+    alpha = 0.15
     fitness = alpha * total_travel_time + (1 - alpha) * travel_time_std
 
     return (fitness,)
@@ -119,7 +120,7 @@ result = algorithms.eaSimple(
     mutpb=0.2,
     ngen=num_generations,
     halloffame=hof,
-    verbose=False,
+    verbose=True,
 )
 
 # 최적 개체 출력
@@ -141,7 +142,9 @@ def solve_tsp_for_cluster(cluster):
         from_node = manager.IndexToNode(from_index)
         to_node = manager.IndexToNode(to_index)
         return (
-            moving_time_matrix[cluster_with_base[from_node], cluster_with_base[to_node]]
+            driving_time_matrix[
+                cluster_with_base[from_node], cluster_with_base[to_node]
+            ]
             + duration_time_list[cluster_with_base[to_node]]
         )
 
