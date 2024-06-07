@@ -7,22 +7,22 @@ import plotly.graph_objects as go
 
 
 # Hyperparameters 설정
-ALPHA_Ss = [0.05]
+ALPHA_Ss = [0.5]
 # ALPHA_Es = [2.5, 5.0, 7.5, 10, 15]
 # BETAs = [2.5, 5.0, 7.5, 10, 15]
-SEEDs = [486]
-# SEEDs = [i for i in range(486, 486 + 10)]
-Ks = np.arange(0.1, 1.0, 0.1)
-# NUMS_OF_LOT_PER_PRODUCT = [5, 10, 15, 20, 30]
-NUMS_OF_LOT_PER_PRODUCT = [2, 5]
+SEEDs = [i for i in range(486, 486 + 10)]
+# Ks = np.arange(0.1, 1.0, 0.1)
+Ks = [0.1]
+NUMS_OF_LOT_PER_PRODUCT = [5, 10, 15, 20, 30]
+# NUMS_OF_LOT_PER_PRODUCT = [2, 5]
 
 results_list = []
 for NUM_OF_LOT_PER_PRODUCT in NUMS_OF_LOT_PER_PRODUCT:
     for ALPHA_S in ALPHA_Ss:
         # for ALPHA_E in ALPHA_Es:
         # for BETA in BETAs:
-        ALPHA_E = 0.1
-        BETA = 0.05
+        ALPHA_E = NUM_OF_LOT_PER_PRODUCT / 2
+        BETA = NUM_OF_LOT_PER_PRODUCT / 2
         for SEED in SEEDs:
             for K in Ks:
                 # 재현성을 위한 시드 설정
@@ -175,10 +175,12 @@ for NUM_OF_LOT_PER_PRODUCT in NUMS_OF_LOT_PER_PRODUCT:
                     return current_stage_due_slack, current_stage_q_slack
 
                 # 휴리스틱 알고리즘을 통한 Priority score 계산
-                def calculate_score(lot, stage, time):
-                    due_slack, q_slack = get_slack(lot, stage, time)
+                # def calculate_score(lot, stage, time):
+                #     due_slack, q_slack = get_slack(lot, stage, time)
 
-                    return np.exp(-K * due_slack) * np.exp(-(1 - K) * max(0, q_slack))
+                #     return np.exp(-K * due_slack) * np.exp(-(1 - K) * max(0, q_slack))
+                def calculate_score(lot, stage, time):
+                    return -lot["due"]
 
                 generate_due()
                 generate_queue_time()
@@ -390,7 +392,7 @@ for NUM_OF_LOT_PER_PRODUCT in NUMS_OF_LOT_PER_PRODUCT:
                         showlegend=True,
                     )
                     # fig_gantt.write_html("gantt_chart.html")
-                    fig_gantt.show()
+                    # fig_gantt.show()
 
                     # Lot Information Table
                     lot_info = []
@@ -441,7 +443,7 @@ for NUM_OF_LOT_PER_PRODUCT in NUMS_OF_LOT_PER_PRODUCT:
                         ]
                     )
                     # fig_table.write_html("lot_info.html")
-                    fig_tale.show()
+                    # fig_table.show()
 
                     late_lots_count = sum(l > 0 for l in lot_tardiness.values())
                     qtime_violations_count = sum(lot_qtime_violation.values())
@@ -474,7 +476,8 @@ for NUM_OF_LOT_PER_PRODUCT in NUMS_OF_LOT_PER_PRODUCT:
 
 results_df = pd.DataFrame(results_list)
 results_df.to_csv(
-    f"simulation_results-{datetime.datetime.now()}-MILP compare.csv", index=False
+    f"./simulation_results-EDD.csv",
+    index=False,
 )
 
 
