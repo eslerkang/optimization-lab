@@ -4,7 +4,7 @@ from itertools import permutations
 from collections import deque
 import random
 
-df = pd.read_csv("./international_airports.csv")
+df = pd.read_csv("./airports.csv")
 
 coordinates = df[["Latitude", "Longitude"]].values
 n_airports = len(coordinates)
