@@ -1,843 +1,138 @@
-demand = [
-    6.93,
-    6.92,
-    6.92,
-    6.93,
-    6.95,
-    6.98,
-    7.02,
-    7.07,
-    7.13,
-    7.19,
-    7.27,
-    7.35,
-    7.45,
-    7.55,
-    7.66,
-    7.78,
-    7.91,
-    8.04,
-    8.19,
-    8.35,
-    8.51,
-    8.68,
-    8.86,
-    9.05,
-    9.25,
-    9.46,
-    9.67,
-    9.90,
-    10.13,
-    10.37,
-    10.62,
-    10.87,
-    11.14,
-    11.41,
-    11.69,
-    11.98,
-    12.27,
-    12.57,
-    12.88,
-    13.20,
-    13.52,
-    13.86,
-    14.19,
-    14.54,
-    14.89,
-    15.25,
-    15.62,
-    15.99,
-    16.37,
-    16.75,
-    17.15,
-    17.54,
-    17.95,
-    18.36,
-    18.77,
-    19.19,
-    19.62,
-    20.05,
-    20.48,
-    20.93,
-    21.37,
-    21.82,
-    22.28,
-    22.74,
-    23.21,
-    23.67,
-    24.15,
-    24.63,
-    25.11,
-    25.59,
-    26.08,
-    26.57,
-    27.07,
-    27.56,
-    28.07,
-    28.57,
-    29.08,
-    29.59,
-    30.10,
-    30.61,
-    31.13,
-    31.64,
-    32.16,
-    32.68,
-    33.21,
-    33.73,
-    34.26,
-    34.78,
-    35.31,
-    35.83,
-    36.36,
-    36.89,
-    37.42,
-    37.95,
-    38.47,
-    39.00,
-    39.53,
-    40.06,
-    40.58,
-    41.11,
-    41.63,
-    42.15,
-    42.68,
-    43.20,
-    43.71,
-    44.23,
-    44.74,
-    45.26,
-    45.77,
-    46.27,
-    46.78,
-    47.28,
-    47.78,
-    48.27,
-    48.77,
-    49.26,
-    49.74,
-    50.22,
-    50.70,
-    51.18,
-    51.65,
-    52.11,
-    52.57,
-    53.03,
-    53.48,
-    53.93,
-    54.37,
-    54.81,
-    55.24,
-    55.67,
-    56.09,
-    56.51,
-    56.92,
-    57.33,
-    57.72,
-    58.12,
-    58.50,
-    58.88,
-    59.26,
-    59.63,
-    59.99,
-    60.34,
-    60.69,
-    61.03,
-    61.36,
-    61.69,
-    62.01,
-    62.32,
-    62.62,
-    62.92,
-    63.21,
-    63.49,
-    63.76,
-    64.03,
-    64.29,
-    64.54,
-    64.78,
-    65.01,
-    65.24,
-    65.46,
-    65.67,
-    65.87,
-    66.06,
-    66.24,
-    66.42,
-    66.58,
-    66.74,
-    66.89,
-    67.03,
-    67.16,
-    67.28,
-    67.39,
-    67.50,
-    67.59,
-    67.68,
-    67.76,
-    67.82,
-    67.88,
-    67.93,
-    67.97,
-    68.01,
-    68.03,
-    68.04,
-    68.05,
-    68.04,
-    68.03,
-    68.00,
-    67.97,
-    67.93,
-    67.88,
-    67.82,
-    67.75,
-    67.67,
-    67.59,
-    67.49,
-    67.39,
-    67.27,
-    67.15,
-    67.02,
-    66.88,
-    66.73,
-    66.57,
-    66.40,
-    66.23,
-    66.04,
-    65.85,
-    65.65,
-    65.44,
-    65.22,
-    64.99,
-    64.76,
-    64.51,
-    64.26,
-    64.00,
-    63.74,
-    63.46,
-    63.18,
-    62.89,
-    62.59,
-    62.28,
-    61.97,
-    61.65,
-    61.32,
-    60.98,
-    60.64,
-    60.29,
-    59.93,
-    59.57,
-    59.20,
-    58.82,
-    58.44,
-    58.05,
-    57.66,
-    57.25,
-    56.85,
-    56.43,
-    56.01,
-    55.59,
-    55.16,
-    54.72,
-    54.28,
-    53.83,
-    53.38,
-    52.92,
-    52.46,
-    52.00,
-    51.53,
-    51.05,
-    50.57,
-    50.09,
-    49.60,
-    49.11,
-    48.62,
-    48.12,
-    47.62,
-    47.12,
-    46.61,
-    46.10,
-    45.59,
-    45.07,
-    44.55,
-    44.03,
-    43.51,
-    42.99,
-    42.46,
-    41.93,
-    41.40,
-    40.87,
-    40.34,
-    39.81,
-    39.28,
-    38.74,
-    38.21,
-    37.67,
-    37.14,
-    36.60,
-    36.06,
-    35.53,
-    34.99,
-    34.46,
-    33.93,
-    33.39,
-    32.86,
-    32.33,
-    31.80,
-    31.27,
-    30.75,
-    30.22,
-    29.70,
-    29.18,
-    28.66,
-    28.14,
-    27.63,
-    27.12,
-    26.61,
-    26.11,
-    25.61,
-    25.11,
-    24.61,
-    24.12,
-    23.63,
-    23.15,
-    22.67,
-    22.19,
-    21.72,
-    21.26,
-    20.79,
-    20.34,
-    19.88,
-    19.44,
-    18.99,
-    18.56,
-    18.12,
-    17.70,
-    17.28,
-    16.86,
-    16.45,
-    16.05,
-    15.65,
-    15.26,
-    14.87,
-    14.50,
-    14.12,
-    13.76,
-    13.40,
-    13.05,
-    12.71,
-    12.37,
-    12.04,
-    11.72,
-    11.40,
-    11.09,
-    10.79,
-    10.50,
-    10.21,
-    9.94,
-    9.67,
-    9.41,
-    9.15,
-    8.91,
-    8.67,
-    8.44,
-    8.22,
-    8.01,
-    7.80,
-    7.61,
-    7.42,
-    7.25,
-    7.08,
-    6.92,
-    6.76,
-    6.62,
-    6.49,
-    6.36,
-    6.25,
-    6.14,
-    6.04,
-    5.95,
-    5.87,
-    5.80,
-    5.74,
-    5.69,
-    5.64,
-    5.61,
-    5.58,
-    5.57,
-    5.56,
-    5.56,
-    5.57,
-    5.59,
-    5.62,
-    5.66,
-    5.71,
-    5.76,
-    5.83,
-    5.90,
-    5.99,
-    6.08,
-    6.18,
-    6.29,
-    6.41,
-    6.54,
-    6.68,
-    6.83,
-    6.98,
-    7.15,
-    7.32,
-    7.50,
-    7.69,
-    7.89,
-    8.10,
-    8.31,
-    8.53,
-    8.77,
-    9.01,
-    9.25,
-    9.51,
-    9.77,
-    10.04,
-    10.32,
-    10.61,
-    10.91,
-    11.21,
-    11.52,
-    11.84,
-    12.16,
-    12.49,
-    12.83,
-    13.18,
-    13.53,
-    13.89,
-    14.25,
-    14.63,
-    15.01,
-    15.39,
-    15.78,
-    16.18,
-    16.58,
-    16.99,
-    17.41,
-    17.83,
-    18.25,
-    18.68,
-    19.12,
-    19.56,
-    20.01,
-    20.46,
-    20.92,
-    21.38,
-    21.84,
-    22.31,
-    22.78,
-    23.26,
-    23.74,
-    24.23,
-    24.72,
-    25.21,
-    25.70,
-    26.20,
-    26.70,
-    27.21,
-    27.71,
-    28.22,
-    28.73,
-    29.25,
-    29.76,
-    30.28,
-    30.80,
-    31.32,
-    31.84,
-    32.37,
-    32.89,
-    33.42,
-    33.94,
-    34.47,
-    35.00,
-    35.53,
-    36.06,
-    36.58,
-    37.11,
-    37.64,
-    38.17,
-    38.69,
-    39.22,
-    39.74,
-    40.27,
-    40.79,
-    41.31,
-    41.83,
-    42.35,
-    42.87,
-    43.38,
-    43.89,
-    44.40,
-    44.91,
-    45.41,
-    45.92,
-    46.41,
-    46.91,
-    47.40,
-    47.89,
-    48.38,
-    48.86,
-    49.34,
-    49.81,
-    50.28,
-    50.75,
-    51.21,
-    51.67,
-    52.12,
-    52.57,
-    53.01,
-    53.45,
-    53.88,
-    54.31,
-    54.73,
-    55.15,
-    55.56,
-    55.96,
-    56.36,
-    56.75,
-    57.14,
-    57.52,
-    57.90,
-    58.26,
-    58.62,
-    58.98,
-    59.33,
-    59.67,
-    60.00,
-    60.33,
-    60.64,
-    60.96,
-    61.26,
-    61.56,
-    61.85,
-    62.13,
-    62.40,
-    62.67,
-    62.93,
-    63.17,
-    63.42,
-    63.65,
-    63.88,
-    64.09,
-    64.30,
-    64.50,
-    64.69,
-    64.88,
-    65.05,
-    65.22,
-    65.38,
-    65.52,
-    65.66,
-    65.79,
-    65.92,
-    66.03,
-    66.13,
-    66.23,
-    66.32,
-    66.39,
-    66.46,
-    66.52,
-    66.57,
-    66.61,
-    66.64,
-    66.67,
-    66.68,
-    66.68,
-    66.68,
-    66.66,
-    66.64,
-    66.61,
-    66.57,
-    66.52,
-    66.46,
-    66.39,
-    66.31,
-    66.22,
-    66.13,
-    66.02,
-    65.91,
-    65.79,
-    65.65,
-    65.51,
-    65.36,
-    65.20,
-    65.04,
-    64.86,
-    64.68,
-    64.48,
-    64.28,
-    64.07,
-    63.85,
-    63.63,
-    63.39,
-    63.15,
-    62.90,
-    62.64,
-    62.37,
-    62.10,
-    61.81,
-    61.52,
-    61.22,
-    60.92,
-    60.60,
-    60.28,
-    59.95,
-    59.62,
-    59.28,
-    58.93,
-    58.57,
-    58.21,
-    57.84,
-    57.46,
-    57.08,
-    56.69,
-    56.29,
-    55.89,
-    55.48,
-    55.07,
-    54.65,
-    54.22,
-    53.79,
-    53.36,
-    52.92,
-    52.47,
-    52.02,
-    51.56,
-    51.10,
-    50.63,
-    50.16,
-    49.69,
-    49.21,
-    48.73,
-    48.24,
-    47.75,
-    47.26,
-    46.76,
-    46.26,
-    45.75,
-    45.25,
-    44.74,
-    44.22,
-    43.71,
-    43.19,
-    42.67,
-    42.15,
-    41.62,
-    41.10,
-    40.57,
-    40.04,
-    39.51,
-    38.98,
-    38.45,
-    37.91,
-    37.38,
-    36.84,
-    36.31,
-    35.77,
-    35.24,
-    34.70,
-    34.17,
-    33.63,
-    33.10,
-    32.56,
-    32.03,
-    31.50,
-    30.97,
-    30.44,
-    29.91,
-    29.38,
-    28.86,
-    28.34,
-    27.81,
-    27.30,
-    26.78,
-    26.27,
-    25.76,
-    25.25,
-    24.74,
-    24.24,
-    23.74,
-    23.25,
-    22.76,
-    22.27,
-    21.79,
-    21.31,
-    20.83,
-    20.36,
-    19.89,
-    19.43,
-    18.97,
-    18.52,
-    18.07,
-    17.63,
-    17.19,
-    16.76,
-    16.33,
-    15.91,
-    15.50,
-    15.09,
-    14.68,
-    14.29,
-    13.90,
-    13.51,
-    13.13,
-    12.76,
-    12.40,
-    12.04,
-    11.69,
-    11.34,
-    11.00,
-    10.67,
-    10.35,
-    10.04,
-    9.73,
-    9.43,
-    9.14,
-    8.85,
-    8.57,
-    8.30,
-    8.04,
-    7.79,
-    7.54,
-    7.31,
-    7.08,
-    6.86,
-    6.65,
-    6.44,
-    6.25,
-    6.06,
-    5.88,
-    5.71,
-    5.55,
-    5.40,
-    5.26,
-    5.12,
-    5.00,
-    4.88,
-    4.78,
-    4.68,
-    4.59,
-    4.51,
-    4.44,
-    4.37,
-    4.32,
-    4.28,
-    4.24,
-    4.22,
-]
-
 import numpy as np
-import scipy.stats as stats
+from scipy import stats
+import math
+
+# 주어진 매개변수
+a = 0.5094208594435883
+c = 1.9562541556953779
+loc = 0.9999997401710807
+scale = 67.51815157840537
+
+# 재무 정보
+product_revenue = 1450  # 드럼당 수익
+interest_rate = 0.10  # 연간 이자율
+production_cost_fixed = 1500  # 고정 생산 비용
+production_cost_variable = 1000  # 배치 크기당 변동 생산 비용
+shipping_cost_truck = 15000  # 트럭당 배송 비용
+truck_capacity = 200  # 트럭 용량 (드럼)
+holding_cost = 100  # 드럼당 연간 재고 유지 비용
+fulfillment_cost = 150  # 드럼당 고객 이행 비용
+
+# 새로운 매개변수
+capacity = 45  # 생산 용량
+
+# 예시 값
+annual_demand = 14305.5  # 연간 수요
+order_cost = 1500  # 주문 비용
+service_level = 0.90  # 서비스 수준
 
 
-# Calculate monthly average demand for 2 years
-days_per_month = [
-    31,
-    28,
-    31,
-    30,
-    31,
-    30,
-    31,
-    31,
-    30,
-    31,
-    30,
-    31,
-    31,
-    28,
-    31,
-    30,
-    31,
-    30,
-    31,
-    31,
-    30,
-    31,
-    30,
-    31,
-]  # Assuming non-leap years
-monthly_demand = []
-
-start_idx = 0
-
-for days in days_per_month:
-    end_idx = start_idx + days
-    month_avg = np.mean(demand[start_idx:end_idx])
-    monthly_demand.append(month_avg)
-    start_idx = end_idx
-
-monthly_demand = np.array(monthly_demand)
-
-print("Monthly average demand for 2 years:")
-print(monthly_demand)
-
-
-fixed_prod_cost = 1500
-variable_prod_cost = 1000
-revenue_per_unit = 1450
-prod_capacity_per_day = 20
-holding_cost_per_unit_per_year = 100
-service_level = 0.98
-z_score = stats.norm.ppf(service_level)
-
-# Calculate EOQ, ROP, and safety stock for each month
-eoq_values = []
-rop_values = []
-safety_stock_values = []
-
-for month, monthly_demand_rate in enumerate(monthly_demand):
-    # Calculate annual demand rate
-    annual_demand_rate = monthly_demand_rate * 365 / days_per_month[month]
-
-    # Calculate EOQ (Q)
-    eoq = np.sqrt(
-        (2 * annual_demand_rate * fixed_prod_cost) / holding_cost_per_unit_per_year
+def calculate_mean_std(a, c, loc, scale):
+    """일반화된 감마 분포의 평균과 표준편차 계산"""
+    mean = loc + scale * math.gamma(a + 1 / c) / math.gamma(a)
+    var = scale**2 * (
+        math.gamma(a + 2 / c) / math.gamma(a)
+        - (math.gamma(a + 1 / c) / math.gamma(a)) ** 2
     )
-    eoq_values.append(eoq)
+    std = math.sqrt(var)
+    return mean, std
 
-    # Calculate lead time
-    prod_lead_time = eoq / prod_capacity_per_day
-    total_lead_time = prod_lead_time + 1  # Adding 1 day for delivery
 
-    # Calculate daily demand rate and its standard deviation
-    daily_demand_rate = monthly_demand_rate / days_per_month[month]
-    daily_demand_std = np.std(
-        demand[sum(days_per_month[:month]) : sum(days_per_month[: month + 1])]
+def calculate_eoq(annual_demand, order_cost, holding_cost):
+    """EOQ 계산"""
+    return math.sqrt((2 * annual_demand * order_cost) / holding_cost)
+
+
+def calculate_lead_time(batch_size):
+    """배치 크기에 따른 lead time 계산"""
+    return 7 + batch_size / capacity
+
+
+def calculate_rop(mean, std, lead_time, service_level):
+    """ROP 계산"""
+    safety_factor = stats.norm.ppf(service_level)
+    safety_stock = safety_factor * std * math.sqrt(lead_time)
+    rop = (mean * lead_time) + safety_stock
+    return rop
+
+
+def calculate_total_cost(Q, r, mean, std, lead_time):
+    """총 비용 계산"""
+    num_orders = annual_demand / Q
+    production_cost = (
+        production_cost_fixed + production_cost_variable * Q
+    ) * num_orders
+
+    num_trucks = math.ceil(Q / truck_capacity)
+    shipping_cost = shipping_cost_truck * num_trucks * num_orders
+
+    inventory_cost = holding_cost * (Q / 2 + r - mean * lead_time)
+
+    stockout_prob = 1 - stats.norm.cdf(
+        (r - mean * lead_time) / (std * math.sqrt(lead_time))
     )
+    expected_stockout = (
+        std
+        * math.sqrt(lead_time)
+        * stats.norm.pdf((r - mean * lead_time) / (std * math.sqrt(lead_time)))
+        - (r - mean * lead_time) * stockout_prob
+    )
+    stockout_cost = num_orders * fulfillment_cost * expected_stockout
 
-    # Calculate safety stock
-    safety_stock = z_score * daily_demand_std * np.sqrt(total_lead_time)
-    safety_stock_values.append(safety_stock)
+    total_cost = production_cost + shipping_cost + inventory_cost + stockout_cost
+    return total_cost
 
-    # Calculate ROP (r)
-    rop = (daily_demand_rate * total_lead_time) + safety_stock
-    rop_values.append(rop)
 
-# Convert to numpy arrays for easier manipulation
-eoq_values = np.array(eoq_values)
-rop_values = np.array(rop_values)
-safety_stock_values = np.array(safety_stock_values)
+def optimize_Q_r(mean, std):
+    """Q와 r의 최적값 찾기"""
+    best_Q = eoq  # EOQ를 초기값으로 사용
+    best_r = rop  # 초기 ROP 값 사용
+    best_cost = float("inf")
 
-print("\nEOQ (Q) values for each month:")
-print(eoq_values)
+    for Q in range(int(best_Q * 0.5), int(best_Q * 1.5), 1):  # EOQ 주변 탐색
+        lead_time = calculate_lead_time(Q)
+        for r in range(
+            int(mean * lead_time),
+            int(mean * lead_time + 4 * std * math.sqrt(lead_time)),
+            1,
+        ):
+            cost = calculate_total_cost(Q, r, mean, std, lead_time)
+            if cost < best_cost:
+                best_cost = cost
+                best_Q = Q
+                best_r = r
 
-print("\nROP (r) values for each month:")
-print(rop_values)
+    return best_Q, best_r, best_cost
 
-print("\nSafety stock values for each month:")
-print(safety_stock_values)
 
-# Calculate averages
-avg_eoq = np.mean(eoq_values)
-avg_rop = np.mean(rop_values)
-avg_safety_stock = np.mean(safety_stock_values)
+# 평균과 표준편차 계산
+mean, std = calculate_mean_std(a, c, loc, scale)
 
-print(f"\nAverage EOQ (Q): {avg_eoq:.2f}")
-print(f"Average ROP (r): {avg_rop:.2f}")
-print(f"Average Safety Stock: {avg_safety_stock:.2f}")
+# EOQ 계산 (초기값으로 사용)
+eoq = calculate_eoq(annual_demand, order_cost, holding_cost)
+
+# 초기 Lead time 계산
+lead_time = calculate_lead_time(eoq)
+
+# 초기 ROP 계산
+rop = calculate_rop(mean, std, lead_time, service_level)
+
+# Q,r 모델 최적화
+optimal_Q, optimal_r, optimal_cost = optimize_Q_r(mean, std)
+
+# 결과 출력
+print(f"평균 일일 수요: {mean:.2f}")
+print(f"일일 수요의 표준편차: {std:.2f}")
+print(f"초기 EOQ: {eoq:.2f}")
+print(f"초기 ROP: {rop:.2f}")
+print(f"최적 주문량 (Q): {optimal_Q:.2f}")
+print(f"최적 재주문점 (r): {optimal_r:.2f}")
+print(f"최적 Lead Time: {calculate_lead_time(optimal_Q):.2f}")
+print(f"최적 총 비용: ${optimal_cost:.2f}")
+print(f"필요한 트럭 수: {math.ceil(optimal_Q / truck_capacity)}")
+
+# 서비스 수준 계산
+optimal_lead_time = calculate_lead_time(optimal_Q)
+z_score = (optimal_r - mean * optimal_lead_time) / (std * math.sqrt(optimal_lead_time))
+actual_service_level = stats.norm.cdf(z_score)
+print(f"실제 서비스 수준: {actual_service_level:.4f}")
