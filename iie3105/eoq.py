@@ -1,4 +1,4 @@
-Predicted_Demand = [
+demand = [
     6.93,
     6.92,
     6.92,
@@ -730,86 +730,114 @@ Predicted_Demand = [
     4.24,
     4.22,
 ]
-fixed_production_cost = 1500
-variable_production_cost = 1000
-interest_rate_per_day = 0.1 / 365
-shipping_cost_by_mail_per_unit = 150
-shipping_cost_by_truck_with_capa_200 = 15000
-holding_cost_per_unit_per_year = 100
-customer_fullfilment_cost_per_unit = 150
-production_capa_per_day = 20
-lead_time_by_mail = 1
-lead_time_by_truck = 7
-price_for_capacity_enlargement_per_unit = 50000
 
-import math
 import numpy as np
-from scipy import stats
+import scipy.stats as stats
 
 
-def calculate_dynamic_eoq_rop(
-    demand, holding_cost, ordering_cost, lead_time, service_level, window_size=30
-):
-    """
-    Calculate dynamic EOQ and ROP for (Q, r) model with changing demand.
+# Calculate monthly average demand for 2 years
+days_per_month = [
+    31,
+    28,
+    31,
+    30,
+    31,
+    30,
+    31,
+    31,
+    30,
+    31,
+    30,
+    31,
+    31,
+    28,
+    31,
+    30,
+    31,
+    30,
+    31,
+    31,
+    30,
+    31,
+    30,
+    31,
+]  # Assuming non-leap years
+monthly_demand = []
 
-    :param demand: List of daily demand values
-    :param holding_cost: Annual holding cost per unit
-    :param ordering_cost: Fixed cost per order
-    :param lead_time: Lead time in days
-    :param service_level: Desired service level (e.g., 0.95 for 95%)
-    :param window_size: Number of days to consider for moving average and standard deviation
-    :return: Lists of (EOQ, ROP) for each day
-    """
-    eoq_list = []
-    rop_list = []
+start_idx = 0
 
-    for i in range(len(demand)):
-        # Use a moving window to calculate average and standard deviation
-        window_start = max(0, i - window_size + 1)
-        window_demand = demand[window_start : i + 1]
+for days in days_per_month:
+    end_idx = start_idx + days
+    month_avg = np.mean(demand[start_idx:end_idx])
+    monthly_demand.append(month_avg)
+    start_idx = end_idx
 
-        # Calculate average daily demand for the window
-        avg_daily_demand = np.mean(window_demand)
+monthly_demand = np.array(monthly_demand)
 
-        # Calculate EOQ
-        eoq = math.sqrt((2 * ordering_cost * avg_daily_demand * 365) / holding_cost)
-
-        # Calculate standard deviation of daily demand for the window
-        daily_demand_std = np.std(window_demand)
-
-        # Calculate safety factor (z-score) based on service level
-        z_score = stats.norm.ppf(service_level)
-
-        # Calculate safety stock
-        safety_stock = z_score * daily_demand_std * math.sqrt(lead_time)
-
-        # Calculate ROP
-        rop = (avg_daily_demand * lead_time) + safety_stock
-
-        eoq_list.append(eoq)
-        rop_list.append(rop)
-
-    return eoq_list, rop_list
+print("Monthly average demand for 2 years:")
+print(monthly_demand)
 
 
-# Example usage
-holding_cost = holding_cost_per_unit_per_year
-ordering_cost = fixed_production_cost
-lead_time = lead_time_by_truck  # Using truck lead time as an example
-service_level = 0.95  # 95% service level
+fixed_prod_cost = 1500
+variable_prod_cost = 1000
+revenue_per_unit = 1450
+prod_capacity_per_day = 20
+holding_cost_per_unit_per_year = 100
+service_level = 0.98
+z_score = stats.norm.ppf(service_level)
 
-eoq_list, rop_list = calculate_dynamic_eoq_rop(
-    Predicted_Demand, holding_cost, ordering_cost, lead_time, service_level
-)
+# Calculate EOQ, ROP, and safety stock for each month
+eoq_values = []
+rop_values = []
+safety_stock_values = []
 
-# Print the first few and last few results
-print("First 5 days:")
-for i in range(5):
-    print(f"Day {i+1}: EOQ = {eoq_list[i]:.2f}, ROP = {rop_list[i]:.2f}")
+for month, monthly_demand_rate in enumerate(monthly_demand):
+    # Calculate annual demand rate
+    annual_demand_rate = monthly_demand_rate * 365 / days_per_month[month]
 
-print("\nLast 5 days:")
-for i in range(-5, 0):
-    print(
-        f"Day {len(Predicted_Demand)+i+1}: EOQ = {eoq_list[i]:.2f}, ROP = {rop_list[i]:.2f}"
+    # Calculate EOQ (Q)
+    eoq = np.sqrt(
+        (2 * annual_demand_rate * fixed_prod_cost) / holding_cost_per_unit_per_year
     )
+    eoq_values.append(eoq)
+
+    # Calculate lead time
+    prod_lead_time = eoq / prod_capacity_per_day
+    total_lead_time = prod_lead_time + 1  # Adding 1 day for delivery
+
+    # Calculate daily demand rate and its standard deviation
+    daily_demand_rate = monthly_demand_rate / days_per_month[month]
+    daily_demand_std = np.std(
+        demand[sum(days_per_month[:month]) : sum(days_per_month[: month + 1])]
+    )
+
+    # Calculate safety stock
+    safety_stock = z_score * daily_demand_std * np.sqrt(total_lead_time)
+    safety_stock_values.append(safety_stock)
+
+    # Calculate ROP (r)
+    rop = (daily_demand_rate * total_lead_time) + safety_stock
+    rop_values.append(rop)
+
+# Convert to numpy arrays for easier manipulation
+eoq_values = np.array(eoq_values)
+rop_values = np.array(rop_values)
+safety_stock_values = np.array(safety_stock_values)
+
+print("\nEOQ (Q) values for each month:")
+print(eoq_values)
+
+print("\nROP (r) values for each month:")
+print(rop_values)
+
+print("\nSafety stock values for each month:")
+print(safety_stock_values)
+
+# Calculate averages
+avg_eoq = np.mean(eoq_values)
+avg_rop = np.mean(rop_values)
+avg_safety_stock = np.mean(safety_stock_values)
+
+print(f"\nAverage EOQ (Q): {avg_eoq:.2f}")
+print(f"Average ROP (r): {avg_rop:.2f}")
+print(f"Average Safety Stock: {avg_safety_stock:.2f}")
