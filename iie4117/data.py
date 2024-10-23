@@ -113,13 +113,11 @@ def calculate_required_increase(combined_data, education_years=6, tolerance_rati
             else combined_data.iloc[-1]["new_predicted_doctors"]
         )
 
-        # 현재 진행 중인 증원의 효과를 고려
         ongoing_increase = sum(required_increase[max(0, i - education_years) : i])
         future_doctors += ongoing_increase
 
         shortage = current_demand - future_doctors
 
-        # 수요와 공급의 차이가 허용 범위 내인 경우 증원하지 않음
         if abs(shortage) / current_demand <= tolerance_ratio:
             required_increase.append(0)
         else:
