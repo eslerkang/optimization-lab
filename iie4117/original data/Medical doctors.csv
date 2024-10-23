@@ -1,0 +1,3728 @@
+code,country,year,value
+COG,Congo,2022,1042
+MRT,Mauritania,2022,1118
+SAU,Saudi Arabia,2022,112023
+GAB,Gabon,2022,1139
+ETH,Ethiopia,2022,13327
+CRI,Costa Rica,2022,13656
+NAM,Namibia,2022,1394
+LTU,Lithuania,2022,14101
+URY,Uruguay,2022,15846
+TCD,Chad,2022,1507
+MUS,Mauritius,2022,1555
+ISL,Iceland,2022,1687
+MNE,Montenegro,2022,1726
+COD,Democratic Republic of the Congo,2022,18493
+NZL,New Zealand,2022,18531
+ARG,Argentina,2022,185762
+IDN,Indonesia,2022,189979
+SWZ,Eswatini,2022,1912
+GEO,Georgia,2022,21017
+GBR,United Kingdom of Great Britain and Northern Ireland,2022,214287
+SEN,Senegal,2022,2188
+GNQ,Equatorial Guinea,2022,239
+DOM,Dominican Republic,2022,25093
+ITA,Italy,2022,250813
+PRY,Paraguay,2022,26320
+ERI,Eritrea,2022,260
+BEN,Benin,2022,2608
+CPV,Cabo Verde,2022,2644
+MOZ,Mozambique,2022,2689
+ZWE,Zimbabwe,2022,2708
+GIN,Guinea,2022,297
+BGR,Bulgaria,2022,33206
+ISR,Israel,2022,33558
+BFA,Burkina Faso,2022,3323
+LSO,Lesotho,2022,347
+SLE,Sierra Leone,2022,366
+CMR,Cameroon,2022,3759
+SYC,Seychelles,2022,409
+BTN,Bhutan,2022,432
+GNB,Guinea-Bissau,2022,438
+MLI,Mali,2022,4402
+IRQ,Iraq,2022,45038
+GHA,Ghana,2022,4726
+AUT,Austria,2022,49242
+CIV,Cote d'Ivoire,2022,4930
+ZMB,Zambia,2022,5243
+PER,Peru,2022,55190
+KEN,Kenya,2022,5517
+NER,Niger,2022,614
+CHL,Chile,2022,62144
+TGO,Togo,2022,730
+BEL,Belgium,2022,74518
+UGA,Uganda,2022,7941
+BRB,Barbados,2022,835
+NGA,Nigeria,2022,86181
+AGO,Angola,2022,8693
+TZA,United Republic of Tanzania,2022,8693
+OMN,Oman,2022,9420
+LBR,Liberia,2022,954
+CAN,Canada,2022,96020
+SLV,El Salvador,2022,9833
+BWA,Botswana,2022,993
+MWI,Malawi,2022,996
+USA,United States of America,2021,1215945
+SAU,Saudi Arabia,2021,100247
+TCD,Chad,2021,1000
+BWA,Botswana,2021,1014
+AUS,Australia,2021,103196
+MRT,Mauritania,2021,1035
+CUB,Cuba,2021,106131
+TON,Tonga,2021,107
+BGD,Bangladesh,2021,113477
+CAF,Central African Republic,2021,114
+NAM,Namibia,2021,1181
+ETH,Ethiopia,2021,12174
+LTU,Lithuania,2021,12533
+MNG,Mongolia,2021,12970
+CRI,Costa Rica,2021,12976
+WSM,Samoa,2021,120
+COL,Colombia,2021,126276
+POL,Poland,2021,129893
+TKM,Turkmenistan,2021,13594
+KOR,Republic of Korea,2021,130479
+KGZ,Kyrgyzstan,2021,14004
+HRV,Croatia,2021,14656
+BOL,Bolivia (Plurinational State of),2021,15326
+SGP,Singapore,2021,15423
+URY,Uruguay,2021,15447
+TUN,Tunisia,2021,15839
+COD,Democratic Republic of the Congo,2021,16989
+ISL,Iceland,2021,1631
+SEN,Senegal,2021,1707
+MNE,Montenegro,2021,1738
+NZL,New Zealand,2021,18037
+SLV,El Salvador,2021,18393
+TUR,Türkiye,2021,183569
+IDN,Indonesia,2021,190268
+GEO,Georgia,2021,20031
+SVK,Slovakia,2021,20047
+IRL,Ireland,2021,20256
+SRB,Serbia,2021,20703
+TJK,Tajikistan,2021,20797
+PRY,Paraguay,2021,21734
+ESP,Spain,2021,212735
+GBR,United Kingdom of Great Britain and Northern Ireland,2021,213357
+FRA,France,2021,215722
+DOM,Dominican Republic,2021,22571
+BFA,Burkina Faso,2021,2221
+MLT,Malta,2021,2252
+FIN,Finland,2021,24252
+ITA,Italy,2021,242721
+LAO,Lao People's Democratic Republic,2021,2424
+LKA,Sri Lanka,2021,25962
+NPL,Nepal,2021,26052
+MOZ,Mozambique,2021,2611
+GMB,Gambia,2021,269
+ARE,United Arab Emirates,2021,27268
+NOR,Norway,2021,27925
+BEN,Benin,2021,2755
+ERI,Eritrea,2021,286
+BGR,Bulgaria,2021,29543
+TKL,Tokelau,2021,3
+CHN,China,2021,3590846
+HUN,Hungary,2021,32026
+ISR,Israel,2021,32520
+MEX,Mexico,2021,324292
+CMR,Cameroon,2021,3378
+BEL,Belgium,2021,37630
+DEU,Germany,2021,376852
+CHE,Switzerland,2021,38613
+GHA,Ghana,2021,4169
+IRQ,Iraq,2021,42329
+BTN,Bhutan,2021,435
+CZE,Czechia,2021,44712
+CYP,Cyprus,2021,4419
+GNB,Guinea-Bissau,2021,453
+EST,Estonia,2021,4568
+BRA,Brazil,2021,459080
+ZAF,South Africa,2021,48021
+AUT,Austria,2021,48443
+CIV,Cote d'Ivoire,2021,4951
+TGO,Togo,2021,506
+KEN,Kenya,2021,5203
+PER,Peru,2021,55479
+CHL,Chile,2021,57952
+ZMB,Zambia,2021,5773
+PRT,Portugal,2021,59338
+PNG,Papua New Guinea,2021,626
+LVA,Latvia,2021,6328
+GRC,Greece,2021,66504
+ROU,Romania,2021,67096
+NLD,Netherlands (Kingdom of the),2021,68363
+SVN,Slovenia,2021,7049
+SWE,Sweden,2021,74856
+PAN,Panama,2021,7545
+MYS,Malaysia,2021,77755
+BRB,Barbados,2021,810
+BDI,Burundi,2021,812
+NGA,Nigeria,2021,84277
+BRN,Brunei Darussalam,2021,852
+LBR,Liberia,2021,887
+PHL,Philippines,2021,89533
+OMN,Oman,2021,9026
+SUR,Suriname,2021,906
+CAN,Canada,2021,93998
+UZB,Uzbekistan,2021,95587
+MDA,Republic of Moldova,2021,9938
+IND,India,2020,1014538
+USA,United States of America,2020,1194267
+KWT,Kuwait,2020,10000
+TON,Tonga,2020,100
+AUS,Australia,2020,100260
+TCD,Chad,2020,1003
+BWA,Botswana,2020,1024
+CUB,Cuba,2020,103835
+NAM,Namibia,2020,1036
+FSM,Micronesia (Federated States of),2020,108
+BGD,Bangladesh,2020,109874
+BOL,Bolivia (Plurinational State of),2020,11359
+GUY,Guyana,2020,1120
+WSM,Samoa,2020,119
+ETH,Ethiopia,2020,12174
+MNG,Mongolia,2020,12431
+MDA,Republic of Moldova,2020,12516
+LTU,Lithuania,2020,12529
+CRI,Costa Rica,2020,12557
+COL,Colombia,2020,121183
+POL,Poland,2020,126064
+TKM,Turkmenistan,2020,13619
+KOR,Republic of Korea,2020,130014
+GAB,Gabon,2020,1362
+SEN,Senegal,2020,1384
+TUV,Tuvalu,2020,14
+SGP,Singapore,2020,14823
+TUN,Tunisia,2020,15743
+ISL,Iceland,2020,1583
+SWZ,Eswatini,2020,165
+IRL,Ireland,2020,17231
+NZL,New Zealand,2020,17448
+IDN,Indonesia,2020,170338
+TUR,Türkiye,2020,171259
+MNE,Montenegro,2020,1721
+ARG,Argentina,2020,175419
+GEO,Georgia,2020,19436
+SRB,Serbia,2020,19857
+FIN,Finland,2020,19969
+GMB,Gambia,2020,196
+SVK,Slovakia,2020,20026
+TJK,Tajikistan,2020,20221
+GBR,United Kingdom of Great Britain and Northern Ireland,2020,203907
+BFA,Burkina Faso,2020,2061
+DOM,Dominican Republic,2020,21442
+FRA,France,2020,214293
+MLT,Malta,2020,2158
+ESP,Spain,2020,216766
+GTM,Guatemala,2020,22227
+ITA,Italy,2020,237844
+NPL,Nepal,2020,24814
+DNK,Denmark,2020,25522
+CMR,Cameroon,2020,2562
+MOZ,Mozambique,2020,2573
+LKA,Sri Lanka,2020,26320
+ARE,United Arab Emirates,2020,26736
+LAO,Lao People's Democratic Republic,2020,2613
+NOR,Norway,2020,27361
+HRV,Croatia,2020,28512
+BGR,Bulgaria,2020,29656
+ERI,Eritrea,2020,291
+ZWE,Zimbabwe,2020,2957
+CHN,China,2020,3401672
+HUN,Hungary,2020,30610
+MEX,Mexico,2020,307501
+ISR,Israel,2020,31389
+AZE,Azerbaijan,2020,31815
+PLW,Palau,2020,32
+JPN,Japan,2020,327403
+MCO,Monaco,2020,328
+MUS,Mauritius,2020,3450
+COM,Comoros,2020,354
+BEL,Belgium,2020,37089
+CHE,Switzerland,2020,37911
+DEU,Germany,2020,371556
+BTN,Bhutan,2020,374
+IRQ,Iraq,2020,38865
+GNB,Guinea-Bissau,2020,385
+ECU,Ecuador,2020,40585
+CYP,Cyprus,2020,4163
+BLR,Belarus,2020,43059
+CZE,Czechia,2020,43810
+SWE,Sweden,2020,44719
+CIV,Cote d'Ivoire,2020,4435
+SSD,South Sudan,2020,456
+EST,Estonia,2020,4626
+AUT,Austria,2020,47422
+ZMB,Zambia,2020,4818
+HND,Honduras,2020,4953
+GHA,Ghana,2020,5285
+ALB,Albania,2020,5397
+CHL,Chile,2020,54196
+RUS,Russian Federation,2020,557285
+PRT,Portugal,2020,57826
+SLE,Sierra Leone,2020,576
+MKD,North Macedonia,2020,6258
+LVA,Latvia,2020,6346
+TTO,Trinidad and Tobago,2020,6366
+ROU,Romania,2020,64127
+GRC,Greece,2020,66187
+THA,Thailand,2020,66301
+NLD,Netherlands (Kingdom of the),2020,67100
+TGO,Togo,2020,685
+SVN,Slovenia,2020,6944
+PAN,Panama,2020,6996
+UGA,Uganda,2020,7031
+EGY,Egypt,2020,73363
+MYS,Malaysia,2020,73973
+BRB,Barbados,2020,737
+PRY,Paraguay,2020,7500
+KAZ,Kazakhstan,2020,76443
+LBR,Liberia,2020,777
+NER,Niger,2020,835
+PHL,Philippines,2020,84306
+BDI,Burundi,2020,852
+OMN,Oman,2020,9058
+CAN,Canada,2020,92173
+UZB,Uzbekistan,2020,93337
+MRT,Mauritania,2020,934
+SAU,Saudi Arabia,2020,95336
+MWI,Malawi,2020,958
+AFG,Afghanistan,2020,9880
+TLS,Timor-Leste,2020,997
+USA,United States of America,2019,1176043
+MDA,Republic of Moldova,2019,10345
+BGD,Bangladesh,2019,103809
+STP,Sao Tome and Principe,2019,105
+TON,Tonga,2019,107
+MDV,Maldives,2019,1090
+MNG,Mongolia,2019,11788
+CRI,Costa Rica,2019,11880
+COL,Colombia,2019,115638
+BOL,Bolivia (Plurinational State of),2019,12698
+LTU,Lithuania,2019,12768
+POL,Poland,2019,125349
+IDN,Indonesia,2019,125861
+KOR,Republic of Korea,2019,127258
+TKM,Turkmenistan,2019,13314
+KGZ,Kyrgyzstan,2019,13709
+GAB,Gabon,2019,1368
+SGP,Singapore,2019,14279
+ISL,Iceland,2019,1404
+SEN,Senegal,2019,1435
+RWA,Rwanda,2019,1492
+COD,Democratic Republic of the Congo,2019,15016
+LBN,Lebanon,2019,15131
+TUN,Tunisia,2019,15426
+DOM,Dominican Republic,2019,15591
+IRL,Ireland,2019,16366
+NZL,New Zealand,2019,16812
+TUR,Türkiye,2019,160810
+MNE,Montenegro,2019,1708
+GMB,Gambia,2019,188
+TJK,Tajikistan,2019,19268
+SVK,Slovakia,2019,19454
+FIN,Finland,2019,19694
+BFA,Burkina Faso,2019,1910
+GBR,United Kingdom of Great Britain and Northern Ireland,2019,196463
+MLT,Malta,2019,2029
+ESP,Spain,2019,207565
+FRA,France,2019,213180
+SYC,Seychelles,2019,220
+COK,Cook Islands,2019,23
+NPL,Nepal,2019,23146
+LKA,Sri Lanka,2019,24605
+DNK,Denmark,2019,24719
+ITA,Italy,2019,241945
+PAK,Pakistan,2019,242099
+ERI,Eritrea,2019,248
+ARE,United Arab Emirates,2019,25414
+SLE,Sierra Leone,2019,256
+BTN,Bhutan,2019,257
+MOZ,Mozambique,2019,2570
+NOR,Norway,2019,26572
+JOR,Jordan,2019,26885
+LAO,Lao People's Democratic Republic,2019,2624
+GEO,Georgia,2019,28291
+HRV,Croatia,2019,28624
+BGR,Bulgaria,2019,29549
+TKL,Tokelau,2019,3
+CHN,China,2019,3210515
+ISR,Israel,2019,30485
+MEX,Mexico,2019,309418
+AZE,Azerbaijan,2019,31829
+GHA,Ghana,2019,3236
+MCO,Monaco,2019,328
+MUS,Mauritius,2019,3290
+HUN,Hungary,2019,34137
+SSD,South Sudan,2019,342
+KHM,Cambodia,2019,3473
+IRQ,Iraq,2019,36297
+BEL,Belgium,2019,36343
+DEU,Germany,2019,365388
+CHE,Switzerland,2019,37300
+CYP,Cyprus,2019,3768
+MMR,Myanmar,2019,39826
+ECU,Ecuador,2019,40230
+CIV,Cote d'Ivoire,2019,4173
+DZA,Algeria,2019,42140
+BLR,Belarus,2019,42897
+CZE,Czechia,2019,43399
+ZMB,Zambia,2019,4386
+SWE,Sweden,2019,44061
+ZAF,South Africa,2019,46393
+AUT,Austria,2019,46987
+EST,Estonia,2019,4603
+ALB,Albania,2019,4745
+VUT,Vanuatu,2019,48
+BRA,Brazil,2019,487659
+CHL,Chile,2019,50439
+PRT,Portugal,2019,56077
+PNG,Papua New Guinea,2019,580
+ETH,Ethiopia,2019,5867
+ROU,Romania,2019,61731
+RUS,Russian Federation,2019,610249
+TTO,Trinidad and Tobago,2019,6244
+LVA,Latvia,2019,6253
+TGO,Togo,2019,627
+THA,Thailand,2019,63974
+MKD,North Macedonia,2019,6468
+NLD,Netherlands (Kingdom of the),2019,65121
+GRC,Greece,2019,66058
+MYS,Malaysia,2019,67586
+SVN,Slovenia,2019,6812
+PAN,Panama,2019,6932
+LBR,Liberia,2019,732
+KAZ,Kazakhstan,2019,74046
+NGA,Nigeria,2019,74543
+EGY,Egypt,2019,74923
+BEN,Benin,2019,763
+BIH,Bosnia and Herzegovina,2019,7791
+AFG,Afghanistan,2019,8082
+PHL,Philippines,2019,81157
+TCD,Chad,2019,859
+ARM,Armenia,2019,8793
+NER,Niger,2019,888
+MRT,Mauritania,2019,897
+NAM,Namibia,2019,900
+CAN,Canada,2019,91375
+UZB,Uzbekistan,2019,91932
+BWA,Botswana,2019,920
+SAU,Saudi Arabia,2019,94333
+OMN,Oman,2019,9602
+AUS,Australia,2019,97039
+CUB,Cuba,2019,97202
+TLS,Timor-Leste,2019,994
+PSE,"occupied Palestinian territory, including east Jerusalem",2018,10417
+MDA,Republic of Moldova,2018,10915
+COL,Colombia,2018,109934
+AFG,Afghanistan,2018,11144
+CRI,Costa Rica,2018,11169
+MNG,Mongolia,2018,11169
+IDN,Indonesia,2018,113518
+LTU,Lithuania,2018,12881
+KOR,Republic of Korea,2018,123230
+IRN,Iran (Islamic Republic of),2018,129604
+TKM,Turkmenistan,2018,13115
+SGP,Singapore,2018,13766
+GAB,Gabon,2018,1368
+ISL,Iceland,2018,1373
+LBN,Lebanon,2018,14431
+GUY,Guyana,2018,1417
+KNA,Saint Kitts and Nevis,2018,145
+DOM,Dominican Republic,2018,15378
+IRL,Ireland,2018,15962
+TUR,Türkiye,2018,153128
+JAM,Jamaica,2018,1546
+NZL,New Zealand,2018,16224
+GRD,Grenada,2018,160
+RWA,Rwanda,2018,1648
+BFA,Burkina Faso,2018,1684
+MNE,Montenegro,2018,1730
+SLV,El Salvador,2018,18427
+ESP,Spain,2018,188166
+GBR,United Kingdom of Great Britain and Northern Ireland,2018,188295
+TJK,Tajikistan,2018,19080
+SVK,Slovakia,2018,19178
+FIN,Finland,2018,19322
+MLT,Malta,2018,1925
+SRB,Serbia,2018,20824
+PAK,Pakistan,2018,208007
+NPL,Nepal,2018,21033
+LKA,Sri Lanka,2018,21316
+FRA,France,2018,210549
+COM,Comoros,2018,220
+AIA,Anguilla,2018,23
+MUS,Mauritius,2018,2395
+DNK,Denmark,2018,24308
+ARE,United Arab Emirates,2018,24345
+SYC,Seychelles,2018,240
+ITA,Italy,2018,240301
+MLI,Mali,2018,2454
+MOZ,Mozambique,2018,2473
+NOR,Norway,2018,25804
+LAO,Lao People's Democratic Republic,2018,2572
+HTI,Haiti,2018,2606
+IRQ,Iraq,2018,27208
+MWI,Malawi,2018,2760
+SWZ,Eswatini,2018,278
+GIN,Guinea,2018,2787
+HRV,Croatia,2018,28150
+GEO,Georgia,2018,28501
+ERI,Eritrea,2018,280
+TZA,United Republic of Tanzania,2018,2885
+ISR,Israel,2018,29592
+BGR,Bulgaria,2018,29625
+GMB,Gambia,2018,298
+CHN,China,2018,3010376
+ZWE,Zimbabwe,2018,3026
+MEX,Mexico,2018,305985
+JPN,Japan,2018,315406
+MCO,Monaco,2018,317
+AZE,Azerbaijan,2018,32485
+BTN,Bhutan,2018,320
+CMR,Cameroon,2018,3259
+HUN,Hungary,2018,33078
+CAF,Central African Republic,2018,335
+BEL,Belgium,2018,35762
+CYP,Cyprus,2018,3544
+DEU,Germany,2018,357401
+MMR,Myanmar,2018,36363
+CHE,Switzerland,2018,36940
+ECU,Ecuador,2018,39908
+ZMB,Zambia,2018,4021
+SSD,South Sudan,2018,411
+BLZ,Belize,2018,413
+BLR,Belarus,2018,42524
+CZE,Czechia,2018,42919
+ZAF,South Africa,2018,43503
+PER,Peru,2018,43805
+SWE,Sweden,2018,43969
+NIC,Nicaragua,2018,4362
+GHA,Ghana,2018,4406
+CPV,Cabo Verde,2018,452
+AUT,Austria,2018,46115
+EST,Estonia,2018,4605
+SUR,Suriname,2018,472
+CHL,Chile,2018,48531
+PRT,Portugal,2018,54478
+COG,Congo,2018,544
+THA,Thailand,2018,55890
+CIV,Cote d'Ivoire,2018,5602
+SLE,Sierra Leone,2018,566
+GNB,Guinea-Bissau,2018,578
+TTO,Trinidad and Tobago,2018,5792
+ROU,Romania,2018,59333
+RUS,Russian Federation,2018,599919
+PNG,Papua New Guinea,2018,602
+MYS,Malaysia,2018,61158
+TGO,Togo,2018,611
+GTM,Guatemala,2018,6122
+NLD,Netherlands (Kingdom of the),2018,63278
+MKD,North Macedonia,2018,6364
+LVA,Latvia,2018,6367
+GRC,Greece,2018,65513
+SVN,Slovenia,2018,6591
+AGO,Angola,2018,6593
+PAN,Panama,2018,6706
+QAT,Qatar,2018,6913
+LBR,Liberia,2018,693
+DZA,Algeria,2018,72604
+KAZ,Kazakhstan,2018,72877
+NGA,Nigeria,2018,74543
+EGY,Egypt,2018,75686
+BIH,Bosnia and Herzegovina,2018,7599
+PHL,Philippines,2018,76079
+BRN,Brunei Darussalam,2018,772
+DMA,Dominica,2018,79
+TCD,Chad,2018,803
+KEN,Kenya,2018,8042
+NAM,Namibia,2018,806
+NER,Niger,2018,818
+ETH,Ethiopia,2018,8395
+ARM,Armenia,2018,8419
+MRT,Mauritania,2018,850
+USA,United States of America,2018,853721
+SAU,Saudi Arabia,2018,88023
+MDV,Maldives,2018,881
+POL,Poland,2018,89532
+UZB,Uzbekistan,2018,89828
+CAN,Canada,2018,89911
+BEN,Benin,2018,908
+TLS,Timor-Leste,2018,916
+BWA,Botswana,2018,925
+IND,India,2018,927447
+AUS,Australia,2018,93604
+BGD,Bangladesh,2018,93741
+PRY,Paraguay,2018,9421
+CUB,Cuba,2018,95487
+OMN,Oman,2018,9674
+LSO,Lesotho,2018,998
+CRI,Costa Rica,2017,10324
+MDA,Republic of Moldova,2017,10492
+MNG,Mongolia,2017,10576
+SDN,Sudan,2017,10683
+COL,Colombia,2017,104125
+SEN,Senegal,2017,1066
+BOL,Bolivia (Plurinational State of),2017,11528
+LCA,Saint Lucia,2017,116
+TKM,Turkmenistan,2017,12811
+LTU,Lithuania,2017,12887
+KOR,Republic of Korea,2017,120630
+SGP,Singapore,2017,13386
+LBY,Libya,2017,13757
+LBN,Lebanon,2017,13813
+ISL,Iceland,2017,1330
+TUN,Tunisia,2017,14892
+GAB,Gabon,2017,1408
+NAM,Namibia,2017,1421
+TUR,Türkiye,2017,149997
+NZL,New Zealand,2017,15656
+IRL,Ireland,2017,15660
+GRD,Grenada,2017,156
+URY,Uruguay,2017,16976
+BFA,Burkina Faso,2017,1626
+RWA,Rwanda,2017,1648
+MNE,Montenegro,2017,1659
+ARG,Argentina,2017,175313
+LUX,Luxembourg,2017,1780
+SVK,Slovakia,2017,18608
+TJK,Tajikistan,2017,18716
+ESP,Spain,2017,180633
+GBR,United Kingdom of Great Britain and Northern Ireland,2017,185921
+MLT,Malta,2017,1855
+FIN,Finland,2017,19219
+LKA,Sri Lanka,2017,19601
+CHN,China,2017,2828999
+SRB,Serbia,2017,20773
+SWZ,Eswatini,2017,208
+PAK,Pakistan,2017,208007
+FRA,France,2017,210017
+MOZ,Mozambique,2017,2180
+JOR,Jordan,2017,22739
+ERI,Eritrea,2017,224
+MLI,Mali,2017,2247
+ARE,United Arab Emirates,2017,23107
+DNK,Denmark,2017,23691
+GMB,Gambia,2017,232
+BTN,Bhutan,2017,234
+GEO,Georgia,2017,24572
+NOR,Norway,2017,24986
+ITA,Italy,2017,241512
+LBR,Liberia,2017,248
+NPL,Nepal,2017,25148
+MAR,Morocco,2017,26003
+ATG,Antigua and Barbuda,2017,264
+ZWE,Zimbabwe,2017,2646
+GHA,Ghana,2017,2679
+HRV,Croatia,2017,27770
+ISR,Israel,2017,28683
+BGR,Bulgaria,2017,29606
+HND,Honduras,2017,2913
+MUS,Mauritius,2017,2927
+MEX,Mexico,2017,297307
+LAO,Lao People's Democratic Republic,2017,3088
+IRQ,Iraq,2017,31451
+AZE,Azerbaijan,2017,31869
+HUN,Hungary,2017,32543
+CYP,Cyprus,2017,3325
+BEL,Belgium,2017,35069
+DEU,Germany,2017,351195
+CHE,Switzerland,2017,36324
+ECU,Ecuador,2017,37293
+BLR,Belarus,2017,42038
+SWE,Sweden,2017,42938
+BLZ,Belize,2017,422
+ZAF,South Africa,2017,44653
+CHL,Chile,2017,45088
+AUT,Austria,2017,45366
+BRA,Brazil,2017,450009
+EST,Estonia,2017,4569
+MMR,Myanmar,2017,46110
+TTO,Trinidad and Tobago,2017,4657
+NER,Niger,2017,472
+GTM,Guatemala,2017,4736
+VEN,Venezuela (Bolivarian Republic of),2017,50866
+GNQ,Equatorial Guinea,2017,507
+PRT,Portugal,2017,52718
+THA,Thailand,2017,55890
+ROU,Romania,2017,57329
+MYS,Malaysia,2017,57831
+TGO,Togo,2017,583
+RUS,Russian Federation,2017,593211
+NLD,Netherlands (Kingdom of the),2017,61730
+MKD,North Macedonia,2017,6219
+LVA,Latvia,2017,6225
+NIC,Nicaragua,2017,6318
+AGO,Angola,2017,6400
+SVN,Slovenia,2017,6408
+GRC,Greece,2017,65240
+TCD,Chad,2017,651
+PAN,Panama,2017,6513
+SUR,Suriname,2017,676
+BRN,Brunei Darussalam,2017,683
+UGA,Uganda,2017,6918
+PHL,Philippines,2017,71407
+BRB,Barbados,2017,712
+KAZ,Kazakhstan,2017,72134
+BHS,Bahamas,2017,740
+BIH,Bosnia and Herzegovina,2017,7415
+EGY,Egypt,2017,77083
+MRT,Mauritania,2017,791
+DMA,Dominica,2017,80
+SAU,Saudi Arabia,2017,82380
+PSE,"occupied Palestinian territory, including east Jerusalem",2017,8339
+ARM,Armenia,2017,8477
+UZB,Uzbekistan,2017,85362
+BGD,Bangladesh,2017,86754
+MDV,Maldives,2017,868
+AFG,Afghanistan,2017,8744
+POL,Poland,2017,90284
+AUS,Australia,2017,90417
+IRN,Iran (Islamic Republic of),2017,91101
+OMN,Oman,2017,9132
+CUB,Cuba,2017,92084
+PRK,Democratic People's Republic of Korea,2017,93667
+TLS,Timor-Leste,2017,933
+IDN,Indonesia,2017,99703
+MNG,Mongolia,2016,10000
+MDA,Republic of Moldova,2016,10488
+SWZ,Eswatini,2016,107
+SEN,Senegal,2016,1154
+KOR,Republic of Korea,2016,117450
+BHR,Bahrain,2016,1187
+TKM,Turkmenistan,2016,12456
+LTU,Lithuania,2016,12812
+SGP,Singapore,2016,12967
+SLB,Solomon Islands,2016,120
+BFA,Burkina Faso,2016,1202
+ISL,Iceland,2016,1292
+LBN,Lebanon,2016,13506
+URY,Uruguay,2016,13545
+JAM,Jamaica,2016,1322
+TUN,Tunisia,2016,14507
+NZL,New Zealand,2016,14688
+RWA,Rwanda,2016,1431
+TUR,Türkiye,2016,144827
+IRL,Ireland,2016,15178
+ZMB,Zambia,2016,1514
+MNE,Montenegro,2016,1616
+LUX,Luxembourg,2016,1683
+BOL,Bolivia (Plurinational State of),2016,17542
+ARG,Argentina,2016,174092
+MLT,Malta,2016,1743
+ESP,Spain,2016,177731
+TJK,Tajikistan,2016,18044
+LKA,Sri Lanka,2016,18761
+FIN,Finland,2016,18805
+SVK,Slovakia,2016,18864
+GBR,United Kingdom of Great Britain and Northern Ireland,2016,182737
+GNB,Guinea-Bissau,2016,183
+PAK,Pakistan,2016,195896
+CHN,China,2016,2651398
+SRB,Serbia,2016,20853
+SYC,Seychelles,2016,203
+FRA,France,2016,208245
+COM,Comoros,2016,216
+ARE,United Arab Emirates,2016,22195
+SYR,Syrian Arab Republic,2016,22485
+DNK,Denmark,2016,22906
+MLI,Mali,2016,2247
+ERI,Eritrea,2016,226
+NOR,Norway,2016,23986
+LBR,Liberia,2016,234
+ITA,Italy,2016,239642
+GEO,Georgia,2016,24082
+ZWE,Zimbabwe,2016,2508
+LAO,Lao People's Democratic Republic,2016,2564
+HRV,Croatia,2016,27008
+IRQ,Iraq,2016,27208
+MUS,Mauritius,2016,2769
+ISR,Israel,2016,28093
+MEX,Mexico,2016,286675
+BGR,Bulgaria,2016,29271
+BTN,Bhutan,2016,299
+THA,Thailand,2016,30691
+JPN,Japan,2016,308105
+HUN,Hungary,2016,31515
+AZE,Azerbaijan,2016,32189
+MMR,Myanmar,2016,32861
+CYP,Cyprus,2016,3209
+ECU,Ecuador,2016,33925
+BEL,Belgium,2016,34834
+DEU,Germany,2016,344755
+TGO,Togo,2016,347
+CHE,Switzerland,2016,35592
+ALB,Albania,2016,3511
+GHA,Ghana,2016,3618
+PER,Peru,2016,40352
+CPV,Cabo Verde,2016,408
+BLR,Belarus,2016,41517
+CHL,Chile,2016,41767
+SWE,Sweden,2016,42003
+ZAF,South Africa,2016,43141
+AUT,Austria,2016,44623
+EST,Estonia,2016,4548
+VUT,Vanuatu,2016,46
+MYS,Malaysia,2016,50087
+PRT,Portugal,2016,51005
+BEN,Benin,2016,523
+COG,Congo,2016,530
+MWI,Malawi,2016,539
+TCD,Chad,2016,540
+ROU,Romania,2016,55975
+HND,Honduras,2016,5546
+RUS,Russian Federation,2016,577856
+MDV,Maldives,2016,585
+NLD,Netherlands (Kingdom of the),2016,60233
+NIC,Nicaragua,2016,6012
+MKD,North Macedonia,2016,6210
+SVN,Slovenia,2016,6224
+LVA,Latvia,2016,6295
+PAN,Panama,2016,6338
+SUR,Suriname,2016,639
+GRC,Greece,2016,65972
+WSM,Samoa,2016,67
+PHL,Philippines,2016,67330
+NER,Niger,2016,681
+GAB,Gabon,2016,715
+QAT,Qatar,2016,7152
+DZA,Algeria,2016,74309
+KAZ,Kazakhstan,2016,74611
+BIH,Bosnia and Herzegovina,2016,7453
+SAU,Saudi Arabia,2016,75740
+VNM,Viet Nam,2016,77539
+EGY,Egypt,2016,77579
+BGD,Bangladesh,2016,78572
+NGA,Nigeria,2016,83565
+BWA,Botswana,2016,830
+UZB,Uzbekistan,2016,84061
+ARM,Armenia,2016,8425
+AUS,Australia,2016,86550
+OMN,Oman,2016,8622
+CUB,Cuba,2016,90161
+POL,Poland,2016,91730
+PRK,Democratic People's Republic of Korea,2016,93667
+CRI,Costa Rica,2016,9516
+GIN,Guinea,2016,977
+AFG,Afghanistan,2016,9842
+COL,Colombia,2016,99027
+MDA,Republic of Moldova,2015,10110
+KWT,Kuwait,2015,10150
+KOR,Republic of Korea,2015,114322
+BFA,Burkina Faso,2015,1189
+JAM,Jamaica,2015,1199
+LBY,Libya,2015,12158
+TKM,Turkmenistan,2015,12271
+SGP,Singapore,2015,12459
+LTU,Lithuania,2015,12605
+ISL,Iceland,2015,1249
+BHR,Bahrain,2015,1270
+RWA,Rwanda,2015,1284
+HRV,Croatia,2015,13430
+LBN,Lebanon,2015,13738
+NZL,New Zealand,2015,13983
+KNA,Saint Kitts and Nevis,2015,137
+NRU,Nauru,2015,14
+TUN,Tunisia,2015,14655
+IRL,Ireland,2015,14666
+TUR,Türkiye,2015,141259
+MNE,Montenegro,2015,1490
+SDN,Sudan,2015,15845
+MLT,Malta,2015,1636
+LUX,Luxembourg,2015,1656
+LBR,Liberia,2015,168
+TJK,Tajikistan,2015,17745
+ARG,Argentina,2015,171870
+MLI,Mali,2015,1750
+ESP,Spain,2015,178600
+LKA,Sri Lanka,2015,18032
+FIN,Finland,2015,18700
+SVK,Slovakia,2015,18719
+GBR,United Kingdom of Great Britain and Northern Ireland,2015,180888
+PAK,Pakistan,2015,184711
+CHN,China,2015,2508408
+GEO,Georgia,2015,20143
+ARE,United Arab Emirates,2015,20481
+FRA,France,2015,206688
+SRB,Serbia,2015,21840
+ERI,Eritrea,2015,212
+GMB,Gambia,2015,213
+DNK,Denmark,2015,22338
+NOR,Norway,2015,23104
+ITA,Italy,2015,233102
+ZWE,Zimbabwe,2015,2508
+BTN,Bhutan,2015,251
+MUS,Mauritius,2015,2550
+JOR,Jordan,2015,26019
+IRQ,Iraq,2015,26975
+AND,Andorra,2015,260
+ISR,Israel,2015,27631
+LAO,Lao People's Democratic Republic,2015,2717
+MEX,Mexico,2015,283275
+BGR,Bulgaria,2015,29002
+ECU,Ecuador,2015,29374
+HUN,Hungary,2015,30486
+CYP,Cyprus,2015,3046
+THA,Thailand,2015,31959
+AZE,Azerbaijan,2015,32458
+CAF,Central African Republic,2015,324
+GHA,Ghana,2015,3263
+DEU,Germany,2015,338129
+BEL,Belgium,2015,34020
+CHE,Switzerland,2015,34762
+GNB,Guinea-Bissau,2015,354
+TGO,Togo,2015,361
+TTO,Trinidad and Tobago,2015,3631
+UGA,Uganda,2015,3645
+CHL,Chile,2015,38580
+SWE,Sweden,2015,40900
+CPV,Cabo Verde,2015,410
+AUT,Austria,2015,44065
+EST,Estonia,2015,4492
+MYS,Malaysia,2015,46491
+BLR,Belarus,2015,48995
+PRT,Portugal,2015,49236
+BDI,Burundi,2015,508
+ROU,Romania,2015,54807
+RUS,Russian Federation,2015,570260
+NIC,Nicaragua,2015,5795
+SVN,Slovenia,2015,5830
+SUR,Suriname,2015,585
+NLD,Netherlands (Kingdom of the),2015,59144
+MKD,North Macedonia,2015,5975
+PAN,Panama,2015,6254
+STP,Sao Tome and Principe,2015,63
+GRC,Greece,2015,63866
+LVA,Latvia,2015,6324
+NER,Niger,2015,634
+PHL,Philippines,2015,64109
+KAZ,Kazakhstan,2015,69722
+MRT,Mauritania,2015,692
+TCD,Chad,2015,696
+IDN,Indonesia,2015,70735
+SAU,Saudi Arabia,2015,73254
+VNM,Viet Nam,2015,73797
+BRN,Brunei Darussalam,2015,739
+UZB,Uzbekistan,2015,74855
+BIH,Bosnia and Herzegovina,2015,7413
+FJI,Fiji,2015,747
+BGD,Bangladesh,2015,75915
+EGY,Egypt,2015,75960
+AUS,Australia,2015,83490
+TLS,Timor-Leste,2015,831
+ARM,Armenia,2015,8526
+CUB,Cuba,2015,87982
+CRI,Costa Rica,2015,8703
+POL,Poland,2015,88437
+OMN,Oman,2015,8914
+IRN,Iran (Islamic Republic of),2015,90470
+HTI,Haiti,2015,911
+COL,Colombia,2015,94949
+MNG,Mongolia,2015,9653
+GIN,Guinea,2015,977
+AFG,Afghanistan,2015,9808
+TUV,Tuvalu,2014,10
+MDA,Republic of Moldova,2014,10080
+RWA,Rwanda,2014,1008
+JAM,Jamaica,2014,1092
+SGP,Singapore,2014,11733
+KOR,Republic of Korea,2014,111694
+IRN,Iran (Islamic Republic of),2014,116536
+ISL,Iceland,2014,1193
+TKM,Turkmenistan,2014,12161
+LTU,Lithuania,2014,12631
+CRI,Costa Rica,2014,12676
+KGZ,Kyrgyzstan,2014,12934
+LBN,Lebanon,2014,12982
+BHR,Bahrain,2014,1279
+NZL,New Zealand,2014,13065
+LBY,Libya,2014,13095
+HRV,Croatia,2014,13302
+UKR,Ukraine,2014,134986
+TUR,Türkiye,2014,135616
+MNE,Montenegro,2014,1370
+IRL,Ireland,2014,14029
+TUN,Tunisia,2014,14127
+TJK,Tajikistan,2014,14219
+MLT,Malta,2014,1566
+LUX,Luxembourg,2014,1602
+ZWE,Zimbabwe,2014,1685
+LKA,Sri Lanka,2014,17388
+PAK,Pakistan,2014,175223
+MLI,Mali,2014,1750
+ESP,Spain,2014,176665
+GBR,United Kingdom of Great Britain and Northern Ireland,2014,177620
+ARE,United Arab Emirates,2014,18385
+FIN,Finland,2014,18475
+SVK,Slovakia,2014,18574
+GIN,Guinea,2014,1844
+GEO,Georgia,2014,19270
+JOR,Jordan,2014,19655
+CHN,China,2014,2374917
+DJI,Djibouti,2014,201
+SMR,San Marino,2014,201
+ERI,Eritrea,2014,204
+FRA,France,2014,205018
+DNK,Denmark,2014,21882
+SRB,Serbia,2014,21900
+NOR,Norway,2014,22754
+ITA,Italy,2014,235889
+MUS,Mauritius,2014,2429
+BTN,Bhutan,2014,244
+COK,Cook Islands,2014,25
+PLW,Palau,2014,25
+LAO,Lao People's Democratic Republic,2014,2530
+MEX,Mexico,2014,267949
+ECU,Ecuador,2014,27007
+ISR,Israel,2014,27185
+BGR,Bulgaria,2014,28733
+MCO,Monaco,2014,280
+CYP,Cyprus,2014,2880
+SYR,Syrian Arab Republic,2014,29025
+KHM,Cambodia,2014,2944
+IRQ,Iraq,2014,30083
+JPN,Japan,2014,300075
+TZA,United Republic of Tanzania,2014,3015
+GHA,Ghana,2014,3016
+SOM,Somalia,2014,309
+MAR,Morocco,2014,31235
+AZE,Azerbaijan,2014,32756
+HUN,Hungary,2014,32791
+BEL,Belgium,2014,33353
+CHE,Switzerland,2014,33785
+LCA,Saint Lucia,2014,331
+DEU,Germany,2014,332695
+CHL,Chile,2014,36012
+SWE,Sweden,2014,39837
+MDG,Madagascar,2014,4275
+AUT,Austria,2014,43148
+EST,Estonia,2014,4418
+MYS,Malaysia,2014,45565
+BLR,Belarus,2014,47272
+PRT,Portugal,2014,47473
+NER,Niger,2014,523
+CIV,Cote d'Ivoire,2014,5240
+ROU,Romania,2014,53720
+NIC,Nicaragua,2014,5495
+NLD,Netherlands (Kingdom of the),2014,57762
+SVN,Slovenia,2014,5712
+RUS,Russian Federation,2014,597062
+MKD,North Macedonia,2014,6035
+TCD,Chad,2014,608
+BDI,Burundi,2014,609
+PHL,Philippines,2014,61139
+BRN,Brunei Darussalam,2014,619
+MRT,Mauritania,2014,622
+GRC,Greece,2014,63906
+LVA,Latvia,2014,6412
+SAU,Saudi Arabia,2014,68747
+KAZ,Kazakhstan,2014,68864
+EGY,Egypt,2014,71221
+VNM,Viet Nam,2014,71815
+UZB,Uzbekistan,2014,72237
+BIH,Bosnia and Herzegovina,2014,7426
+BGD,Bangladesh,2014,75514
+MDV,Maldives,2014,770
+AUS,Australia,2014,80968
+TLS,Timor-Leste,2014,801
+YEM,Yemen,2014,8148
+ARM,Armenia,2014,8425
+CUB,Cuba,2014,85563
+BFA,Burkina Faso,2014,857
+OMN,Oman,2014,8651
+POL,Poland,2014,87687
+PRK,Democratic People's Republic of Korea,2014,87839
+COL,Colombia,2014,91259
+KEN,Kenya,2014,9149
+MNG,Mongolia,2014,9300
+KWT,Kuwait,2014,9789
+AFG,Afghanistan,2014,9954
+MDA,Republic of Moldova,2013,10198
+SGP,Singapore,2013,10953
+SLB,Solomon Islands,2013,107
+KOR,Republic of Korea,2013,108909
+TKM,Turkmenistan,2013,11873
+RWA,Rwanda,2013,1104
+ZWE,Zimbabwe,2013,1114
+ISL,Iceland,2013,1168
+CRI,Costa Rica,2013,12055
+NZL,New Zealand,2013,12569
+LTU,Lithuania,2013,12650
+HRV,Croatia,2013,12906
+KGZ,Kyrgyzstan,2013,12961
+BHR,Bahrain,2013,1254
+LBN,Lebanon,2013,13296
+TJK,Tajikistan,2013,13778
+TUR,Türkiye,2013,133775
+JAM,Jamaica,2013,1337
+MNE,Montenegro,2013,1348
+MOZ,Mozambique,2013,1452
+MLT,Malta,2013,1466
+NPL,Nepal,2013,15181
+LUX,Luxembourg,2013,1537
+UKR,Ukraine,2013,158344
+ARE,United Arab Emirates,2013,16016
+LKA,Sri Lanka,2013,16495
+SMR,San Marino,2013,164
+PAK,Pakistan,2013,167759
+ERI,Eritrea,2013,172
+GBR,United Kingdom of Great Britain and Northern Ireland,2013,173985
+ESP,Spain,2013,177665
+FIN,Finland,2013,18137
+IRL,Ireland,2013,18160
+GEO,Georgia,2013,18278
+SVK,Slovakia,2013,18355
+JOR,Jordan,2013,18697
+MLI,Mali,2013,1971
+CHN,China,2013,2285794
+MWI,Malawi,2013,200
+BTN,Bhutan,2013,203
+FRA,France,2013,203227
+MUS,Mauritius,2013,2046
+MAR,Morocco,2013,21309
+DNK,Denmark,2013,21611
+NOR,Norway,2013,21874
+LAO,Lao People's Democratic Republic,2013,2152
+KIR,Kiribati,2013,22
+SRB,Serbia,2013,22248
+ITA,Italy,2013,234918
+HTI,Haiti,2013,2392
+MEX,Mexico,2013,256131
+ECU,Ecuador,2013,26000
+ISR,Israel,2013,26908
+GHA,Ghana,2013,2730
+CYP,Cyprus,2013,2754
+BGR,Bulgaria,2013,28715
+MCO,Monaco,2013,287
+CPV,Cabo Verde,2013,308
+HUN,Hungary,2013,31748
+AZE,Azerbaijan,2013,32434
+CHE,Switzerland,2013,32681
+BEL,Belgium,2013,32999
+DEU,Germany,2013,325407
+CHL,Chile,2013,33045
+MDG,Madagascar,2013,3523
+ALB,Albania,2013,3709
+BRA,Brazil,2013,378354
+CZE,Czechia,2013,38776
+SWE,Sweden,2013,38814
+AUT,Austria,2013,42360
+LCA,Saint Lucia,2013,433
+EST,Estonia,2013,4395
+BLR,Belarus,2013,45736
+PRT,Portugal,2013,46010
+MYS,Malaysia,2013,46916
+ROU,Romania,2013,52828
+SVN,Slovenia,2013,5416
+NIC,Nicaragua,2013,5445
+TON,Tonga,2013,55
+NLD,Netherlands (Kingdom of the),2013,55681
+BDI,Burundi,2013,554
+TCD,Chad,2013,573
+RUS,Russian Federation,2013,576580
+PHL,Philippines,2013,58598
+MKD,North Macedonia,2013,5804
+PAN,Panama,2013,6068
+GRC,Greece,2013,63736
+BGD,Bangladesh,2013,64434
+COD,Democratic Republic of the Congo,2013,6418
+LVA,Latvia,2013,6423
+NGA,Nigeria,2013,65759
+BRN,Brunei Darussalam,2013,656
+KAZ,Kazakhstan,2013,67267
+SAU,Saudi Arabia,2013,67980
+FJI,Fiji,2013,706
+UZB,Uzbekistan,2013,71971
+TLS,Timor-Leste,2013,712
+BIH,Bosnia and Herzegovina,2013,7211
+OMN,Oman,2013,7673
+AUS,Australia,2013,77974
+BFA,Burkina Faso,2013,803
+CUB,Cuba,2013,83698
+ARM,Armenia,2013,8412
+POL,Poland,2013,85246
+COL,Colombia,2013,86925
+KEN,Kenya,2013,8682
+MNG,Mongolia,2013,8911
+KWT,Kuwait,2013,8933
+AFG,Afghanistan,2013,9184
+WSM,Samoa,2013,92
+NER,Niger,2013,946
+SGP,Singapore,2012,10225
+JAM,Jamaica,2012,1006
+VCT,Saint Vincent and the Grenadines,2012,102
+KOR,Republic of Korea,2012,104114
+ZWE,Zimbabwe,2012,1059
+CRI,Costa Rica,2012,11522
+TKM,Turkmenistan,2012,11787
+NZL,New Zealand,2012,11968
+ISL,Iceland,2012,1142
+LTU,Lithuania,2012,12604
+KGZ,Kyrgyzstan,2012,12718
+HRV,Croatia,2012,12772
+COM,Comoros,2012,123
+BHR,Bahrain,2012,1244
+MNE,Montenegro,2012,1276
+TUR,Türkiye,2012,129772
+ARE,United Arab Emirates,2012,13499
+TJK,Tajikistan,2012,13599
+NPL,Nepal,2012,13925
+MOZ,Mozambique,2012,1358
+MLT,Malta,2012,1381
+TZA,United Republic of Tanzania,2012,1481
+LUX,Luxembourg,2012,1489
+LKA,Sri Lanka,2012,15697
+ERI,Eritrea,2012,153
+UKR,Ukraine,2012,158681
+PAK,Pakistan,2012,160880
+SMR,San Marino,2012,164
+FIN,Finland,2012,17671
+MLI,Mali,2012,1704
+GBR,United Kingdom of Great Britain and Northern Ireland,2012,172069
+MUS,Mauritius,2012,1722
+ESP,Spain,2012,178833
+IRL,Ireland,2012,18166
+SVK,Slovakia,2012,18193
+GEO,Georgia,2012,18235
+BTN,Bhutan,2012,194
+CHN,China,2012,2138836
+FRA,France,2012,201075
+LAO,Lao People's Democratic Republic,2012,2090
+NOR,Norway,2012,21238
+DNK,Denmark,2012,21456
+SRB,Serbia,2012,22315
+ITA,Italy,2012,230621
+MHL,Marshall Islands,2012,24
+ECU,Ecuador,2012,24302
+KHM,Cambodia,2012,2440
+MEX,Mexico,2012,247662
+GHA,Ghana,2012,2486
+MCO,Monaco,2012,254
+ISR,Israel,2012,26650
+CPV,Cabo Verde,2012,260
+CYP,Cyprus,2012,2606
+BGR,Bulgaria,2012,28305
+MMR,Myanmar,2012,29832
+JPN,Japan,2012,292039
+CHL,Chile,2012,30400
+HUN,Hungary,2012,30641
+CHE,Switzerland,2012,31313
+DEU,Germany,2012,317390
+MDG,Madagascar,2012,3188
+AZE,Azerbaijan,2012,32335
+BEL,Belgium,2012,32583
+PER,Peru,2012,33669
+UGA,Uganda,2012,3370
+ALB,Albania,2012,3696
+SWE,Sweden,2012,37767
+LCA,Saint Lucia,2012,378
+CZE,Czechia,2012,38624
+MYS,Malaysia,2012,38718
+BLZ,Belize,2012,387
+AUT,Austria,2012,41349
+EST,Estonia,2012,4343
+PRT,Portugal,2012,44590
+BLR,Belarus,2012,45533
+VUT,Vanuatu,2012,46
+IDN,Indonesia,2012,49853
+BDI,Burundi,2012,498
+NIC,Nicaragua,2012,5148
+ROU,Romania,2012,52362
+SVN,Slovenia,2012,5228
+TCD,Chad,2012,528
+NLD,Netherlands (Kingdom of the),2012,54511
+PHL,Philippines,2012,56461
+MKD,North Macedonia,2012,5755
+RUS,Russian Federation,2012,577640
+BRN,Brunei Darussalam,2012,596
+BGD,Bangladesh,2012,60413
+PAN,Panama,2012,6025
+SAU,Saudi Arabia,2012,61516
+GRC,Greece,2012,63838
+LVA,Latvia,2012,6396
+KAZ,Kazakhstan,2012,65512
+BIH,Bosnia and Herzegovina,2012,7026
+OMN,Oman,2012,7055
+FSM,Micronesia (Federated States of),2012,72
+UZB,Uzbekistan,2012,72007
+VNM,Viet Nam,2012,73717
+AUS,Australia,2012,75257
+AFG,Afghanistan,2012,7521
+BFA,Burkina Faso,2012,787
+KEN,Kenya,2012,8092
+BWA,Botswana,2012,819
+CUB,Cuba,2012,82065
+COL,Colombia,2012,82917
+PRY,Paraguay,2012,8203
+KWT,Kuwait,2012,8259
+ARM,Armenia,2012,8355
+POL,Poland,2012,85025
+PRK,Democratic People's Republic of Korea,2012,85470
+MNG,Mongolia,2012,8597
+SLB,Solomon Islands,2012,86
+SYC,Seychelles,2012,93
+NER,Niger,2012,952
+MDA,Republic of Moldova,2012,9837
+CRI,Costa Rica,2011,10990
+GNB,Guinea-Bissau,2011,100
+KOR,Republic of Korea,2011,101370
+ZWE,Zimbabwe,2011,1054
+SYC,Seychelles,2011,107
+SWZ,Eswatini,2011,109
+SLB,Solomon Islands,2011,109
+NZL,New Zealand,2011,11634
+TKM,Turkmenistan,2011,11818
+ISL,Iceland,2011,1118
+LTU,Lithuania,2011,12407
+HRV,Croatia,2011,12490
+KGZ,Kyrgyzstan,2011,12614
+ARE,United Arab Emirates,2011,12856
+BHR,Bahrain,2011,1208
+MNE,Montenegro,2011,1259
+TUR,Türkiye,2011,126029
+MOZ,Mozambique,2011,1268
+TJK,Tajikistan,2011,13247
+LBN,Lebanon,2011,13630
+MLT,Malta,2011,1319
+ERI,Eritrea,2011,136
+HTI,Haiti,2011,1392
+NRU,Nauru,2011,14
+DOM,Dominican Republic,2011,14983
+LUX,Luxembourg,2011,1434
+KIR,Kiribati,2011,15
+LKA,Sri Lanka,2011,15077
+PAK,Pakistan,2011,152368
+SMR,San Marino,2011,155
+UKR,Ukraine,2011,158949
+SLE,Sierra Leone,2011,165
+FIN,Finland,2011,17558
+SVK,Slovakia,2011,17849
+GBR,United Kingdom of Great Britain and Northern Ireland,2011,170317
+ESP,Spain,2011,179267
+GEO,Georgia,2011,18366
+IRL,Ireland,2011,18812
+MUS,Mauritius,2011,1810
+MLI,Mali,2011,1829
+CMR,Cameroon,2011,1842
+FRA,France,2011,199085
+CHN,China,2011,2020154
+NOR,Norway,2011,20744
+DNK,Denmark,2011,21107
+ECU,Ecuador,2011,21174
+SRB,Serbia,2011,22412
+ITA,Italy,2011,231481
+MEX,Mexico,2011,243008
+TTO,Trinidad and Tobago,2011,2431
+GHA,Ghana,2011,2486
+MCO,Monaco,2011,250
+CYP,Cyprus,2011,2529
+ISR,Israel,2011,26297
+CHL,Chile,2011,27323
+MMR,Myanmar,2011,28077
+BGR,Bulgaria,2011,28321
+HUN,Hungary,2011,29500
+CPV,Cabo Verde,2011,292
+CHE,Switzerland,2011,30327
+AZE,Azerbaijan,2011,31441
+DEU,Germany,2011,311223
+MDG,Madagascar,2011,3131
+LCA,Saint Lucia,2011,317
+BEL,Belgium,2011,32182
+CIV,Cote d'Ivoire,2011,3220
+KHM,Cambodia,2011,3291
+MHL,Marshall Islands,2011,33
+BDI,Burundi,2011,357
+ALB,Albania,2011,3578
+MYS,Malaysia,2011,36607
+SWE,Sweden,2011,36742
+BRA,Brazil,2011,365231
+CZE,Czechia,2011,38171
+AUT,Austria,2011,40731
+PRT,Portugal,2011,43523
+EST,Estonia,2011,4372
+BLR,Belarus,2011,44827
+BOL,Bolivia (Plurinational State of),2011,4771
+NIC,Nicaragua,2011,4803
+ROU,Romania,2011,51153
+SVN,Slovenia,2011,5121
+NLD,Netherlands (Kingdom of the),2011,52295
+PHL,Philippines,2011,54415
+BEN,Benin,2011,546
+PAN,Panama,2011,5551
+MKD,North Macedonia,2011,5649
+BGD,Bangladesh,2011,57313
+SAU,Saudi Arabia,2011,59261
+RUS,Russian Federation,2011,607812
+BRN,Brunei Darussalam,2011,608
+BFA,Burkina Faso,2011,620
+OMN,Oman,2011,6328
+GRC,Greece,2011,64145
+LVA,Latvia,2011,6456
+KAZ,Kazakhstan,2011,65111
+BIH,Bosnia and Herzegovina,2011,6881
+UZB,Uzbekistan,2011,72547
+COG,Congo,2011,723
+AUS,Australia,2011,74100
+KEN,Kenya,2011,7549
+AFG,Afghanistan,2011,7584
+KWT,Kuwait,2011,7781
+CUB,Cuba,2011,78622
+COL,Colombia,2011,79382
+MNG,Mongolia,2011,7943
+BWA,Botswana,2011,819
+ARM,Armenia,2011,8249
+BHS,Bahamas,2011,830
+POL,Poland,2011,84221
+SGP,Singapore,2011,9646
+MDA,Republic of Moldova,2011,9848
+CHN,China,2010,1972840
+CRI,Costa Rica,2010,10554
+SYC,Seychelles,2010,100
+NRU,Nauru,2010,11
+NZL,New Zealand,2010,11412
+TKM,Turkmenistan,2010,11570
+LBN,Lebanon,2010,11583
+ISL,Iceland,2010,1142
+MOZ,Mozambique,2010,1145
+BHR,Bahrain,2010,1178
+ARE,United Arab Emirates,2010,12137
+LTU,Lithuania,2010,12226
+HRV,Croatia,2010,12304
+KGZ,Kyrgyzstan,2010,12685
+TJK,Tajikistan,2010,12778
+TUN,Tunisia,2010,12996
+TUR,Türkiye,2010,123447
+MNE,Montenegro,2010,1276
+MLT,Malta,2010,1279
+ERI,Eritrea,2010,129
+SLE,Sierra Leone,2010,136
+LSO,Lesotho,2010,138
+LKA,Sri Lanka,2010,14668
+LUX,Luxembourg,2010,1406
+PAK,Pakistan,2010,144901
+MUS,Mauritius,2010,1500
+MLI,Mali,2010,1536
+UKR,Ukraine,2010,159495
+JOR,Jordan,2010,16212
+ZWE,Zimbabwe,2010,1615
+GBR,United Kingdom of Great Britain and Northern Ireland,2010,166674
+FIN,Finland,2010,17078
+CMR,Cameroon,2010,1712
+ESP,Spain,2010,175033
+SVK,Slovakia,2010,18110
+GEO,Georgia,2010,18227
+IRL,Ireland,2010,18838
+ECU,Ecuador,2010,19344
+IRQ,Iraq,2010,19738
+NOR,Norway,2010,20114
+DNK,Denmark,2010,20669
+LAO,Lao People's Democratic Republic,2010,2101
+FRA,France,2010,212132
+SRB,Serbia,2010,22316
+ITA,Italy,2010,226384
+MEX,Mexico,2010,228028
+GHA,Ghana,2010,2325
+CYP,Cyprus,2010,2399
+CHL,Chile,2010,24455
+TTO,Trinidad and Tobago,2010,2402
+HND,Honduras,2010,2454
+ISR,Israel,2010,25791
+THA,Thailand,2010,26244
+MMR,Myanmar,2010,26435
+BGR,Bulgaria,2010,27869
+HUN,Hungary,2010,28686
+JPN,Japan,2010,283548
+LCA,Saint Lucia,2010,287
+PLW,Palau,2010,29
+CHE,Switzerland,2010,29803
+CPV,Cabo Verde,2010,292
+DEU,Germany,2010,303645
+SYR,Syrian Arab Republic,2010,31194
+BEL,Belgium,2010,31815
+MHL,Marshall Islands,2010,32
+MYS,Malaysia,2010,32979
+KHM,Cambodia,2010,3294
+AZE,Azerbaijan,2010,33085
+IDN,Indonesia,2010,33736
+SWE,Sweden,2010,35709
+ALB,Albania,2010,3640
+CZE,Czechia,2010,37661
+PNG,Papua New Guinea,2010,376
+AUT,Austria,2010,40208
+KIR,Kiribati,2010,41
+MDG,Madagascar,2010,4130
+BDI,Burundi,2010,418
+PRT,Portugal,2010,42126
+NIC,Nicaragua,2010,4239
+EST,Estonia,2010,4319
+BOL,Bolivia (Plurinational State of),2010,4406
+NLD,Netherlands (Kingdom of the),2010,49242
+COG,Congo,2010,494
+SVN,Slovenia,2010,4979
+ROU,Romania,2010,50778
+PAN,Panama,2010,5121
+BEN,Benin,2010,513
+GUY,Guyana,2010,515
+PHL,Philippines,2010,52287
+MDV,Maldives,2010,525
+BGD,Bangladesh,2010,53643
+MRT,Mauritania,2010,547
+MKD,North Macedonia,2010,5541
+SAU,Saudi Arabia,2010,56459
+BRN,Brunei Darussalam,2010,563
+TON,Tonga,2010,58
+OMN,Oman,2010,5862
+VNM,Viet Nam,2010,62458
+KAZ,Kazakhstan,2010,63835
+WSM,Samoa,2010,64
+GRC,Greece,2010,64032
+LVA,Latvia,2010,6517
+BIH,Bosnia and Herzegovina,2010,6665
+AFG,Afghanistan,2010,6901
+QAT,Qatar,2010,6919
+KEN,Kenya,2010,7129
+BFA,Burkina Faso,2010,713
+RUS,Russian Federation,2010,715800
+VCT,Saint Vincent and the Grenadines,2010,72
+UZB,Uzbekistan,2010,72522
+KWT,Kuwait,2010,7269
+AUS,Australia,2010,74061
+COL,Colombia,2010,74584
+MNG,Mongolia,2010,7497
+CUB,Cuba,2010,76506
+ARM,Armenia,2010,8177
+BWA,Botswana,2010,819
+POL,Poland,2010,83201
+ZMB,Zambia,2010,836
+LBR,Liberia,2010,90
+SGP,Singapore,2010,9030
+MDA,Republic of Moldova,2010,9728
+KOR,Republic of Korea,2010,98293
+CHN,China,2009,1905436
+NRU,Nauru,2009,10
+CRI,Costa Rica,2009,10026
+SYC,Seychelles,2009,103
+MOZ,Mozambique,2009,1042
+NZL,New Zealand,2009,11106
+TKM,Turkmenistan,2009,11474
+HRV,Croatia,2009,11813
+BHR,Bahrain,2009,1149
+PHL,Philippines,2009,116734
+ISL,Iceland,2009,1162
+TUR,Türkiye,2009,118641
+TUV,Tuvalu,2009,12
+LBY,Libya,2009,12009
+ARE,United Arab Emirates,2009,12016
+TJK,Tajikistan,2009,12107
+LTU,Lithuania,2009,12191
+KGZ,Kyrgyzstan,2009,12488
+GTM,Guatemala,2009,12940
+GNB,Guinea-Bissau,2009,124
+MLT,Malta,2009,1257
+COM,Comoros,2009,128
+ERI,Eritrea,2009,128
+LKA,Sri Lanka,2009,13737
+MNE,Montenegro,2009,1310
+CMR,Cameroon,2009,1346
+LUX,Luxembourg,2009,1349
+PAK,Pakistan,2009,139555
+JOR,Jordan,2009,14674
+MUS,Mauritius,2009,1475
+ZWE,Zimbabwe,2009,1516
+FIN,Finland,2009,16706
+UKR,Ukraine,2009,160459
+GUY,Guyana,2009,161
+GBR,United Kingdom of Great Britain and Northern Ireland,2009,165109
+ESP,Spain,2009,166800
+CHL,Chile,2009,17382
+GEO,Georgia,2009,17392
+SVK,Slovakia,2009,17798
+SWZ,Eswatini,2009,173
+MLI,Mali,2009,1786
+ECU,Ecuador,2009,18024
+IRL,Ireland,2009,18168
+NOR,Norway,2009,19546
+TTO,Trinidad and Tobago,2009,1992
+DNK,Denmark,2009,20163
+MAR,Morocco,2009,20682
+GHA,Ghana,2009,2033
+CAF,Central African Republic,2009,205
+FRA,France,2009,210723
+ETH,Ethiopia,2009,2152
+SRB,Serbia,2009,22078
+THA,Thailand,2009,22651
+MEX,Mexico,2009,222570
+ITA,Italy,2009,223997
+CYP,Cyprus,2009,2270
+COK,Cook Islands,2009,24
+MMR,Myanmar,2009,24536
+BLZ,Belize,2009,241
+ISR,Israel,2009,25405
+CPV,Cabo Verde,2009,251
+MWI,Malawi,2009,265
+AND,Andorra,2009,266
+PER,Peru,2009,27272
+BGR,Bulgaria,2009,27952
+PLW,Palau,2009,29
+CHE,Switzerland,2009,29680
+SYR,Syrian Arab Republic,2009,29927
+AGO,Angola,2009,2956
+DEU,Germany,2009,296400
+HUN,Hungary,2009,30276
+MYS,Malaysia,2009,30536
+BEL,Belgium,2009,31578
+AZE,Azerbaijan,2009,32798
+KHM,Cambodia,2009,3351
+IDN,Indonesia,2009,34544
+SWE,Sweden,2009,34864
+ALB,Albania,2009,3656
+SUR,Suriname,2009,369
+CZE,Czechia,2009,37351
+FJI,Fiji,2009,372
+MDG,Madagascar,2009,3730
+AUT,Austria,2009,39235
+PRT,Portugal,2009,40804
+NIC,Nicaragua,2009,4040
+EST,Estonia,2009,4378
+NER,Niger,2009,439
+BRN,Brunei Darussalam,2009,445
+MRT,Mauritania,2009,445
+SAU,Saudi Arabia,2009,46904
+PAN,Panama,2009,4686
+NLD,Netherlands (Kingdom of the),2009,48312
+SVN,Slovenia,2009,4915
+ROU,Romania,2009,50386
+BGD,Bangladesh,2009,51721
+QAT,Qatar,2009,5126
+MDV,Maldives,2009,526
+KWT,Kuwait,2009,5340
+MKD,North Macedonia,2009,5364
+OMN,Oman,2009,5563
+NGA,Nigeria,2009,58363
+COD,Democratic Republic of the Congo,2009,5832
+KAZ,Kazakhstan,2009,60656
+VNM,Viet Nam,2009,60807
+AFG,Afghanistan,2009,6037
+TON,Tonga,2009,62
+GRC,Greece,2009,64326
+BIH,Bosnia and Herzegovina,2009,6493
+AUS,Australia,2009,67613
+LVA,Latvia,2009,6753
+BFA,Burkina Faso,2009,676
+KEN,Kenya,2009,6897
+BWA,Botswana,2009,693
+COL,Colombia,2009,71596
+RUS,Russian Federation,2009,711300
+YEM,Yemen,2009,7127
+MNG,Mongolia,2009,7140
+UZB,Uzbekistan,2009,72144
+CUB,Cuba,2009,74880
+ARM,Armenia,2009,7994
+ZMB,Zambia,2009,801
+POL,Poland,2009,82813
+SGP,Singapore,2009,8323
+LBR,Liberia,2009,90
+KOR,Republic of Korea,2009,94672
+MDA,Republic of Moldova,2009,9798
+CHN,China,2008,1791881
+NRU,Nauru,2008,10
+TUV,Tuvalu,2008,10
+DOM,Dominican Republic,2008,10385
+NZL,New Zealand,2008,10495
+SDN,Sudan,2008,10813
+LBY,Libya,2008,11163
+TKM,Turkmenistan,2008,11365
+TUN,Tunisia,2008,11533
+SLV,El Salvador,2008,11542
+ARE,United Arab Emirates,2008,11630
+HRV,Croatia,2008,11801
+BHR,Bahrain,2008,1103
+JAM,Jamaica,2008,1103
+TUR,Türkiye,2008,113151
+PHL,Philippines,2008,114159
+ISL,Iceland,2008,1156
+KGZ,Kyrgyzstan,2008,12364
+LTU,Lithuania,2008,12413
+LKA,Sri Lanka,2008,12479
+ERI,Eritrea,2008,126
+URY,Uruguay,2008,13197
+TJK,Tajikistan,2008,13909
+MNE,Montenegro,2008,1312
+LUX,Luxembourg,2008,1328
+PAK,Pakistan,2008,133984
+MLT,Malta,2008,1374
+JOR,Jordan,2008,14576
+UKR,Ukraine,2008,143909
+MUS,Mauritius,2008,1450
+ECU,Ecuador,2008,15968
+GBR,United Kingdom of Great Britain and Northern Ireland,2008,158736
+FIN,Finland,2008,16314
+GEO,Georgia,2008,16571
+ESP,Spain,2008,162900
+CHL,Chile,2008,17358
+IRL,Ireland,2008,17741
+BTN,Bhutan,2008,171
+GMB,Gambia,2008,175
+SVK,Slovakia,2008,18121
+NOR,Norway,2008,18858
+GHA,Ghana,2008,1855
+DNK,Denmark,2008,19663
+ETH,Ethiopia,2008,2085
+THA,Thailand,2008,21051
+SRB,Serbia,2008,21939
+FRA,France,2008,212479
+MEX,Mexico,2008,216021
+CYP,Cyprus,2008,2190
+ITA,Italy,2008,222760
+MMR,Myanmar,2008,23709
+ISR,Israel,2008,24931
+KIR,Kiribati,2008,25
+MYS,Malaysia,2008,25102
+MWI,Malawi,2008,257
+VUT,Vanuatu,2008,26
+BGR,Bulgaria,2008,27454
+JPN,Japan,2008,274992
+CIV,Cote d'Ivoire,2008,2746
+NER,Niger,2008,288
+CHE,Switzerland,2008,29194
+DEU,Germany,2008,290723
+NIU,Niue,2008,3
+SYR,Syrian Arab Republic,2008,30702
+HUN,Hungary,2008,31024
+BEL,Belgium,2008,31281
+AZE,Azerbaijan,2008,32503
+SWE,Sweden,2008,33940
+PNG,Papua New Guinea,2008,333
+FJI,Fiji,2008,337
+KHM,Cambodia,2008,3393
+TGO,Togo,2008,349
+CZE,Czechia,2008,36921
+NIC,Nicaragua,2008,3676
+MDG,Madagascar,2008,3719
+AUT,Austria,2008,38357
+PRT,Portugal,2008,39632
+EST,Estonia,2008,4469
+ATG,Antigua and Barbuda,2008,45
+SAU,Saudi Arabia,2008,45896
+QAT,Qatar,2008,4610
+NLD,Netherlands (Kingdom of the),2008,47202
+BFA,Burkina Faso,2008,473
+AFG,Afghanistan,2008,4834
+SVN,Slovenia,2008,4854
+PAN,Panama,2008,4855
+BGD,Bangladesh,2008,49357
+KWT,Kuwait,2008,4995
+ROU,Romania,2008,50267
+LBR,Liberia,2008,51
+OMN,Oman,2008,5194
+MKD,North Macedonia,2008,5364
+BEN,Benin,2008,542
+NGA,Nigeria,2008,56526
+BRN,Brunei Darussalam,2008,564
+TON,Tonga,2008,57
+VNM,Viet Nam,2008,57333
+KAZ,Kazakhstan,2008,58945
+BIH,Bosnia and Herzegovina,2008,6275
+GRC,Greece,2008,63244
+FSM,Micronesia (Federated States of),2008,64
+AUS,Australia,2008,64117
+KEN,Kenya,2008,6623
+COL,Colombia,2008,68372
+YEM,Yemen,2008,6909
+SYC,Seychelles,2008,70
+RUS,Russian Federation,2008,703800
+LVA,Latvia,2008,7040
+UZB,Uzbekistan,2008,71962
+BWA,Botswana,2008,716
+CUB,Cuba,2008,74552
+SEN,Senegal,2008,741
+MNG,Mongolia,2008,7584
+GNB,Guinea-Bissau,2008,78
+SGP,Singapore,2008,7841
+PRK,Democratic People's Republic of Korea,2008,79931
+ZMB,Zambia,2008,795
+ARM,Armenia,2008,7976
+POL,Poland,2008,82397
+WSM,Samoa,2008,85
+SLB,Solomon Islands,2008,89
+KOR,Republic of Korea,2008,90532
+MLI,Mali,2008,934
+BHS,Bahamas,2008,947
+CRI,Costa Rica,2008,9630
+MDA,Republic of Moldova,2008,9684
+CHN,China,2007,1715460
+TUN,Tunisia,2007,10554
+BHR,Bahrain,2007,1052
+TUR,Türkiye,2007,108402
+LKA,Sri Lanka,2007,11023
+LBN,Lebanon,2007,11186
+SDN,Sudan,2007,11337
+TKM,Turkmenistan,2007,11403
+HRV,Croatia,2007,11799
+PHL,Philippines,2007,111233
+ISL,Iceland,2007,1126
+KGZ,Kyrgyzstan,2007,12225
+LTU,Lithuania,2007,12551
+MNE,Montenegro,2007,1233
+ERI,Eritrea,2007,124
+PAK,Pakistan,2007,127859
+LUX,Luxembourg,2007,1293
+TJK,Tajikistan,2007,13392
+CMR,Cameroon,2007,1319
+MLT,Malta,2007,1357
+ECU,Ecuador,2007,14007
+MUS,Mauritius,2007,1425
+UKR,Ukraine,2007,143200
+ATG,Antigua and Barbuda,2007,144
+BTN,Bhutan,2007,144
+JOR,Jordan,2007,15279
+FIN,Finland,2007,15885
+GBR,United Kingdom of Great Britain and Northern Ireland,2007,152679
+TTO,Trinidad and Tobago,2007,1543
+GMB,Gambia,2007,159
+GEO,Georgia,2007,16262
+IRL,Ireland,2007,16872
+ESP,Spain,2007,161033
+GHA,Ghana,2007,1665
+CHL,Chile,2007,17134
+NOR,Norway,2007,18102
+SVK,Slovakia,2007,18219
+MAR,Morocco,2007,18269
+DNK,Denmark,2007,18886
+ETH,Ethiopia,2007,1806
+THA,Thailand,2007,19584
+MEX,Mexico,2007,209772
+SRB,Serbia,2007,21340
+MMR,Myanmar,2007,21799
+FRA,France,2007,211522
+CYP,Cyprus,2007,2117
+ITA,Italy,2007,221782
+MYS,Malaysia,2007,23738
+ISR,Israel,2007,24770
+AND,Andorra,2007,249
+VUT,Vanuatu,2007,26
+BGR,Bulgaria,2007,27882
+HUN,Hungary,2007,28189
+CHE,Switzerland,2007,28579
+DEU,Germany,2007,286803
+SYR,Syrian Arab Republic,2007,29582
+TGO,Togo,2007,290
+NIC,Nicaragua,2007,2943
+BEL,Belgium,2007,30868
+MHL,Marshall Islands,2007,31
+BOL,Bolivia (Plurinational State of),2007,3170
+AZE,Azerbaijan,2007,32388
+SWE,Sweden,2007,33162
+MDG,Madagascar,2007,3524
+CZE,Czechia,2007,36815
+ALB,Albania,2007,3626
+AUT,Austria,2007,37701
+PRT,Portugal,2007,38574
+BRN,Brunei Darussalam,2007,393
+DZA,Algeria,2007,40857
+COG,Congo,2007,401
+EST,Estonia,2007,4370
+NLD,Netherlands (Kingdom of the),2007,45763
+PAN,Panama,2007,4501
+BGD,Bangladesh,2007,46978
+PER,Peru,2007,47170
+KWT,Kuwait,2007,4711
+AFG,Afghanistan,2007,4723
+ROU,Romania,2007,48199
+SVN,Slovenia,2007,4814
+OMN,Oman,2007,4908
+MKD,North Macedonia,2007,5052
+VNM,Viet Nam,2007,54798
+NGA,Nigeria,2007,55376
+MDV,Maldives,2007,552
+KAZ,Kazakhstan,2007,57387
+BIH,Bosnia and Herzegovina,2007,6182
+GRC,Greece,2007,62207
+AUS,Australia,2007,62652
+COL,Colombia,2007,65345
+LVA,Latvia,2007,6916
+RUS,Russian Federation,2007,707300
+BWA,Botswana,2007,709
+UZB,Uzbekistan,2007,71627
+CUB,Cuba,2007,72416
+MNG,Mongolia,2007,7336
+SGP,Singapore,2007,7384
+NAM,Namibia,2007,774
+ARM,Armenia,2007,7837
+POL,Poland,2007,83519
+KOR,Republic of Korea,2007,84464
+MLI,Mali,2007,864
+ARE,United Arab Emirates,2007,8669
+SYC,Seychelles,2007,91
+CRI,Costa Rica,2007,9208
+NZL,New Zealand,2007,9705
+MDA,Republic of Moldova,2007,9859
+CHN,China,2006,1678031
+LKA,Sri Lanka,2006,10279
+TUR,Türkiye,2006,104475
+PHL,Philippines,2006,108640
+ISL,Iceland,2006,1095
+SDN,Sudan,2006,11083
+HRV,Croatia,2006,11250
+TKM,Turkmenistan,2006,11507
+LBN,Lebanon,2006,11760
+LTU,Lithuania,2006,12397
+KGZ,Kyrgyzstan,2006,12549
+ECU,Ecuador,2006,12606
+LUX,Luxembourg,2006,1218
+MNE,Montenegro,2006,1231
+TJK,Tajikistan,2006,13268
+JOR,Jordan,2006,13727
+ERI,Eritrea,2006,135
+MUS,Mauritius,2006,1400
+UKR,Ukraine,2006,143728
+GBR,United Kingdom of Great Britain and Northern Ireland,2006,149558
+FIN,Finland,2006,15089
+IRL,Ireland,2006,15509
+MLT,Malta,2006,1564
+TTO,Trinidad and Tobago,2006,1592
+GEO,Georgia,2006,16207
+ESP,Spain,2006,160933
+CHL,Chile,2006,17016
+SVK,Slovakia,2006,17040
+NOR,Norway,2006,17391
+GMB,Gambia,2006,175
+DNK,Denmark,2006,18615
+THA,Thailand,2006,18918
+DJI,Djibouti,2006,185
+CYP,Cyprus,2006,1921
+MMR,Myanmar,2006,20501
+SRB,Serbia,2006,20906
+MEX,Mexico,2006,202320
+MYS,Malaysia,2006,21937
+FRA,France,2006,211324
+ETH,Ethiopia,2006,2115
+ITA,Italy,2006,216519
+QAT,Qatar,2006,2313
+ISR,Israel,2006,24588
+AND,Andorra,2006,244
+PLW,Palau,2006,26
+JPN,Japan,2006,266431
+NIC,Nicaragua,2006,2715
+BGR,Bulgaria,2006,28086
+CHE,Switzerland,2006,28343
+DEU,Germany,2006,283102
+BEL,Belgium,2006,30440
+HUN,Hungary,2006,30575
+AZE,Azerbaijan,2006,30766
+SOM,Somalia,2006,300
+SWE,Sweden,2006,32167
+MDG,Madagascar,2006,3219
+KWT,Kuwait,2006,3452
+CZE,Czechia,2006,36595
+ALB,Albania,2006,3626
+TCD,Chad,2006,368
+AUT,Austria,2006,37022
+PRT,Portugal,2006,37589
+IRN,Iran (Islamic Republic of),2006,37822
+BRN,Brunei Darussalam,2006,399
+NIU,Niue,2006,4
+AFG,Afghanistan,2006,4220
+EST,Estonia,2006,4286
+BGD,Bangladesh,2006,44632
+NLD,Netherlands (Kingdom of the),2006,45688
+PAN,Panama,2006,4575
+OMN,Oman,2006,4579
+ROU,Romania,2006,46936
+SVN,Slovenia,2006,4740
+NGA,Nigeria,2006,49612
+MKD,North Macedonia,2006,5187
+VNM,Viet Nam,2006,52792
+MOZ,Mozambique,2006,548
+KAZ,Kazakhstan,2006,57514
+AUS,Australia,2006,58167
+GRC,Greece,2006,59599
+BWA,Botswana,2006,591
+BIH,Bosnia and Herzegovina,2006,5932
+COL,Colombia,2006,62731
+ZMB,Zambia,2006,649
+LVA,Latvia,2006,6719
+GRD,Grenada,2006,69
+SGP,Singapore,2006,6931
+RUS,Russian Federation,2006,702200
+ARE,United Arab Emirates,2006,7048
+MNG,Mongolia,2006,7079
+UZB,Uzbekistan,2006,71071
+CUB,Cuba,2006,71489
+SYC,Seychelles,2006,75
+ARM,Armenia,2006,7661
+COG,Congo,2006,782
+MLI,Mali,2006,794
+KOR,Republic of Korea,2006,81666
+POL,Poland,2006,83116
+CRI,Costa Rica,2006,8871
+NZL,New Zealand,2006,9505
+BHR,Bahrain,2006,972
+MDA,Republic of Moldova,2006,9855
+CHN,China,2005,1622684
+LKA,Sri Lanka,2005,10198
+SLV,El Salvador,2005,10355
+TUR,Türkiye,2005,100853
+SYC,Seychelles,2005,104
+CMR,Cameroon,2005,1049
+PHL,Philippines,2005,106083
+ISL,Iceland,2005,1072
+HRV,Croatia,2005,11100
+TKM,Turkmenistan,2005,11905
+COM,Comoros,2005,116
+LUX,Luxembourg,2005,1190
+LTU,Lithuania,2005,12361
+ECU,Ecuador,2005,12492
+KGZ,Kyrgyzstan,2005,12773
+JOR,Jordan,2005,12909
+MNE,Montenegro,2005,1203
+ERI,Eritrea,2005,122
+PAK,Pakistan,2005,126350
+TJK,Tajikistan,2005,13272
+MUS,Mauritius,2005,1342
+IRL,Ireland,2005,14671
+FIN,Finland,2005,14957
+DJI,Djibouti,2005,140
+MLT,Malta,2005,1407
+UKR,Ukraine,2005,141521
+GBR,United Kingdom of Great Britain and Northern Ireland,2005,145413
+CHL,Chile,2005,15865
+ZWE,Zimbabwe,2005,1516
+ESP,Spain,2005,154767
+LAO,Lao People's Democratic Republic,2005,1569
+GEO,Georgia,2005,16068
+SVK,Slovakia,2005,16318
+NOR,Norway,2005,16473
+GMB,Gambia,2005,166
+CIV,Cote d'Ivoire,2005,1698
+DNK,Denmark,2005,18072
+MMR,Myanmar,2005,18584
+MEX,Mexico,2005,187115
+CYP,Cyprus,2005,1949
+MYS,Malaysia,2005,20105
+SRB,Serbia,2005,20786
+FRA,France,2005,210312
+ITA,Italy,2005,215739
+QAT,Qatar,2005,2150
+ISR,Israel,2005,24398
+ETH,Ethiopia,2005,2453
+AND,Andorra,2005,255
+HND,Honduras,2005,2680
+CHE,Switzerland,2005,27791
+NIC,Nicaragua,2005,2717
+HUN,Hungary,2005,28055
+BGR,Bulgaria,2005,28174
+SYR,Syrian Arab Republic,2005,28247
+DEU,Germany,2005,280012
+BEL,Belgium,2005,30081
+AZE,Azerbaijan,2005,30584
+SWE,Sweden,2005,31186
+DZA,Algeria,2005,33952
+MDG,Madagascar,2005,3303
+UGA,Uganda,2005,3361
+AUT,Austria,2005,35784
+CZE,Czechia,2005,36381
+PRT,Portugal,2005,36779
+NGA,Nigeria,2005,39210
+BRN,Brunei Darussalam,2005,390
+OMN,Oman,2005,4182
+BGD,Bangladesh,2005,42881
+EST,Estonia,2005,4257
+MKD,North Macedonia,2005,4392
+NLD,Netherlands (Kingdom of the),2005,44186
+PAN,Panama,2005,4488
+BWA,Botswana,2005,466
+SVN,Slovenia,2005,4692
+ROU,Romania,2005,47388
+BRB,Barbados,2005,489
+WSM,Samoa,2005,50
+VNM,Viet Nam,2005,51466
+KAZ,Kazakhstan,2005,55509
+GRC,Greece,2005,55556
+AUS,Australia,2005,56084
+BIH,Bosnia and Herzegovina,2005,5773
+COL,Colombia,2005,60331
+IRN,Iran (Islamic Republic of),2005,61870
+FSM,Micronesia (Federated States of),2005,62
+ZMB,Zambia,2005,646
+LVA,Latvia,2005,6628
+SGP,Singapore,2005,6748
+MNG,Mongolia,2005,6788
+RUS,Russian Federation,2005,690300
+ARE,United Arab Emirates,2005,6971
+UZB,Uzbekistan,2005,70564
+CUB,Cuba,2005,70594
+ARM,Armenia,2005,7645
+KOR,Republic of Korea,2005,78342
+POL,Poland,2005,81600
+MLI,Mali,2005,811
+NZL,New Zealand,2005,8706
+SLB,Solomon Islands,2005,89
+BHR,Bahrain,2005,928
+GIN,Guinea,2005,940
+TUN,Tunisia,2005,9422
+MDA,Republic of Moldova,2005,9892
+CHN,China,2004,1582442
+NRU,Nauru,2004,10
+LKA,Sri Lanka,2004,10479
+VCT,Saint Vincent and the Grenadines,2004,101
+LBR,Liberia,2004,103
+ISL,Iceland,2004,1056
+HRV,Croatia,2004,11093
+IRL,Ireland,2004,11141
+JOR,Jordan,2004,11398
+COM,Comoros,2004,115
+PAK,Pakistan,2004,116298
+AGO,Angola,2004,1165
+BTN,Bhutan,2004,118
+MNE,Montenegro,2004,1191
+ECU,Ecuador,2004,12027
+LTU,Lithuania,2004,12247
+TKM,Turkmenistan,2004,12290
+KGZ,Kyrgyzstan,2004,12905
+SYC,Seychelles,2004,121
+DJI,Djibouti,2004,129
+TJK,Tajikistan,2004,13000
+TUN,Tunisia,2004,13330
+MUS,Mauritius,2004,1303
+MLT,Malta,2004,1384
+GBR,United Kingdom of Great Britain and Northern Ireland,2004,139846
+FIN,Finland,2004,14689
+ERI,Eritrea,2004,142
+UKR,Ukraine,2004,142415
+ESP,Spain,2004,147833
+ZMB,Zambia,2004,1499
+NOR,Norway,2004,15615
+CHL,Chile,2004,15762
+MAR,Morocco,2004,15991
+GNQ,Equatorial Guinea,2004,153
+GEO,Georgia,2004,16062
+SVK,Slovakia,2004,16938
+GMB,Gambia,2004,166
+SLE,Sierra Leone,2004,168
+DNK,Denmark,2004,17438
+MMR,Myanmar,2004,17791
+SWZ,Eswatini,2004,171
+MEX,Mexico,2004,172771
+MYS,Malaysia,2004,18246
+THA,Thailand,2004,18918
+GNB,Guinea-Bissau,2004,188
+CYP,Cyprus,2004,1932
+ETH,Ethiopia,2004,1996
+COK,Cook Islands,2004,20
+SRB,Serbia,2004,20974
+BDI,Burundi,2004,200
+LAO,Lao People's Democratic Republic,2004,2000
+FRA,France,2004,208768
+CIV,Cote d'Ivoire,2004,2081
+ZWE,Zimbabwe,2004,2086
+ITA,Italy,2004,213302
+UGA,Uganda,2004,2209
+AND,Andorra,2004,239
+ISR,Israel,2004,24276
+TGO,Togo,2004,244
+SYR,Syrian Arab Republic,2004,25890
+JPN,Japan,2004,259336
+MWI,Malawi,2004,266
+CHE,Switzerland,2004,27291
+BGR,Bulgaria,2004,27406
+DEU,Germany,2004,278444
+MDG,Madagascar,2004,2780
+BEL,Belgium,2004,29891
+NER,Niger,2004,296
+VUT,Vanuatu,2004,30
+AZE,Azerbaijan,2004,30051
+SWE,Sweden,2004,30333
+MDV,Maldives,2004,302
+BEN,Benin,2004,311
+CMR,Cameroon,2004,3124
+MRT,Mauritania,2004,313
+GHA,Ghana,2004,3240
+HUN,Hungary,2004,33727
+CAF,Central African Republic,2004,331
+AUT,Austria,2004,34589
+ZAF,South Africa,2004,34829
+TCD,Chad,2004,345
+PRT,Portugal,2004,35817
+CZE,Czechia,2004,35907
+ALB,Albania,2004,3699
+BGD,Bangladesh,2004,38485
+OMN,Oman,2004,3871
+GAB,Gabon,2004,395
+NIU,Niue,2004,4
+SUR,Suriname,2004,400
+EST,Estonia,2004,4120
+NLD,Netherlands (Kingdom of the),2004,43111
+PAN,Panama,2004,4321
+MKD,North Macedonia,2004,4490
+SVN,Slovenia,2004,4589
+BRN,Brunei Darussalam,2004,463
+ROU,Romania,2004,48150
+MOZ,Mozambique,2004,514
+GRC,Greece,2004,53943
+AUS,Australia,2004,53966
+NPL,Nepal,2004,5384
+KAZ,Kazakhstan,2004,54758
+BIH,Bosnia and Herzegovina,2004,5680
+COL,Colombia,2004,57774
+SEN,Senegal,2004,594
+NAM,Namibia,2004,598
+IRN,Iran (Islamic Republic of),2004,60791
+SGP,Singapore,2004,6492
+MNG,Mongolia,2004,6590
+LVA,Latvia,2004,6603
+YEM,Yemen,2004,6739
+RUS,Russian Federation,2004,688200
+CUB,Cuba,2004,69713
+UZB,Uzbekistan,2004,70958
+LBY,Libya,2004,7070
+BFA,Burkina Faso,2004,708
+BWA,Botswana,2004,715
+MLI,Mali,2004,721
+ARM,Armenia,2004,7383
+KOR,Republic of Korea,2004,75236
+SDN,Sudan,2004,7552
+COG,Congo,2004,756
+ARE,United Arab Emirates,2004,7802
+USA,United States of America,2004,793648
+BHR,Bahrain,2004,803
+STP,Sao Tome and Principe,2004,81
+POL,Poland,2004,87440
+NZL,New Zealand,2004,8945
+MDA,Republic of Moldova,2004,9092
+PHL,Philippines,2004,93862
+TUR,Türkiye,2004,97110
+GIN,Guinea,2004,987
+CHN,China,2003,1534046
+TUV,Tuvalu,2003,10
+IRL,Ireland,2003,10270
+ECU,Ecuador,2003,10808
+HRV,Croatia,2003,10820
+PHL,Philippines,2003,101786
+TTO,Trinidad and Tobago,2003,1038
+ERI,Eritrea,2003,104
+ISL,Iceland,2003,1047
+MNE,Montenegro,2003,1139
+MUS,Mauritius,2003,1173
+JOR,Jordan,2003,12375
+TKM,Turkmenistan,2003,12408
+LTU,Lithuania,2003,12530
+TJK,Tajikistan,2003,12688
+KGZ,Kyrgyzstan,2003,12902
+MLT,Malta,2003,1254
+GBR,United Kingdom of Great Britain and Northern Ireland,2003,131272
+ESP,Spain,2003,136000
+NOR,Norway,2003,14746
+UKR,Ukraine,2003,143202
+CHL,Chile,2003,15003
+GMB,Gambia,2003,156
+GEO,Georgia,2003,16221
+DNK,Denmark,2003,16608
+SVK,Slovakia,2003,16925
+SWZ,Eswatini,2003,160
+MEX,Mexico,2003,162747
+MYS,Malaysia,2003,18191
+CYP,Cyprus,2003,1850
+ETH,Ethiopia,2003,1936
+SRB,Serbia,2003,20549
+FIN,Finland,2003,20832
+NIC,Nicaragua,2003,2045
+FRA,France,2003,206289
+ITA,Italy,2003,208093
+JAM,Jamaica,2003,2253
+ISR,Israel,2003,24055
+SYR,Syrian Arab Republic,2003,24473
+AND,Andorra,2003,244
+MDG,Madagascar,2003,2550
+CHE,Switzerland,2003,26824
+DEU,Germany,2003,276643
+BGR,Bulgaria,2003,28128
+SWE,Sweden,2003,29409
+IDN,Indonesia,2003,29499
+BEL,Belgium,2003,29646
+AZE,Azerbaijan,2003,29687
+HUN,Hungary,2003,32889
+AUT,Austria,2003,33663
+NGA,Nigeria,2003,34923
+PRT,Portugal,2003,34936
+CZE,Czechia,2003,35960
+BGD,Bangladesh,2003,36576
+ALB,Albania,2003,3699
+OMN,Oman,2003,3726
+EGY,Egypt,2003,38485
+FJI,Fiji,2003,380
+NIU,Niue,2003,4
+EST,Estonia,2003,4107
+NLD,Netherlands (Kingdom of the),2003,42447
+ROU,Romania,2003,43336
+PAN,Panama,2003,4301
+MKD,North Macedonia,2003,4448
+SVN,Slovenia,2003,4485
+WSM,Samoa,2003,50
+AUS,Australia,2003,51819
+GRC,Greece,2003,52225
+BWA,Botswana,2003,526
+KAZ,Kazakhstan,2003,54613
+COL,Colombia,2003,55332
+BIH,Bosnia and Herzegovina,2003,5559
+GRD,Grenada,2003,58
+FSM,Micronesia (Federated States of),2003,60
+SLB,Solomon Islands,2003,60
+SGP,Singapore,2003,6292
+LVA,Latvia,2003,6478
+MNG,Mongolia,2003,6637
+CUB,Cuba,2003,68017
+RUS,Russian Federation,2003,686000
+UZB,Uzbekistan,2003,71623
+PRK,Democratic People's Republic of Korea,2003,74597
+ARM,Armenia,2003,7413
+KOR,Republic of Korea,2003,75045
+ARE,United Arab Emirates,2003,7707
+BHR,Bahrain,2003,816
+TUN,Tunisia,2003,8189
+NZL,New Zealand,2003,8758
+LSO,Lesotho,2003,89
+POL,Poland,2003,92982
+TUR,Türkiye,2003,94466
+MDA,Republic of Moldova,2003,9525
+CHN,China,2002,1463573
+HRV,Croatia,2002,10589
+ISL,Iceland,2002,1029
+TTO,Trinidad and Tobago,2002,1054
+ECU,Ecuador,2002,11149
+JOR,Jordan,2002,11715
+MNE,Montenegro,2002,1166
+MUS,Mauritius,2002,1186
+URY,Uruguay,2002,12384
+TKM,Turkmenistan,2002,12674
+LTU,Lithuania,2002,12749
+KGZ,Kyrgyzstan,2002,12909
+GBR,United Kingdom of Great Britain and Northern Ireland,2002,125451
+ESP,Spain,2002,129667
+TJK,Tajikistan,2002,13117
+CHL,Chile,2002,13992
+MLT,Malta,2002,1302
+ERI,Eritrea,2002,132
+NOR,Norway,2002,14603
+UKR,Ukraine,2002,144843
+MEX,Mexico,2002,155246
+GEO,Georgia,2002,16212
+DNK,Denmark,2002,16324
+SVK,Slovakia,2002,17215
+MYS,Malaysia,2002,17442
+THA,Thailand,2002,18987
+CYP,Cyprus,2002,1835
+FIN,Finland,2002,20234
+AND,Andorra,2002,203
+ITA,Italy,2002,203480
+FRA,France,2002,203962
+MDG,Madagascar,2002,2283
+ISR,Israel,2002,23620
+SYR,Syrian Arab Republic,2002,25073
+CHE,Switzerland,2002,25921
+JPN,Japan,2002,251889
+BGR,Bulgaria,2002,27688
+DEU,Germany,2002,273961
+SWE,Sweden,2002,28670
+AZE,Azerbaijan,2002,29481
+BEL,Belgium,2002,29537
+TON,Tonga,2002,30
+HUN,Hungary,2002,32452
+AUT,Austria,2002,32812
+PRT,Portugal,2002,34270
+DZA,Algeria,2002,35368
+CZE,Czechia,2002,35750
+OMN,Oman,2002,3536
+ALB,Albania,2002,3656
+BRN,Brunei Darussalam,2002,400
+EST,Estonia,2002,4089
+NLD,Netherlands (Kingdom of the),2002,41589
+PAN,Panama,2002,4203
+VNM,Viet Nam,2002,44960
+SVN,Slovenia,2002,4440
+ROU,Romania,2002,45805
+KEN,Kenya,2002,4506
+MKD,North Macedonia,2002,4573
+AUS,Australia,2002,49895
+GRC,Greece,2002,50347
+COL,Colombia,2002,53266
+KAZ,Kazakhstan,2002,53659
+BWA,Botswana,2002,536
+BIH,Bosnia and Herzegovina,2002,5443
+GRD,Grenada,2002,58
+TUV,Tuvalu,2002,6
+SGP,Singapore,2002,6029
+PRY,Paraguay,2002,6355
+LVA,Latvia,2002,6443
+CUB,Cuba,2002,67079
+RUS,Russian Federation,2002,682400
+MNG,Mongolia,2002,6823
+ARE,United Arab Emirates,2002,6967
+KOR,Republic of Korea,2002,70923
+UZB,Uzbekistan,2002,72368
+ARM,Armenia,2002,7777
+BHR,Bahrain,2002,792
+SLV,El Salvador,2002,7938
+TUN,Tunisia,2002,7964
+TZA,United Republic of Tanzania,2002,822
+NZL,New Zealand,2002,8393
+POL,Poland,2002,88070
+PHL,Philippines,2002,90370
+TUR,Türkiye,2002,91949
+IRL,Ireland,2002,9444
+MDA,Republic of Moldova,2002,9653
+CHN,China,2001,1637337
+BOL,Bolivia (Plurinational State of),2001,10329
+HRV,Croatia,2001,10552
+JOR,Jordan,2001,10627
+ECU,Ecuador,2001,10989
+LBN,Lebanon,2001,11505
+MUS,Mauritius,2001,1107
+MNE,Montenegro,2001,1173
+LTU,Lithuania,2001,12601
+TKM,Turkmenistan,2001,12634
+GBR,United Kingdom of Great Britain and Northern Ireland,2001,120709
+MLT,Malta,2001,1221
+TTO,Trinidad and Tobago,2001,1234
+DMA,Dominica,2001,124
+ESP,Spain,2001,128100
+KGZ,Kyrgyzstan,2001,13379
+TJK,Tajikistan,2001,13421
+COK,Cook Islands,2001,14
+SAU,Saudi Arabia,2001,14464
+UKR,Ukraine,2001,146557
+DNK,Denmark,2001,15717
+GEO,Georgia,2001,15966
+NOR,Norway,2001,15978
+MEX,Mexico,2001,152064
+SVK,Slovakia,2001,17340
+AND,Andorra,2001,175
+SWZ,Eswatini,2001,179
+THA,Thailand,2001,18947
+CYP,Cyprus,2001,1839
+FIN,Finland,2001,19854
+ITA,Italy,2001,199794
+FRA,France,2001,201140
+ISR,Israel,2001,23119
+CHE,Switzerland,2001,25395
+BGR,Bulgaria,2001,27186
+SWE,Sweden,2001,27766
+DEU,Germany,2001,271157
+AZE,Azerbaijan,2001,29084
+BEL,Belgium,2001,29303
+HUN,Hungary,2001,29448
+AUT,Austria,2001,32080
+BGD,Bangladesh,2001,32498
+PRT,Portugal,2001,33732
+OMN,Oman,2001,3397
+TON,Tonga,2001,35
+CZE,Czechia,2001,35222
+PAN,Panama,2001,3843
+EST,Estonia,2001,3863
+NLD,Netherlands (Kingdom of the),2001,40355
+ALB,Albania,2001,4100
+AFG,Afghanistan,2001,4104
+VNM,Viet Nam,2001,42327
+BRB,Barbados,2001,420
+ROU,Romania,2001,43574
+SVN,Slovenia,2001,4325
+MKD,North Macedonia,2001,4459
+GRC,Greece,2001,47944
+VEN,Venezuela (Bolivarian Republic of),2001,48000
+KNA,Saint Kitts and Nevis,2001,49
+AUS,Australia,2001,49392
+COL,Colombia,2001,51209
+KAZ,Kazakhstan,2001,51289
+BWA,Botswana,2001,510
+BIH,Bosnia and Herzegovina,2001,5445
+GRD,Grenada,2001,58
+SGP,Singapore,2001,5922
+VCT,Saint Vincent and the Grenadines,2001,62
+LVA,Latvia,2001,6281
+KOR,Republic of Korea,2001,65715
+ARE,United Arab Emirates,2001,6549
+CUB,Cuba,2001,66325
+MNG,Mongolia,2001,6639
+RUS,Russian Federation,2001,677800
+UZB,Uzbekistan,2001,73041
+BHR,Bahrain,2001,742
+TUN,Tunisia,2001,7767
+ARM,Armenia,2001,7989
+LKA,Sri Lanka,2001,8384
+NZL,New Zealand,2001,8491
+POL,Poland,2001,86706
+TUR,Türkiye,2001,89804
+IRL,Ireland,2001,9166
+ERI,Eritrea,2001,95
+MDA,Republic of Moldova,2001,9599
+PAK,Pakistan,2001,96248
+PHL,Philippines,2001,97206
+ISL,Iceland,2001,990
+CHN,China,2000,1603266
+ECU,Ecuador,2000,10304
+MDA,Republic of Moldova,2000,10319
+HRV,Croatia,2000,10439
+ERI,Eritrea,2000,100
+MLT,Malta,2000,1024
+MUS,Mauritius,2000,1080
+MNE,Montenegro,2000,1156
+GBR,United Kingdom of Great Britain and Northern Ireland,2000,117332
+TKM,Turkmenistan,2000,12408
+LTU,Lithuania,2000,12692
+ESP,Spain,2000,127200
+TTO,Trinidad and Tobago,2000,1275
+TJK,Tajikistan,2000,13500
+KGZ,Kyrgyzstan,2000,13799
+SAU,Saudi Arabia,2000,14950
+UKR,Ukraine,2000,147957
+ZWE,Zimbabwe,2000,1499
+NOR,Norway,2000,15180
+DNK,Denmark,2000,15553
+MYS,Malaysia,2000,15619
+DOM,Dominican Republic,2000,15670
+LAO,Lao People's Democratic Republic,2000,1517
+GEO,Georgia,2000,16738
+MEX,Mexico,2000,160861
+AND,Andorra,2000,168
+SVK,Slovakia,2000,17420
+CYP,Cyprus,2000,1800
+FIN,Finland,2000,19391
+SUR,Suriname,2000,191
+ITA,Italy,2000,196075
+FRA,France,2000,197977
+KHM,Cambodia,2000,2047
+SYR,Syrian Arab Republic,2000,22408
+ISR,Israel,2000,22590
+TCD,Chad,2000,235
+JPN,Japan,2000,245315
+CHE,Switzerland,2000,25216
+BLZ,Belize,2000,251
+SWE,Sweden,2000,26843
+DEU,Germany,2000,266869
+HUN,Hungary,2000,27390
+BGR,Bulgaria,2000,27526
+PNG,Papua New Guinea,2000,275
+BEL,Belgium,2000,28999
+AZE,Azerbaijan,2000,29033
+AUT,Austria,2000,31060
+PRT,Portugal,2000,32977
+OMN,Oman,2000,3258
+BRN,Brunei Darussalam,2000,336
+CZE,Czechia,2000,34604
+BRB,Barbados,2000,365
+GUY,Guyana,2000,366
+HND,Honduras,2000,3676
+NLD,Netherlands (Kingdom of the),2000,38903
+EST,Estonia,2000,4110
+SVN,Slovenia,2000,4279
+ROU,Romania,2000,43237
+ALB,Albania,2000,4325
+MKD,North Macedonia,2000,4455
+GRC,Greece,2000,47251
+AUS,Australia,2000,47372
+KAZ,Kazakhstan,2000,48953
+COL,Colombia,2000,49406
+BWA,Botswana,2000,499
+CRI,Costa Rica,2000,5204
+BIH,Bosnia and Herzegovina,2000,5457
+SGP,Singapore,2000,5577
+ARE,United Arab Emirates,2000,5646
+GRD,Grenada,2000,58
+KOR,Republic of Korea,2000,60895
+FSM,Micronesia (Federated States of),2000,64
+MNG,Mongolia,2000,6498
+CUB,Cuba,2000,65997
+BHR,Bahrain,2000,678
+RUS,Russian Federation,2000,680200
+LVA,Latvia,2000,6819
+UZB,Uzbekistan,2000,73389
+USA,United States of America,2000,730801
+TUN,Tunisia,2000,7444
+GIN,Guinea,2000,764
+LKA,Sri Lanka,2000,7963
+ARM,Armenia,2000,8290
+IRL,Ireland,2000,8438
+POL,Poland,2000,85031
+TUR,Türkiye,2000,85242
+NZL,New Zealand,2000,8615
+VCT,Saint Vincent and the Grenadines,2000,89
+PAK,Pakistan,2000,91823
+PHL,Philippines,2000,95032
+JOR,Jordan,2000,9575
+ISL,Iceland,2000,968
+CHN,China,1999,1561584
+HRV,Croatia,1999,10436
+GBR,United Kingdom of Great Britain and Northern Ireland,1999,112183
+MNE,Montenegro,1999,1142
+TTO,Trinidad and Tobago,1999,1171
+ATG,Antigua and Barbuda,1999,12
+TJK,Tajikistan,1999,12965
+WSM,Samoa,1999,120
+ESP,Spain,1999,123200
+LTU,Lithuania,1999,13092
+KGZ,Kyrgyzstan,1999,14113
+NOR,Norway,1999,14665
+DNK,Denmark,1999,15342
+MEX,Mexico,1999,166839
+ECU,Ecuador,1999,17075
+GEO,Georgia,1999,17256
+THA,Thailand,1999,18140
+FIN,Finland,1999,18964
+FRA,France,1999,195751
+SYR,Syrian Arab Republic,1999,21393
+OMN,Oman,1999,2174
+ISR,Israel,1999,22167
+TCD,Chad,1999,232
+ITA,Italy,1999,234333
+BRA,Brazil,1999,236668
+CHE,Switzerland,1999,24026
+SWE,Sweden,1999,26268
+DEU,Germany,1999,262400
+FJI,Fiji,1999,271
+BGR,Bulgaria,1999,28261
+AZE,Azerbaijan,1999,28485
+BEL,Belgium,1999,28642
+PER,Peru,1999,29799
+AUT,Austria,1999,30283
+CZE,Czechia,1999,31653
+HUN,Hungary,1999,31775
+PRT,Portugal,1999,31942
+PAN,Panama,1999,3662
+NLD,Netherlands (Kingdom of the),1999,37638
+ROU,Romania,1999,42251
+EST,Estonia,1999,4200
+SVN,Slovenia,1999,4216
+MKD,North Macedonia,1999,4409
+AUS,Australia,1999,45999
+KNA,Saint Kitts and Nevis,1999,46
+GRC,Greece,1999,46124
+COL,Colombia,1999,47003
+KAZ,Kazakhstan,1999,50560
+BWA,Botswana,1999,507
+SGP,Singapore,1999,5325
+SLB,Solomon Islands,1999,54
+GRD,Grenada,1999,59
+KOR,Republic of Korea,1999,61182
+CUB,Cuba,1999,64863
+LVA,Latvia,1999,6495
+RUS,Russian Federation,1999,682500
+LKA,Sri Lanka,1999,6994
+TUN,Tunisia,1999,7149
+SLV,El Salvador,1999,7268
+TUR,Türkiye,1999,79658
+IRL,Ireland,1999,8469
+NZL,New Zealand,1999,8616
+PAK,Pakistan,1999,87105
+POL,Poland,1999,87524
+DJI,Djibouti,1999,93
+ISL,Iceland,1999,938
+JOR,Jordan,1999,9686
+GTM,Guatemala,1999,9965
+CHN,China,1998,1513975
+HRV,Croatia,1998,10299
+ARG,Argentina,1998,108800
+GBR,United Kingdom of Great Britain and Northern Ireland,1998,110952
+ESP,Spain,1998,117566
+TTO,Trinidad and Tobago,1998,1185
+TJK,Tajikistan,1998,12551
+LTU,Lithuania,1998,13209
+NOR,Norway,1998,14029
+KGZ,Kyrgyzstan,1998,14282
+DNK,Denmark,1998,15144
+MDA,Republic of Moldova,1998,15599
+TCD,Chad,1998,156
+ECU,Ecuador,1998,16016
+AND,Andorra,1998,162
+MEX,Mexico,1998,163925
+GEO,Georgia,1998,17403
+THA,Thailand,1998,17955
+KHM,Cambodia,1998,1711
+CYP,Cyprus,1998,1721
+FIN,Finland,1998,18630
+FRA,France,1998,194834
+HTI,Haiti,1998,1949
+SYR,Syrian Arab Republic,1998,20888
+OMN,Oman,1998,2099
+COG,Congo,1998,2155
+BRA,Brazil,1998,216632
+ISR,Israel,1998,22067
+CHE,Switzerland,1998,23679
+ITA,Italy,1998,231667
+JPN,Japan,1998,238771
+SWE,Sweden,1998,25836
+DEU,Germany,1998,259441
+PLW,Palau,1998,26
+BGR,Bulgaria,1998,28476
+AZE,Azerbaijan,1998,28477
+AUT,Austria,1998,30268
+CZE,Czechia,1998,31192
+PRT,Portugal,1998,31550
+HUN,Hungary,1998,31638
+BHS,Bahamas,1998,312
+PAN,Panama,1998,3475
+BEL,Belgium,1998,38109
+ROU,Romania,1998,41310
+EST,Estonia,1998,4158
+BWA,Botswana,1998,424
+ALB,Albania,1998,4325
+SVN,Slovenia,1998,4335
+AUS,Australia,1998,44684
+GRC,Greece,1998,44753
+COL,Colombia,1998,44778
+MKD,North Macedonia,1998,4508
+KNA,Saint Kitts and Nevis,1998,46
+JOR,Jordan,1998,4889
+KAZ,Kazakhstan,1998,53181
+KOR,Republic of Korea,1998,58684
+CUB,Cuba,1998,63483
+LKA,Sri Lanka,1998,6427
+LVA,Latvia,1998,6602
+RUS,Russian Federation,1998,679800
+TUN,Tunisia,1998,6819
+UZB,Uzbekistan,1998,73903
+TUR,Türkiye,1998,75088
+IRL,Ireland,1998,8102
+PAK,Pakistan,1998,82682
+NZL,New Zealand,1998,8491
+POL,Poland,1998,90086
+ISL,Iceland,1998,909
+MLT,Malta,1998,984
+CHN,China,1997,1505342
+HRV,Croatia,1997,10331
+VCT,Saint Vincent and the Grenadines,1997,101
+GBR,United Kingdom of Great Britain and Northern Ireland,1997,108030
+TJK,Tajikistan,1997,11777
+ESP,Spain,1997,114867
+LTU,Lithuania,1997,13437
+NOR,Norway,1997,13547
+KGZ,Kyrgyzstan,1997,14354
+DNK,Denmark,1997,14672
+MDA,Republic of Moldova,1997,15440
+ECU,Ecuador,1997,15866
+AND,Andorra,1997,158
+MEX,Mexico,1997,159947
+THA,Thailand,1997,16569
+CYP,Cyprus,1997,1685
+GEO,Georgia,1997,17198
+FIN,Finland,1997,18204
+SYR,Syrian Arab Republic,1997,19678
+OMN,Oman,1997,1921
+FRA,France,1997,193382
+TCD,Chad,1997,195
+VUT,Vanuatu,1997,20
+ISR,Israel,1997,21133
+BRA,Brazil,1997,215875
+ITA,Italy,1997,227333
+CHE,Switzerland,1997,23144
+SWE,Sweden,1997,25244
+DEU,Germany,1997,255654
+BGR,Bulgaria,1997,28655
+AZE,Azerbaijan,1997,28873
+AUT,Austria,1997,29226
+PRT,Portugal,1997,30830
+HUN,Hungary,1997,31649
+CZE,Czechia,1997,32065
+PAN,Panama,1997,3434
+BEL,Belgium,1997,37451
+DMA,Dominica,1997,38
+YEM,Yemen,1997,3814
+ROU,Romania,1997,40378
+GRD,Grenada,1997,41
+COL,Colombia,1997,42240
+GRC,Greece,1997,43030
+ALB,Albania,1997,4304
+AUS,Australia,1997,44194
+SVN,Slovenia,1997,4436
+MKD,North Macedonia,1997,4491
+EST,Estonia,1997,4533
+KNA,Saint Kitts and Nevis,1997,48
+KAZ,Kazakhstan,1997,51998
+KOR,Republic of Korea,1997,56662
+LKA,Sri Lanka,1997,5628
+CUB,Cuba,1997,62624
+LBY,Libya,1997,6371
+TUN,Tunisia,1997,6464
+RUS,Russian Federation,1997,673400
+LVA,Latvia,1997,6974
+TUR,Türkiye,1997,71545
+UZB,Uzbekistan,1997,73397
+PAK,Pakistan,1997,78470
+IRL,Ireland,1997,7801
+NZL,New Zealand,1997,8224
+AGO,Angola,1997,881
+ISL,Iceland,1997,884
+POL,Poland,1997,91121
+MLT,Malta,1997,925
+TTO,Trinidad and Tobago,1997,949
+CHN,China,1996,1475232
+HRV,Croatia,1996,10110
+GBR,United Kingdom of Great Britain and Northern Ireland,1996,104429
+ESP,Spain,1996,109600
+TJK,Tajikistan,1996,11964
+KHM,Cambodia,1996,1247
+NOR,Norway,1996,13351
+LTU,Lithuania,1996,13389
+DNK,Denmark,1996,14207
+GEO,Georgia,1996,14852
+KGZ,Kyrgyzstan,1996,14963
+ECU,Ecuador,1996,15388
+MDA,Republic of Moldova,1996,15406
+MEX,Mexico,1996,153864
+CYP,Cyprus,1996,1645
+FIN,Finland,1996,17674
+MDV,Maldives,1996,173
+FRA,France,1996,191663
+ISR,Israel,1996,20267
+BRA,Brazil,1996,206675
+CHE,Switzerland,1996,22718
+ITA,Italy,1996,221667
+JPN,Japan,1996,231425
+SWE,Sweden,1996,25087
+DEU,Germany,1996,253975
+AUT,Austria,1996,28561
+AZE,Azerbaijan,1996,29200
+BGR,Bulgaria,1996,29592
+NIU,Niue,1996,3
+PRT,Portugal,1996,30278
+CZE,Czechia,1996,30784
+HUN,Hungary,1996,31348
+PAN,Panama,1996,3371
+BEL,Belgium,1996,36644
+COL,Colombia,1996,39911
+ROU,Romania,1996,40919
+GRC,Greece,1996,41511
+SVN,Slovenia,1996,4251
+ALB,Albania,1996,4278
+AUS,Australia,1996,43756
+MKD,North Macedonia,1996,4440
+EST,Estonia,1996,4457
+KNA,Saint Kitts and Nevis,1996,48
+LKA,Sri Lanka,1996,5117
+KOR,Republic of Korea,1996,53372
+KAZ,Kazakhstan,1996,57941
+CUB,Cuba,1996,60129
+TUN,Tunisia,1996,6177
+RUS,Russian Federation,1996,669200
+TUR,Türkiye,1996,69118
+LVA,Latvia,1996,6966
+UZB,Uzbekistan,1996,73335
+PAK,Pakistan,1996,74229
+IRL,Ireland,1996,7622
+NZL,New Zealand,1996,7634
+ISL,Iceland,1996,839
+POL,Poland,1996,90828
+TTO,Trinidad and Tobago,1996,957
+LUX,Luxembourg,1996,958
+CHN,China,1995,1454926
+GBR,United Kingdom of Great Britain and Northern Ireland,1995,101803
+TTO,Trinidad and Tobago,1995,1183
+TJK,Tajikistan,1995,12104
+NOR,Norway,1995,12871
+LTU,Lithuania,1995,13370
+DNK,Denmark,1995,14038
+THA,Thailand,1995,14181
+ECU,Ecuador,1995,14271
+KGZ,Kyrgyzstan,1995,14377
+AND,Andorra,1995,143
+MDA,Republic of Moldova,1995,15242
+MEX,Mexico,1995,151579
+NRU,Nauru,1995,16
+CYP,Cyprus,1995,1607
+ESP,Spain,1995,162650
+ZWE,Zimbabwe,1995,1630
+LAO,Lao People's Democratic Republic,1995,1656
+FIN,Finland,1995,17118
+FRA,France,1995,189891
+ISR,Israel,1995,19836
+BRA,Brazil,1995,198479
+ITA,Italy,1995,216000
+CHE,Switzerland,1995,22275
+SWE,Sweden,1995,24860
+OMN,Oman,1995,2477
+DEU,Germany,1995,249458
+AUT,Austria,1995,27911
+BGR,Bulgaria,1995,29069
+AZE,Azerbaijan,1995,29217
+PRT,Portugal,1995,29384
+CZE,Czechia,1995,30942
+HUN,Hungary,1995,31024
+PAN,Panama,1995,3196
+GAB,Gabon,1995,321
+BEL,Belgium,1995,35917
+BRB,Barbados,1995,358
+COL,Colombia,1995,37743
+ROU,Romania,1995,40112
+LKA,Sri Lanka,1995,4047
+GRC,Greece,1995,41200
+SVN,Slovenia,1995,4216
+ALB,Albania,1995,4244
+AUS,Australia,1995,44583
+MKD,North Macedonia,1995,4503
+EST,Estonia,1995,4585
+KNA,Saint Kitts and Nevis,1995,46
+KOR,Republic of Korea,1995,50635
+CUB,Cuba,1995,56836
+TUN,Tunisia,1995,5965
+KAZ,Kazakhstan,1995,60125
+USA,United States of America,1995,646610
+RUS,Russian Federation,1995,653700
+TUR,Türkiye,1995,67828
+PAK,Pakistan,1995,69691
+LVA,Latvia,1995,7028
+UZB,Uzbekistan,1995,74203
+NZL,New Zealand,1995,7530
+IRL,Ireland,1995,7563
+ISL,Iceland,1995,809
+POL,Poland,1995,89421
+LUX,Luxembourg,1995,914
+HRV,Croatia,1995,9723
+NOR,Norway,1994,12076
+TJK,Tajikistan,1994,12638
+LTU,Lithuania,1994,13505
+DNK,Denmark,1994,13761
+KGZ,Kyrgyzstan,1994,13975
+ECU,Ecuador,1994,14271
+MEX,Mexico,1994,141059
+MDA,Republic of Moldova,1994,15498
+CYP,Cyprus,1994,1528
+FIN,Finland,1994,16679
+ESP,Spain,1994,162089
+FRA,France,1994,188082
+ISR,Israel,1994,19331
+BRA,Brazil,1994,190554
+CHE,Switzerland,1994,21788
+JPN,Japan,1994,221714
+DEU,Germany,1994,243406
+AUT,Austria,1994,27043
+GAB,Gabon,1994,277
+BGR,Bulgaria,1994,28094
+AZE,Azerbaijan,1994,28819
+PRT,Portugal,1994,28953
+CZE,Czechia,1994,30306
+HUN,Hungary,1994,30990
+PAN,Panama,1994,3021
+ITA,Italy,1994,319502
+SWE,Sweden,1994,32100
+LKA,Sri Lanka,1994,3345
+COL,Colombia,1994,35416
+BEL,Belgium,1994,35486
+KNA,Saint Kitts and Nevis,1994,39
+ROU,Romania,1994,40114
+GRC,Greece,1994,40487
+ALB,Albania,1994,4232
+AUS,Australia,1994,43404
+MKD,North Macedonia,1994,4348
+SVN,Slovenia,1994,4356
+EST,Estonia,1994,4680
+KOR,Republic of Korea,1994,47740
+TUN,Tunisia,1994,5344
+CUB,Cuba,1994,54065
+KAZ,Kazakhstan,1994,60901
+RUS,Russian Federation,1994,636800
+TUR,Türkiye,1994,65832
+PAK,Pakistan,1994,66196
+IRL,Ireland,1994,7129
+NZL,New Zealand,1994,7180
+LVA,Latvia,1994,7289
+UZB,Uzbekistan,1994,74030
+ISL,Iceland,1994,797
+POL,Poland,1994,87712
+LUX,Luxembourg,1994,870
+HRV,Croatia,1994,9607
+GBR,United Kingdom of Great Britain and Northern Ireland,1994,98105
+IDN,Indonesia,1993,11067
+NOR,Norway,1993,11652
+TJK,Tajikistan,1993,12132
+ECU,Ecuador,1993,12149
+MEX,Mexico,1993,129840
+LTU,Lithuania,1993,13285
+DNK,Denmark,1993,13569
+THA,Thailand,1993,13634
+KGZ,Kyrgyzstan,1993,14050
+CYP,Cyprus,1993,1441
+MDA,Republic of Moldova,1993,15459
+ESP,Spain,1993,159291
+FIN,Finland,1993,16347
+ISR,Israel,1993,18674
+BRA,Brazil,1993,183068
+FRA,France,1993,185477
+CHE,Switzerland,1993,21238
+GAB,Gabon,1993,225
+DEU,Germany,1993,236608
+AUT,Austria,1993,26058
+BGR,Bulgaria,1993,28457
+PRT,Portugal,1993,28690
+AZE,Azerbaijan,1993,28827
+CZE,Czechia,1993,29589
+HUN,Hungary,1993,30610
+PAN,Panama,1993,3097
+SWE,Sweden,1993,31084
+ITA,Italy,1993,313337
+KNA,Saint Kitts and Nevis,1993,32
+COL,Colombia,1993,33156
+BEL,Belgium,1993,34736
+LKA,Sri Lanka,1993,3713
+GRC,Greece,1993,40116
+ROU,Romania,1993,40265
+SVN,Slovenia,1993,4039
+AUS,Australia,1993,42300
+MKD,North Macedonia,1993,4363
+KOR,Republic of Korea,1993,45477
+ALB,Albania,1993,4515
+EST,Estonia,1993,4792
+CUB,Cuba,1993,51045
+TUN,Tunisia,1993,5257
+TUR,Türkiye,1993,61050
+PAK,Pakistan,1993,63003
+KAZ,Kazakhstan,1993,64465
+RUS,Russian Federation,1993,641600
+NZL,New Zealand,1993,6872
+MDV,Maldives,1993,69
+IRL,Ireland,1993,7212
+UZB,Uzbekistan,1993,73121
+LVA,Latvia,1993,7446
+ISL,Iceland,1993,779
+LUX,Luxembourg,1993,848
+POL,Poland,1993,85367
+MLT,Malta,1993,910
+HRV,Croatia,1993,9693
+GBR,United Kingdom of Great Britain and Northern Ireland,1993,97055
+NOR,Norway,1992,11383
+MEX,Mexico,1992,114727
+ECU,Ecuador,1992,12853
+TJK,Tajikistan,1992,13071
+LTU,Lithuania,1992,13258
+DNK,Denmark,1992,13433
+CHL,Chile,1992,13650
+CYP,Cyprus,1992,1368
+KGZ,Kyrgyzstan,1992,15197
+MDA,Republic of Moldova,1992,15271
+FIN,Finland,1992,15875
+ESP,Spain,1992,156100
+BRA,Brazil,1992,175848
+ISR,Israel,1992,18119
+FRA,France,1992,183246
+CHE,Switzerland,1992,20706
+JPN,Japan,1992,211847
+DEU,Germany,1992,227882
+AUT,Austria,1992,25195
+BGR,Bulgaria,1992,27039
+CZE,Czechia,1992,27645
+AZE,Azerbaijan,1992,28177
+PRT,Portugal,1992,28529
+ITA,Italy,1992,285111
+LKA,Sri Lanka,1992,2934
+PAN,Panama,1992,2947
+SWE,Sweden,1992,30063
+KNA,Saint Kitts and Nevis,1992,31
+COL,Colombia,1992,31113
+HUN,Hungary,1992,31178
+BEL,Belgium,1992,34069
+GRC,Greece,1992,38738
+AUS,Australia,1992,41461
+SVN,Slovenia,1992,4169
+KOR,Republic of Korea,1992,42394
+ROU,Romania,1992,42522
+MKD,North Macedonia,1992,4564
+CUB,Cuba,1992,46860
+EST,Estonia,1992,5004
+TUN,Tunisia,1992,5099
+ALB,Albania,1992,5264
+TUR,Türkiye,1992,56985
+PAK,Pakistan,1992,60042
+RUS,Russian Federation,1992,637300
+KAZ,Kazakhstan,1992,66301
+NZL,New Zealand,1992,6722
+IRL,Ireland,1992,7096
+UZB,Uzbekistan,1992,72121
+ISL,Iceland,1992,771
+LUX,Luxembourg,1992,814
+LVA,Latvia,1992,8191
+POL,Poland,1992,83724
+MCO,Monaco,1992,84
+MLT,Malta,1992,875
+ARG,Argentina,1992,88800
+GBR,United Kingdom of Great Britain and Northern Ireland,1992,94671
+HRV,Croatia,1992,9446
+IND,India,1991,1088048
+NOR,Norway,1991,11089
+ECU,Ecuador,1991,12205
+DNK,Denmark,1991,12531
+THA,Thailand,1991,12803
+CYP,Cyprus,1991,1265
+TJK,Tajikistan,1991,14160
+LTU,Lithuania,1991,14464
+MDA,Republic of Moldova,1991,15192
+KGZ,Kyrgyzstan,1991,15354
+FIN,Finland,1991,15412
+ISR,Israel,1991,15764
+ESP,Spain,1991,153306
+FRA,France,1991,179600
+GAB,Gabon,1991,189
+CHE,Switzerland,1991,20594
+DEU,Germany,1991,220445
+AUT,Austria,1991,23950
+LKA,Sri Lanka,1991,2440
+BGR,Bulgaria,1991,26760
+CZE,Czechia,1991,27575
+ITA,Italy,1991,276810
+KNA,Saint Kitts and Nevis,1991,28
+AZE,Azerbaijan,1991,28131
+PRT,Portugal,1991,28342
+COL,Colombia,1991,28569
+SWE,Sweden,1991,28958
+PAN,Panama,1991,2831
+HUN,Hungary,1991,31429
+BEL,Belgium,1991,33271
+GRC,Greece,1991,37238
+KOR,Republic of Korea,1991,38907
+NLD,Netherlands (Kingdom of the),1991,39069
+AUS,Australia,1991,40348
+SVN,Slovenia,1991,4155
+ROU,Romania,1991,42102
+CUB,Cuba,1991,42634
+MDV,Maldives,1991,44
+MKD,North Macedonia,1991,4487
+TUN,Tunisia,1991,4500
+ALB,Albania,1991,4793
+TUR,Türkiye,1991,54485
+EST,Estonia,1991,5520
+IRL,Ireland,1991,5995
+RUS,Russian Federation,1991,632200
+KAZ,Kazakhstan,1991,64517
+NZL,New Zealand,1991,6575
+UZB,Uzbekistan,1991,70599
+BIH,Bosnia and Herzegovina,1991,7027
+ISL,Iceland,1991,734
+LUX,Luxembourg,1991,780
+POL,Poland,1991,82925
+MLT,Malta,1991,875
+GBR,United Kingdom of Great Britain and Northern Ireland,1991,93663
+HRV,Croatia,1991,9303
+LVA,Latvia,1991,9571
+MEX,Mexico,1991,99399
+CHN,China,1990,1302997
+HRV,Croatia,1990,10152
+CYP,Cyprus,1990,1198
+DNK,Denmark,1990,12828
+TJK,Tajikistan,1990,13526
+ZWE,Zimbabwe,1990,1320
+ISR,Israel,1990,14372
+LTU,Lithuania,1990,14795
+FIN,Finland,1990,14967
+OMN,Oman,1990,1441
+KGZ,Kyrgyzstan,1990,15043
+MDA,Republic of Moldova,1990,15485
+BRA,Brazil,1990,161880
+FRA,France,1990,175912
+CHE,Switzerland,1990,20030
+JPN,Japan,1990,204001
+AUT,Austria,1990,23102
+COL,Colombia,1990,26171
+ITA,Italy,1990,266447
+AZE,Azerbaijan,1990,27493
+SWE,Sweden,1990,27808
+PAN,Panama,1990,2750
+KNA,Saint Kitts and Nevis,1990,28
+PRT,Portugal,1990,28016
+CZE,Czechia,1990,28036
+BGR,Bulgaria,1990,28497
+HUN,Hungary,1990,30522
+BEL,Belgium,1990,32547
+GRC,Greece,1990,34336
+KOR,Republic of Korea,1990,35781
+AUS,Australia,1990,36991
+NLD,Netherlands (Kingdom of the),1990,37461
+CUB,Cuba,1990,38690
+ROU,Romania,1990,41813
+SVN,Slovenia,1990,4110
+MKD,North Macedonia,1990,4396
+TUN,Tunisia,1990,4424
+ALB,Albania,1990,4516
+TUR,Türkiye,1990,50639
+IRL,Ireland,1990,5450
+EST,Estonia,1990,5498
+NZL,New Zealand,1990,6339
+KAZ,Kazakhstan,1990,66277
+RUS,Russian Federation,1990,667300
+UZB,Uzbekistan,1990,69173
+BIH,Bosnia and Herzegovina,1990,7032
+ISL,Iceland,1990,726
+LUX,Luxembourg,1990,766
+ESP,Spain,1990,79600
+MLT,Malta,1990,800
+POL,Poland,1990,81641
+MEX,Mexico,1990,81843
+GBR,United Kingdom of Great Britain and Northern Ireland,1990,92583
+LVA,Latvia,1990,9439
+ECU,Ecuador,1990,9785
+HRV,Croatia,1989,10173
+ECU,Ecuador,1989,10403
+CYP,Cyprus,1989,1171
+DNK,Denmark,1989,12621
+THA,Thailand,1989,12713
+ISR,Israel,1989,13839
+TJK,Tajikistan,1989,13843
+FIN,Finland,1989,14450
+LTU,Lithuania,1989,14579
+KGZ,Kyrgyzstan,1989,14808
+ESP,Spain,1989,143803
+MDA,Republic of Moldova,1989,15532
+CHE,Switzerland,1989,19433
+AUT,Austria,1989,22115
+ITA,Italy,1989,255231
+SWE,Sweden,1989,26786
+PRT,Portugal,1989,27629
+CZE,Czechia,1989,28200
+BGR,Bulgaria,1989,28218
+HUN,Hungary,1989,30475
+COL,Colombia,1989,31646
+BEL,Belgium,1989,32134
+GRC,Greece,1989,33151
+KOR,Republic of Korea,1989,33791
+AUS,Australia,1989,35951
+NLD,Netherlands (Kingdom of the),1989,36042
+MDV,Maldives,1989,39
+ROU,Romania,1989,41938
+SVN,Slovenia,1989,4119
+ALB,Albania,1989,4466
+TUR,Türkiye,1989,46708
+IRL,Ireland,1989,5220
+EST,Estonia,1989,5473
+RUS,Russian Federation,1989,601874
+NZL,New Zealand,1989,6286
+KAZ,Kazakhstan,1989,65525
+UZB,Uzbekistan,1989,67734
+BIH,Bosnia and Herzegovina,1989,6904
+MLT,Malta,1989,692
+ISL,Iceland,1989,715
+LUX,Luxembourg,1989,744
+POL,Poland,1989,79247
+MCO,Monaco,1989,80
+GBR,United Kingdom of Great Britain and Northern Ireland,1989,88607
+LVA,Latvia,1989,9494
+ECU,Ecuador,1988,10719
+MMR,Myanmar,1988,12268
+DNK,Denmark,1988,12410
+TJK,Tajikistan,1988,13517
+ISR,Israel,1988,13605
+FIN,Finland,1988,13938
+ESP,Spain,1988,138994
+LTU,Lithuania,1988,14293
+KGZ,Kyrgyzstan,1988,14372
+MDA,Republic of Moldova,1988,15203
+CHE,Switzerland,1988,19641
+JPN,Japan,1988,193704
+AUT,Austria,1988,21258
+LKA,Sri Lanka,1988,2316
+ITA,Italy,1988,245898
+SWE,Sweden,1988,25728
+PRT,Portugal,1988,26887
+BGR,Bulgaria,1988,27750
+CZE,Czechia,1988,27910
+COL,Colombia,1988,29492
+HUN,Hungary,1988,29671
+BEL,Belgium,1988,30687
+KOR,Republic of Korea,1988,31197
+GRC,Greece,1988,32145
+AUS,Australia,1988,34763
+NLD,Netherlands (Kingdom of the),1988,35852
+SVN,Slovenia,1988,4040
+ROU,Romania,1988,41616
+TUR,Türkiye,1988,42502
+EST,Estonia,1988,5435
+IRL,Ireland,1988,5590
+RUS,Russian Federation,1988,591786
+NZL,New Zealand,1988,6174
+KAZ,Kazakhstan,1988,63345
+UZB,Uzbekistan,1988,65805
+BIH,Bosnia and Herzegovina,1988,6683
+ISL,Iceland,1988,675
+MLT,Malta,1988,700
+LUX,Luxembourg,1988,709
+POL,Poland,1988,78662
+GBR,United Kingdom of Great Britain and Northern Ireland,1988,86903
+HRV,Croatia,1988,9955
+NOR,Norway,1987,10482
+DNK,Denmark,1987,12050
+ISR,Israel,1987,13323
+FIN,Finland,1987,13537
+KGZ,Kyrgyzstan,1987,13833
+LTU,Lithuania,1987,13947
+ESP,Spain,1987,135406
+CHE,Switzerland,1987,19021
+AUT,Austria,1987,20489
+ITA,Italy,1987,235458
+SWE,Sweden,1987,24647
+PRT,Portugal,1987,26472
+BGR,Bulgaria,1987,27107
+CZE,Czechia,1987,27145
+COL,Colombia,1987,27688
+KOR,Republic of Korea,1987,28204
+HUN,Hungary,1987,29459
+BEL,Belgium,1987,29821
+AUS,Australia,1987,33494
+NLD,Netherlands (Kingdom of the),1987,34573
+TUR,Türkiye,1987,38829
+SVN,Slovenia,1987,3997
+ROU,Romania,1987,41059
+EST,Estonia,1987,5388
+IRL,Ireland,1987,5500
+RUS,Russian Federation,1987,582148
+NZL,New Zealand,1987,6095
+KAZ,Kazakhstan,1987,61290
+ISL,Iceland,1987,665
+LUX,Luxembourg,1987,666
+POL,Poland,1987,77496
+GBR,United Kingdom of Great Britain and Northern Ireland,1987,85284
+THA,Thailand,1987,9580
+HRV,Croatia,1987,9792
+ECU,Ecuador,1987,9901
+DNK,Denmark,1986,12007
+ISR,Israel,1986,13008
+FIN,Finland,1986,13079
+KGZ,Kyrgyzstan,1986,13162
+LTU,Lithuania,1986,13555
+ESP,Spain,1986,131080
+CHE,Switzerland,1986,18366
+JPN,Japan,1986,183129
+AUT,Austria,1986,20228
+LKA,Sri Lanka,1986,2217
+ITA,Italy,1986,224976
+SWE,Sweden,1986,23612
+PRT,Portugal,1986,25608
+COL,Colombia,1986,25641
+BGR,Bulgaria,1986,26451
+KOR,Republic of Korea,1986,26587
+CZE,Czechia,1986,26957
+HUN,Hungary,1986,28309
+BEL,Belgium,1986,28826
+AUS,Australia,1986,32137
+NLD,Netherlands (Kingdom of the),1986,33330
+TUR,Türkiye,1986,37442
+SVN,Slovenia,1986,3837
+ROU,Romania,1986,40706
+EST,Estonia,1986,5221
+RUS,Russian Federation,1986,567832
+IRL,Ireland,1986,5680
+NZL,New Zealand,1986,5747
+KAZ,Kazakhstan,1986,59459
+ISL,Iceland,1986,632
+LUX,Luxembourg,1986,686
+POL,Poland,1986,75473
+GBR,United Kingdom of Great Britain and Northern Ireland,1986,81515
+ECU,Ecuador,1986,8742
+CYP,Cyprus,1986,911
+NOR,Norway,1986,9443
+HRV,Croatia,1986,9522
+ZWE,Zimbabwe,1985,1058
+DNK,Denmark,1985,11765
+FIN,Finland,1985,12652
+ISR,Israel,1985,12728
+LTU,Lithuania,1985,13090
+KGZ,Kyrgyzstan,1985,13489
+CYP,Cyprus,1985,1692
+CHE,Switzerland,1985,17667
+AUT,Austria,1985,19416
+ITA,Italy,1985,215206
+SWE,Sweden,1985,22485
+CUB,Cuba,1985,22910
+COL,Colombia,1985,23481
+PRT,Portugal,1985,24588
+KOR,Republic of Korea,1985,24830
+BGR,Bulgaria,1985,25665
+CZE,Czechia,1985,26649
+HUN,Hungary,1985,27978
+BEL,Belgium,1985,27989
+AUS,Australia,1985,30168
+NLD,Netherlands (Kingdom of the),1985,32193
+TUR,Türkiye,1985,36427
+SVN,Slovenia,1985,3712
+ROU,Romania,1985,40050
+EST,Estonia,1985,5089
+USA,United States of America,1985,525070
+RUS,Russian Federation,1985,553673
+NZL,New Zealand,1985,5556
+KAZ,Kazakhstan,1985,57269
+IRL,Ireland,1985,5750
+ISL,Iceland,1985,626
+LUX,Luxembourg,1985,663
+CHN,China,1985,724238
+POL,Poland,1985,73199
+ESP,Spain,1985,78700
+GBR,United Kingdom of Great Britain and Northern Ireland,1985,80763
+THA,Thailand,1985,8530
+HRV,Croatia,1985,9139
+NOR,Norway,1985,9176
+ECU,Ecuador,1985,9414
+OMN,Oman,1985,958
+DNK,Denmark,1984,11558
+ISR,Israel,1984,12446
+KGZ,Kyrgyzstan,1984,12836
+LTU,Lithuania,1984,12879
+ESP,Spain,1984,121362
+CHE,Switzerland,1984,16928
+JPN,Japan,1984,173452
+AUT,Austria,1984,18978
+SWE,Sweden,1984,21462
+COL,Colombia,1984,21709
+KOR,Republic of Korea,1984,23043
+PRT,Portugal,1984,24150
+BGR,Bulgaria,1984,24718
+CZE,Czechia,1984,25859
+HUN,Hungary,1984,26268
+BEL,Belgium,1984,27096
+AUS,Australia,1984,28524
+NLD,Netherlands (Kingdom of the),1984,31185
+TUR,Türkiye,1984,34195
+NZL,New Zealand,1984,5437
+KAZ,Kazakhstan,1984,55105
+ISL,Iceland,1984,574
+EST,Estonia,1984,6066
+LUX,Luxembourg,1984,637
+POL,Poland,1984,71012
+GBR,United Kingdom of Great Britain and Northern Ireland,1984,79578
+HRV,Croatia,1984,8739
+ECU,Ecuador,1984,8742
+DNK,Denmark,1983,10820
+KGZ,Kyrgyzstan,1983,11369
+ISR,Israel,1983,11946
+ESP,Spain,1983,115251
+LTU,Lithuania,1983,12540
+CHE,Switzerland,1983,16700
+AUT,Austria,1983,18343
+KOR,Republic of Korea,1983,21749
+PRT,Portugal,1983,23067
+BGR,Bulgaria,1983,24026
+CZE,Czechia,1983,25341
+HUN,Hungary,1983,25724
+BEL,Belgium,1983,27726
+NLD,Netherlands (Kingdom of the),1983,29951
+AUS,Australia,1983,29956
+TUR,Türkiye,1983,32263
+KAZ,Kazakhstan,1983,52702
+NZL,New Zealand,1983,5403
+ISL,Iceland,1983,545
+EST,Estonia,1983,5916
+LUX,Luxembourg,1983,627
+POL,Poland,1983,69231
+ECU,Ecuador,1983,7750
+GBR,United Kingdom of Great Britain and Northern Ireland,1983,78737
+THA,Thailand,1983,7848
+HRV,Croatia,1983,8609
+DNK,Denmark,1982,10475
+KGZ,Kyrgyzstan,1982,10813
+ESP,Spain,1982,104759
+ISR,Israel,1982,11520
+LTU,Lithuania,1982,12109
+CHE,Switzerland,1982,16500
+JPN,Japan,1982,160379
+AUT,Austria,1982,17670
+KOR,Republic of Korea,1982,21551
+PRT,Portugal,1982,22154
+BGR,Bulgaria,1982,23081
+CZE,Czechia,1982,24584
+BEL,Belgium,1982,24831
+HUN,Hungary,1982,25538
+NLD,Netherlands (Kingdom of the),1982,28807
+AUS,Australia,1982,28821
+TUR,Türkiye,1982,30956
+KAZ,Kazakhstan,1982,49625
+NZL,New Zealand,1982,5210
+ISL,Iceland,1982,532
+EST,Estonia,1982,5702
+LUX,Luxembourg,1982,605
+POL,Poland,1982,67002
+ECU,Ecuador,1982,7228
+GBR,United Kingdom of Great Britain and Northern Ireland,1982,75218
+HRV,Croatia,1982,8348
+ISR,Israel,1981,11158
+LTU,Lithuania,1981,11718
+JPN,Japan,1981,155422
+CHE,Switzerland,1981,16313
+AUT,Austria,1981,17159
+KOR,Republic of Korea,1981,19275
+PRT,Portugal,1981,21044
+BGR,Bulgaria,1981,22088
+BEL,Belgium,1981,23932
+CZE,Czechia,1981,23936
+HUN,Hungary,1981,24958
+AUS,Australia,1981,27710
+NLD,Netherlands (Kingdom of the),1981,28037
+TUR,Türkiye,1981,28411
+KAZ,Kazakhstan,1981,47557
+NZL,New Zealand,1981,5037
+ISL,Iceland,1981,509
+EST,Estonia,1981,5500
+LUX,Luxembourg,1981,563
+POL,Poland,1981,64896
+ECU,Ecuador,1981,6545
+THA,Thailand,1981,6931
+GBR,United Kingdom of Great Britain and Northern Ireland,1981,76042
+HRV,Croatia,1981,7997
+DNK,Denmark,1981,9396
+ESP,Spain,1981,96569
+KGZ,Kyrgyzstan,1980,10609
+ISR,Israel,1980,10801
+LTU,Lithuania,1980,11347
+ITA,Italy,1980,148101
+JPN,Japan,1980,148815
+CUB,Cuba,1980,15247
+CHE,Switzerland,1980,15588
+FIN,Finland,1980,16204
+AUT,Austria,1980,16662
+PRT,Portugal,1980,19364
+LKA,Sri Lanka,1980,2055
+BGR,Bulgaria,1980,21796
+BEL,Belgium,1980,22759
+CZE,Czechia,1980,23303
+HUN,Hungary,1980,24510
+NLD,Netherlands (Kingdom of the),1980,26987
+AUS,Australia,1980,27160
+TUR,Türkiye,1980,27241
+ROU,Romania,1980,32762
+SVN,Slovenia,1980,3358
+KAZ,Kazakhstan,1980,45400
+ISL,Iceland,1980,488
+NZL,New Zealand,1980,4881
+OMN,Oman,1980,514
+EST,Estonia,1980,5345
+CYP,Cyprus,1980,560
+LUX,Luxembourg,1980,621
+POL,Poland,1980,63577
+ESP,Spain,1980,68900
+CHN,China,1980,709473
+GBR,United Kingdom of Great Britain and Northern Ireland,1980,74209
+HRV,Croatia,1980,7668
+NOR,Norway,1980,8050
+DNK,Denmark,1980,9083
+ISR,Israel,1979,10140
+CHE,Switzerland,1979,14843
+JPN,Japan,1979,143125
+AUT,Austria,1979,16125
+PRT,Portugal,1979,17483
+BGR,Bulgaria,1979,21249
+BEL,Belgium,1979,22037
+GRC,Greece,1979,22337
+CZE,Czechia,1979,22568
+AUS,Australia,1979,25812
+NLD,Netherlands (Kingdom of the),1979,25947
+TUR,Türkiye,1979,26298
+HUN,Hungary,1979,26311
+NZL,New Zealand,1979,4557
+ISL,Iceland,1979,459
+EST,Estonia,1979,5181
+LUX,Luxembourg,1979,575
+POL,Poland,1979,61460
+THA,Thailand,1979,6619
+GBR,United Kingdom of Great Britain and Northern Ireland,1979,72293
+ESP,Spain,1979,81658
+CHE,Switzerland,1978,13908
+JPN,Japan,1978,136164
+PRT,Portugal,1978,15382
+AUT,Austria,1978,15676
+BGR,Bulgaria,1978,20454
+BEL,Belgium,1978,21142
+GRC,Greece,1978,21320
+CZE,Czechia,1978,21929
+NLD,Netherlands (Kingdom of the),1978,24878
+TUR,Türkiye,1978,25230
+HUN,Hungary,1978,25444
+AUS,Australia,1978,26591
+NZL,New Zealand,1978,4377
+ISL,Iceland,1978,439
+EST,Estonia,1978,5067
+LUX,Luxembourg,1978,530
+POL,Poland,1978,59155
+CHN,China,1978,609608
+GBR,United Kingdom of Great Britain and Northern Ireland,1978,68325
+ESP,Spain,1978,75081
+ISR,Israel,1978,9488
+CHE,Switzerland,1977,13149
+PRT,Portugal,1977,13245
+JPN,Japan,1977,131628
+AUT,Austria,1977,15232
+BEL,Belgium,1977,19706
+BGR,Bulgaria,1977,19879
+GRC,Greece,1977,20484
+CZE,Czechia,1977,21392
+AUS,Australia,1977,23406
+NLD,Netherlands (Kingdom of the),1977,23769
+TUR,Türkiye,1977,23920
+HUN,Hungary,1977,24793
+ISL,Iceland,1977,424
+NZL,New Zealand,1977,4257
+LUX,Luxembourg,1977,455
+EST,Estonia,1977,4893
+POL,Poland,1977,57321
+THA,Thailand,1977,5790
+GBR,United Kingdom of Great Britain and Northern Ireland,1977,66846
+ESP,Spain,1977,69080
+ISR,Israel,1977,8995
+PRT,Portugal,1976,11300
+CHE,Switzerland,1976,12562
+JPN,Japan,1976,128448
+AUT,Austria,1976,14760
+BEL,Belgium,1976,18761
+BGR,Bulgaria,1976,19312
+GRC,Greece,1976,19340
+CZE,Czechia,1976,20781
+TUR,Türkiye,1976,22588
+NLD,Netherlands (Kingdom of the),1976,22913
+AUS,Australia,1976,23034
+HUN,Hungary,1976,24157
+NZL,New Zealand,1976,4048
+ISL,Iceland,1976,408
+LUX,Luxembourg,1976,456
+EST,Estonia,1976,4723
+CYP,Cyprus,1976,478
+POL,Poland,1976,55772
+ESP,Spain,1976,64597
+GBR,United Kingdom of Great Britain and Northern Ireland,1976,65449
+ISR,Israel,1976,8496
+PRT,Portugal,1975,10474
+CHE,Switzerland,1975,11910
+JPN,Japan,1975,125970
+AUT,Austria,1975,14187
+OMN,Oman,1975,147
+GRC,Greece,1975,18421
+BEL,Belgium,1975,18506
+BGR,Bulgaria,1975,18770
+CZE,Czechia,1975,20237
+AUS,Australia,1975,20524
+TUR,Türkiye,1975,21714
+NLD,Netherlands (Kingdom of the),1975,21892
+HUN,Hungary,1975,23588
+ISL,Iceland,1975,400
+LUX,Luxembourg,1975,452
+EST,Estonia,1975,4544
+THA,Thailand,1975,5005
+POL,Poland,1975,54461
+ESP,Spain,1975,54533
+GBR,United Kingdom of Great Britain and Northern Ireland,1975,64107
+ISR,Israel,1975,8064
+CUB,Cuba,1975,9328
+CHE,Switzerland,1974,11326
+JPN,Japan,1974,122096
+AUT,Austria,1974,13741
+BEL,Belgium,1974,17272
+GRC,Greece,1974,17942
+BGR,Bulgaria,1974,18238
+AUS,Australia,1974,19460
+CZE,Czechia,1974,19764
+NLD,Netherlands (Kingdom of the),1974,20200
+TUR,Türkiye,1974,20868
+HUN,Hungary,1974,23095
+ISL,Iceland,1974,372
+LUX,Luxembourg,1974,425
+EST,Estonia,1974,4412
+POL,Poland,1974,53414
+ESP,Spain,1974,54533
+GBR,United Kingdom of Great Britain and Northern Ireland,1974,61884
+ISR,Israel,1974,7706
+PRT,Portugal,1974,9875
+CHE,Switzerland,1973,10751
+JPN,Japan,1973,120107
+AUT,Austria,1973,13377
+BEL,Belgium,1973,16478
+GRC,Greece,1973,16984
+BGR,Bulgaria,1973,17601
+AUS,Australia,1973,18225
+TUR,Türkiye,1973,18511
+CZE,Czechia,1973,19293
+NLD,Netherlands (Kingdom of the),1973,19330
+HUN,Hungary,1973,22510
+ISL,Iceland,1973,343
+NZL,New Zealand,1973,3444
+LUX,Luxembourg,1973,410
+EST,Estonia,1973,4312
+THA,Thailand,1973,4607
+ESP,Spain,1973,51594
+POL,Poland,1973,51672
+GBR,United Kingdom of Great Britain and Northern Ireland,1973,60575
+ISR,Israel,1973,6988
+PRT,Portugal,1973,8787
+CHE,Switzerland,1972,10207
+JPN,Japan,1972,119084
+AUT,Austria,1972,12938
+GRC,Greece,1972,15351
+BEL,Belgium,1972,15888
+BGR,Bulgaria,1972,17023
+TUR,Türkiye,1972,17034
+NLD,Netherlands (Kingdom of the),1972,18142
+AUS,Australia,1972,18369
+CZE,Czechia,1972,18836
+HUN,Hungary,1972,21983
+ISL,Iceland,1972,333
+LUX,Luxembourg,1972,403
+EST,Estonia,1972,4120
+ESP,Spain,1972,49256
+POL,Poland,1972,49957
+GBR,United Kingdom of Great Britain and Northern Ireland,1972,58751
+ISR,Israel,1972,6337
+PRT,Portugal,1972,8547
+JPN,Japan,1971,116746
+AUT,Austria,1971,12748
+GRC,Greece,1971,14883
+BEL,Belgium,1971,14887
+BGR,Bulgaria,1971,16183
+TUR,Türkiye,1971,16514
+AUS,Australia,1971,16525
+NLD,Netherlands (Kingdom of the),1971,17381
+CZE,Czechia,1971,18349
+HUN,Hungary,1971,21450
+ISL,Iceland,1971,305
+NZL,New Zealand,1971,3080
+LUX,Luxembourg,1971,397
+EST,Estonia,1971,3985
+THA,Thailand,1971,4085
+ESP,Spain,1971,47419
+POL,Poland,1971,48207
+GBR,United Kingdom of Great Britain and Northern Ireland,1971,56710
+ISR,Israel,1971,5686
+PRT,Portugal,1971,8006
+CHE,Switzerland,1971,9655
+JPN,Japan,1970,113214
+AUT,Austria,1970,12438
+OMN,Oman,1970,13
+TUR,Türkiye,1970,13843
+GRC,Greece,1970,14263
+BGR,Bulgaria,1970,15819
+NLD,Netherlands (Kingdom of the),1970,16292
+AUS,Australia,1970,16697
+CZE,Czechia,1970,17539
+HUN,Hungary,1970,20877
+ROU,Romania,1970,24000
+ISL,Iceland,1970,291
+LUX,Luxembourg,1970,384
+EST,Estonia,1970,3860
+ESP,Spain,1970,45335
+POL,Poland,1970,46466
+HRV,Croatia,1970,5024
+CYP,Cyprus,1970,512
+GBR,United Kingdom of Great Britain and Northern Ireland,1970,52516
+FIN,Finland,1970,5326
+ISR,Israel,1970,5354
+NOR,Norway,1970,5361
+ITA,Italy,1970,58297
+LTU,Lithuania,1970,7263
+PRT,Portugal,1970,7752
+CHE,Switzerland,1970,9224
+ESP,Spain,1969,44102
+ESP,Spain,1968,42460
+ESP,Spain,1967,41932
+ESP,Spain,1966,40840
+ESP,Spain,1965,39709
+CYP,Cyprus,1965,448
+ESP,Spain,1964,39064
+ESP,Spain,1963,37743
+ESP,Spain,1962,37374
+ESP,Spain,1961,36562
+ESP,Spain,1960,35685
+CYP,Cyprus,1960,391
+ESP,Spain,1959,35228
+ESP,Spain,1958,34583
+ESP,Spain,1957,33337
+ESP,Spain,1956,32477
+ESP,Spain,1955,32018
+ESP,Spain,1954,31618

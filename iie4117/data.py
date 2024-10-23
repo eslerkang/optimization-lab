@@ -1,57 +1,276 @@
-난 대한민국의 의대 정원을 늘리거나 현행을 유지하거나에 대한 의사결정을 진행해 보고서를 작성해야 해. 이를 위해 필요한 데이터를 수집하고, 수리적 모델을 통해 향후 인구 대비 의사 수나 평균 진료 시간, 또는 응급실 bed 수 등을 다양하게 고려해서 의대 증원에 대한 인사이트를 도출하고자 해. 우선 나는 국가/연도별 인구 수, specialist medical practitioners, general medical practitioners, medical doctors 수에 대한 데이터를 각각 수집해봤어. 이 외에 내가 준비해야 할 데이터가 있을까? 너가 PM으로서 나에게 어떤 식으로 진행해야 할지 계획해주고, 순차적으로 진행함에 따라 올바르게 하고 있는지 확인하며 같이 해줘
+import pandas as pd
+import matplotlib.pyplot as plt
 
 
+def load_data():
+    oecd_data = pd.read_csv("oecd data.csv")
+    population_forecast = pd.read_csv("korea population forecast.csv")
+    hospital_use_rate = pd.read_csv("korea hospital use rate.csv")
+    return oecd_data, population_forecast, hospital_use_rate
 
 
+def calculate_oecd_average_doctor_ratio(oecd_data):
+    oecd_data["doctor_ratio"] = oecd_data["doctors_count"] / oecd_data["population"]
+    latest_year = oecd_data["year"].max()
+    latest_data = oecd_data[oecd_data["year"] == latest_year]
+    return latest_data["doctor_ratio"].mean()
 
-안녕하세요. 의대 정원 조정에 관한 중요한 프로젝트를 맡으셨군요. 이는 매우 복잡하고 민감한 주제이므로 철저한 분석과 신중한 접근이 필요합니다. 제가 PM으로서 프로젝트 계획과 추가 데이터 수집에 대해 조언해 드리겠습니다.
-먼저, 추가로 수집해야 할 데이터는 다음과 같습니다:
-의료 서비스 수요 관련 데이터:
-연령별 인구 구조 및 예측
-주요 질병 발생률 및 추세
-의료 서비스 이용률
-의료 시스템 현황 데이터:
-병원 수 및 분포
-병상 수 (일반 병상 및 응급실 병상)
-의료 장비 현황
-의료 인력 관련 데이터:
-의사 연령 분포 및 은퇴 예측
-의대 졸업생 수 및 추세
-전문의 분야별 분포
-의료 서비스 질 관련 데이터:
-평균 진료 시간
-환자 대기 시간
-의료 서비스 만족도
-경제적 요인:
-의료비 지출 현황 및 예측
-GDP 대비 의료비 지출 비율
-국제 비교 데이터:
-OECD 국가들의 인구 대비 의사 수
-의료 시스템 효율성 지표
-이제 프로젝트 진행 계획을 단계별로 설명해 드리겠습니다:
-데이터 수집 및 정제
-위에서 언급한 모든 데이터를 수집하고 정제합니다.
-데이터의 신뢰성과 일관성을 확인합니다.
-현황 분석
-수집된 데이터를 바탕으로 현재 의료 시스템의 상태를 분석합니다.
-주요 문제점과 개선이 필요한 영역을 식별합니다.
-수리적 모델 개발
-인구 변화, 의사 수 변화, 의료 서비스 수요 등을 고려한 수리적 모델을 개발합니다.
-모델의 정확성을 검증하고 필요시 조정합니다.
-시나리오 분석
-의대 정원 유지, 증원, 감원 등 다양한 시나리오를 설정합니다.
-각 시나리오에 따른 장기적 영향을 모델을 통해 예측합니다.
-비용-편익 분석
-각 시나리오에 대한 경제적, 사회적 비용과 편익을 분석합니다.
-국제 비교 분석
-OECD 국가들과의 비교를 통해 한국의 현재 위치와 개선 가능성을 평가합니다.
-정책 제안 도출
-분석 결과를 바탕으로 최적의 정책 방향을 제안합니다.
-단기, 중기, 장기적 관점에서의 권고사항을 작성합니다.
-보고서 작성 및 검토
-모든 분석 결과와 제안을 종합한 보고서를 작성합니다.
-전문가 검토를 거쳐 보고서의 완성도를 높입니다.
-발표 자료 준비 및 최종 보고
-주요 이해관계자들에게 발표할 자료를 준비합니다.
-최종 보고 및 질의응답 세션을 진행합니다.
-각 단계를 진행하면서 지속적으로 소통하며, 진행 상황과 중간 결과를 공유해 주시기 바랍니다. 그러면 제가 각 단계에서 필요한 조언과 피드백을 드리도록 하겠습니다. 첫 번째 단계인 데이터 수집 및 정제부터 시작해 보시겠습니까?
+
+def predict_future_doctor_demand(
+    population_forecast, hospital_use_rate, oecd_average_ratio
+):
+    latest_year = hospital_use_rate["year"].max()
+    latest_use_rate = hospital_use_rate[hospital_use_rate["year"] == latest_year]
+
+    male_use_rate = (
+        latest_use_rate[
+            (latest_use_rate["category"] == "성별")
+            & (latest_use_rate["subcategory"] == "남성")
+        ]["outpatient"].values[0]
+        + latest_use_rate[
+            (latest_use_rate["category"] == "성별")
+            & (latest_use_rate["subcategory"] == "남성")
+        ]["inpatient"].values[0]
+    )
+    female_use_rate = (
+        latest_use_rate[
+            (latest_use_rate["category"] == "성별")
+            & (latest_use_rate["subcategory"] == "여성")
+        ]["outpatient"].values[0]
+        + latest_use_rate[
+            (latest_use_rate["category"] == "성별")
+            & (latest_use_rate["subcategory"] == "여성")
+        ]["inpatient"].values[0]
+    )
+
+    future_demand = {}
+    for year in population_forecast["year"].unique():
+        year_data = population_forecast[population_forecast["year"] == year]
+        male_pop = year_data[
+            (year_data["category"] == "성별") & (year_data["subcategory"] == "남성")
+        ]["population"].values[0]
+        female_pop = year_data[
+            (year_data["category"] == "성별") & (year_data["subcategory"] == "여성")
+        ]["population"].values[0]
+
+        weighted_population = (
+            male_pop * male_use_rate + female_pop * female_use_rate
+        ) / 100
+        future_demand[year] = weighted_population * oecd_average_ratio
+
+    return pd.Series(future_demand)
+
+
+def predict_future_doctors_and_graduates(
+    oecd_data, population_forecast, retirement_rate
+):
+    korea_data = oecd_data[oecd_data["country_code"] == "KOR"].sort_values("year")
+
+    current_year = korea_data["year"].max()
+    current_doctors = korea_data[korea_data["year"] == current_year][
+        "doctors_count"
+    ].values[0]
+    current_graduates = korea_data["graduates_count"].tail(6).mean()
+
+    forecast_years = population_forecast["year"].unique()
+
+    future_doctors = []
+    future_graduates = []
+
+    for i in range(len(forecast_years)):
+        if i == 0:
+            doctors = current_doctors
+        else:
+            doctors = future_doctors[-1]
+
+        retired_doctors = int(doctors * retirement_rate)
+        new_doctors = int(current_graduates)
+        doctors = doctors - retired_doctors + new_doctors
+
+        future_doctors.append(doctors)
+        future_graduates.append(new_doctors)
+
+    return pd.DataFrame(
+        {
+            "year": forecast_years,
+            "predicted_doctors": future_doctors,
+            "predicted_graduates": future_graduates,
+        }
+    )
+
+
+def calculate_required_increase(combined_data, education_years=6, tolerance_ratio=0.05):
+    required_increase = []
+    for i, row in combined_data.iterrows():
+        if i < education_years:
+            required_increase.append(0)
+            continue
+
+        current_demand = row["predicted_demand"]
+        future_doctors = (
+            combined_data.iloc[i]["new_predicted_doctors"]
+            if i < len(combined_data) - education_years
+            else combined_data.iloc[-1]["new_predicted_doctors"]
+        )
+
+        # 현재 진행 중인 증원의 효과를 고려
+        ongoing_increase = sum(required_increase[max(0, i - education_years) : i])
+        future_doctors += ongoing_increase
+
+        shortage = current_demand - future_doctors
+
+        # 수요와 공급의 차이가 허용 범위 내인 경우 증원하지 않음
+        if abs(shortage) / current_demand <= tolerance_ratio:
+            required_increase.append(0)
+        else:
+            required_increase.append(max(0, int(shortage / education_years)))
+
+    return required_increase
+
+
+# 데이터 로드 및 예측 실행
+oecd_data, population_forecast, hospital_use_rate = load_data()
+oecd_average_ratio = calculate_oecd_average_doctor_ratio(oecd_data)
+
+first_year = population_forecast["year"].unique()[0]
+year_data = population_forecast[population_forecast["year"] == first_year]
+total_population = year_data[year_data["category"] == "성별"]["population"].sum()
+over_60_population = year_data[
+    (year_data["category"] == "연령") & (year_data["subcategory"] == "60세 이상")
+]["population"].values[0]
+retirement_rate = (over_60_population / total_population) / 5
+
+future_demand = predict_future_doctor_demand(
+    population_forecast, hospital_use_rate, oecd_average_ratio
+)
+future_doctors_and_graduates = predict_future_doctors_and_graduates(
+    oecd_data, population_forecast, retirement_rate
+)
+
+# 데이터 병합 및 증원량 계산
+future_demand_df = pd.DataFrame(
+    {"year": future_demand.index, "predicted_demand": future_demand.values}
+)
+combined_data = pd.merge(future_doctors_and_graduates, future_demand_df, on="year")
+
+# 새로운 의사 수와 졸업생 수 계산을 위한 반복문
+new_graduates = combined_data["predicted_graduates"].tolist()
+new_doctors = [combined_data.iloc[0]["predicted_doctors"]]
+
+for i in range(1, len(combined_data)):
+    current_doctors = new_doctors[-1]
+    retired_doctors = int(current_doctors * retirement_rate)
+    new_doctor_graduates = new_graduates[i]
+    doctors = current_doctors - retired_doctors + new_doctor_graduates
+    new_doctors.append(doctors)
+
+combined_data["new_predicted_doctors"] = new_doctors
+combined_data["new_graduates"] = new_graduates
+
+required_increase = calculate_required_increase(combined_data)
+combined_data["required_increase"] = required_increase
+
+# 증원을 반영한 새로운 졸업생 수와 의사 수 계산
+for i in range(6, len(combined_data)):
+    combined_data.loc[i, "new_graduates"] += combined_data.loc[
+        i - 6, "required_increase"
+    ]
+
+new_doctors = [combined_data.iloc[0]["predicted_doctors"]]
+for i in range(1, len(combined_data)):
+    current_doctors = new_doctors[-1]
+    retired_doctors = int(current_doctors * retirement_rate)
+    new_doctor_graduates = combined_data.loc[i, "new_graduates"]
+    doctors = current_doctors - retired_doctors + new_doctor_graduates
+    new_doctors.append(doctors)
+
+combined_data["new_predicted_doctors"] = new_doctors
+
+print("Predicted future doctors, graduates, demand, and required increase:")
+print(combined_data)
+combined_data.to_csv("combined.csv", index=False)
+
+print(f"Retirement rate: {retirement_rate:.4f}")
+print(f"Initial number of doctors: {combined_data.iloc[0]['predicted_doctors']}")
+print(f"Initial number of graduates: {combined_data.iloc[0]['predicted_graduates']}")
+print(
+    f"Final number of doctors (without increase): {combined_data.iloc[-1]['predicted_doctors']}"
+)
+print(
+    f"Final number of doctors (with increase): {combined_data.iloc[-1]['new_predicted_doctors']}"
+)
+print(
+    f"Final number of graduates (with increase): {combined_data.iloc[-1]['new_graduates']}"
+)
+print(f"Final demand: {combined_data.iloc[-1]['predicted_demand']}")
+
+plt.figure(figsize=(16, 10))  # 그래프 크기를 더 크게 조정
+
+plt.plot(
+    combined_data["year"],
+    combined_data["predicted_doctors"],
+    label="Predicted Doctors (Original)",
+    color="blue",
+    linestyle="--",
+)
+plt.plot(
+    combined_data["year"],
+    combined_data["new_predicted_doctors"],
+    label="Predicted Doctors (With Increase)",
+    color="darkblue",
+)
+plt.plot(
+    combined_data["year"],
+    combined_data["predicted_demand"],
+    label="Predicted Demand",
+    color="red",
+)
+
+plt.title("Predicted Doctors, Demand, and Graduates in Korea", fontsize=16)
+plt.xlabel("Year", fontsize=12)
+plt.ylabel("Number of Doctors", fontsize=12)
+plt.grid(True, alpha=0.3)
+
+plt.ylim(
+    0,
+    max(
+        combined_data["predicted_demand"].max(),
+        combined_data["new_predicted_doctors"].max(),
+    )
+    * 1.1,
+)
+
+ax2 = plt.twinx()
+ax2.plot(
+    combined_data["year"],
+    combined_data["predicted_graduates"],
+    label="Current Graduates",
+    color="limegreen",
+    linestyle="--",
+)
+ax2.plot(
+    combined_data["year"],
+    combined_data["new_graduates"],
+    label="New Graduates",
+    color="darkgreen",
+)
+ax2.set_ylabel("Annual Number of Graduates", color="darkgreen", fontsize=12)
+ax2.tick_params(axis="y", labelcolor="darkgreen")
+
+# 범례 위치 조정
+lines1, labels1 = plt.gca().get_legend_handles_labels()
+lines2, labels2 = ax2.get_legend_handles_labels()
+plt.legend(
+    lines1 + lines2,
+    labels1 + labels2,
+    loc="upper center",
+    bbox_to_anchor=(0.5, -0.15),
+    ncol=3,
+    fancybox=True,
+    shadow=True,
+    fontsize=10,
+)
+
+plt.tight_layout()
+plt.subplots_adjust(bottom=0.2)  # 그래프 아래쪽 여백 추가
+plt.show()
