@@ -19,7 +19,7 @@ holding_cost = 100  # 드럼당 연간 재고 유지 비용
 fulfillment_cost = 150  # 드럼당 고객 이행 비용
 
 # 새로운 매개변수
-capacity = 45  # 생산 용량
+capacity = 20  # 생산 용량
 
 # 예시 값
 annual_demand = 14305.5  # 연간 수요
