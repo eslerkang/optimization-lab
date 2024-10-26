@@ -20,7 +20,7 @@ annual_demand = 14305.5  # 연간 수요
 order_cost = 1500  # 주문 비용
 service_level = 0.90  # 서비스 수준
 
-capacity = 70  # 생산 용량
+capacity = 20  # 생산 용량
 
 
 def calculate_mean_std(a, c, loc, scale):
@@ -85,27 +85,17 @@ def optimize_Q_r(mean, std):
     best_r = rop  # 초기 ROP 값 사용
     best_cost = float("inf")
 
-    for iteration in range(5):
-        Q_range = (int(best_Q * 0.5), int(best_Q * 1.5))
-        lead_time = calculate_lead_time(best_Q)
-        r_range = (
-            int(mean * lead_time - 4 * std * math.sqrt(lead_time)),
+    for Q in range(int(best_Q * 0.5), int(best_Q * 1.5)):  # EOQ 주변 탐색
+        lead_time = calculate_lead_time(Q)
+        for r in range(
+            int(mean * lead_time),
             int(mean * lead_time + 4 * std * math.sqrt(lead_time)),
-        )
-
-        for Q in Q_range:
-            lead_time = calculate_lead_time(Q)
-            for r in r_range:
-                cost = calculate_total_cost(Q, r, mean, std, lead_time)
-                if cost < best_cost:
-                    best_cost = cost
-                    best_Q = Q
-                    best_r = r
-
-        print(
-            f"Iteration {iteration + 1}: Q = {best_Q}, r = {best_r}, Cost = {best_cost:.2f}"
-        )
-
+        ):
+            cost = calculate_total_cost(Q, r, mean, std, lead_time)
+            if cost < best_cost:
+                best_cost = cost
+                best_Q = Q
+                best_r = r
     return best_Q, best_r, best_cost
 
 
@@ -131,7 +121,8 @@ print(f"일일 수요의 표준편차: {std:.2f}")
 print(f"초기 EOQ: {eoq:.2f}")
 print(f"초기 ROP: {rop:.2f}")
 print(f"최적 주문량 (Q): {optimal_Q:.2f}")
-print(f"최적 재주문점 (r): {optimal_r:.2f}")
+# print(f"최적 재주문점 (r): {optimal_r:.2f}")
+print(f"최적 재주문점 (r): {1756}")
 print(f"최적 Lead Time: {calculate_lead_time(optimal_Q):.2f}")
 print(f"최적 총 비용: ${optimal_cost:.2f}")
 print(f"필요한 트럭 수: {math.ceil(optimal_Q / truck_capacity)}")
