@@ -64,26 +64,41 @@ for region in regions:
     regional_kmf[region] = kmf
 
 # 그래프 생성
-plt.figure(figsize=(12, 8))
-ax = plt.subplot(111)
+plt.figure(figsize=(20, 16))
 
-# KM 곡선 그리기
-kmf_pre_ww1.plot(ax=ax, ci_show=True)
-kmf_post_ww1.plot(ax=ax, ci_show=True)
-kmf_pre_ww2.plot(ax=ax, ci_show=True)
-kmf_post_ww2.plot(ax=ax, ci_show=True)
-
-# at-risk 수 추가
-from lifelines.plotting import add_at_risk_counts
-
-add_at_risk_counts(kmf_pre_ww1, kmf_post_ww1, ax=ax)
-add_at_risk_counts(kmf_pre_ww2, kmf_post_ww2, ax=ax)
-
-# 그래프 꾸미기
-plt.title("Kaplan-Meier Survival Curves for Wars Before and After WW1")
+# WW1 분석 그래프
+plt.subplot(221)
+kmf_pre_ww1.plot(ci_show=True)
+kmf_post_ww1.plot(ci_show=True)
+plt.title("Wars Before and After WW1")
 plt.xlabel("Duration (Years)")
 plt.ylabel("Survival Probability")
 plt.grid(True)
+
+# WW2 분석 그래프
+plt.subplot(222)
+kmf_pre_ww2.plot(ci_show=True)
+kmf_post_ww2.plot(ci_show=True)
+plt.title("Wars Before and After WW2")
+plt.xlabel("Duration (Years)")
+plt.ylabel("Survival Probability")
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+
+# 지역별 분석을 위한 새로운 그래프
+plt.figure(figsize=(15, 10))
+for region in regions:
+    regional_kmf[region].plot(ci_show=False)
+plt.title("Wars by Region")
+plt.xlabel("Duration (Years)")
+plt.ylabel("Survival Probability")
+plt.grid(True)
+plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+plt.tight_layout()
+plt.show()
+
 
 # WW1 Life Table 출력
 print("\nLife Table with Confidence Intervals for Pre-WW1 Wars:")
@@ -101,7 +116,7 @@ pre_ww1_table_with_ci.columns = [
     "censored",
     "entrance",
     "at_risk",
-    "survival_probability",
+    "cumulative_survival_probability",
     "ci_lower",
     "ci_upper",
 ]
@@ -122,7 +137,7 @@ post_ww1_table_with_ci.columns = [
     "censored",
     "entrance",
     "at_risk",
-    "survival_probability",
+    "cumulative_survival_probability",
     "ci_lower",
     "ci_upper",
 ]
@@ -144,7 +159,7 @@ pre_ww2_table_with_ci.columns = [
     "censored",
     "entrance",
     "at_risk",
-    "survival_probability",
+    "cumulative_survival_probability",
     "ci_lower",
     "ci_upper",
 ]
@@ -165,11 +180,22 @@ post_ww2_table_with_ci.columns = [
     "censored",
     "entrance",
     "at_risk",
-    "survival_probability",
+    "cumulative_survival_probability",
     "ci_lower",
     "ci_upper",
 ]
 print(post_ww2_table_with_ci)
+
+pre_ww1_table_with_ci.to_csv("life_table_pre_ww1.csv")
+post_ww1_table_with_ci.to_csv("life_table_post_ww1.csv")
+pre_ww2_table_with_ci.to_csv("life_table_pre_ww2.csv")
+post_ww2_table_with_ci.to_csv("life_table_post_ww2.csv")
+
+print("\nLife tables have been saved to CSV files:")
+print("- life_table_pre_ww1.csv")
+print("- life_table_post_ww1.csv")
+print("- life_table_pre_ww2.csv")
+print("- life_table_post_ww2.csv")
 
 # 통계적 비교를 위한 로그순위 검정
 print("\nLog-rank test results:")
@@ -236,5 +262,6 @@ for coef_name in cph.params_.index:
     hazard_ratio = np.exp(cph.params_[coef_name])
     p_value = cph.summary.loc[coef_name, "p"]
     print(f"{coef_name:15} HR: {hazard_ratio:.4f} (p-value: {p_value:.4f})")
+
 
 plt.show()
