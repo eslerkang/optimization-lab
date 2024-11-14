@@ -21,7 +21,7 @@ c_wr = np.array(
     ]
 )
 
-model = gp.Model("Hw2-2")
+model = gp.Model("Hw3-2")
 
 y_ws = model.addVars(2, len(w_size_capacity), vtype=GRB.BINARY, name="y_ws")
 x_fw = model.addVars(2, vtype=GRB.INTEGER, name="x_fw", lb=0)

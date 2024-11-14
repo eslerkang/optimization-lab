@@ -29,7 +29,7 @@ binary_distance_matrix = np.array(
 
 nodes = ["A", "B", "C", "D", "E", "F"]
 
-model = gp.Model("hw2-1 - original")
+model = gp.Model("hw3-1 - original")
 
 x_i = model.addVars(len(nodes), vtype=GRB.BINARY, name="x_i")
 y_i = model.addVars(len(nodes), vtype=GRB.BINARY, name="y_i")
@@ -65,7 +65,7 @@ column_elimination_matrix = np.array(
     ]
 )
 
-model = gp.Model("hw2-1 - column elimination")
+model = gp.Model("hw3-1 - column elimination")
 
 x_i = model.addVars(len(nodes), vtype=GRB.BINARY, name="x_i")
 y_i = model.addVars(len(nodes), vtype=GRB.BINARY, name="y_i")
