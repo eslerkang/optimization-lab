@@ -39,7 +39,7 @@ model.addConstr(
 
 for w in range(2):
     model.addConstr(
-        gp.quicksum(x_wr[w, r] for r in range(len(demand)))
+        x_fw[w]
         <= gp.quicksum(
             w_size_capacity[s] * y_ws[w, s] for s in range(len(w_size_capacity))
         )
