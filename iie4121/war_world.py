@@ -70,6 +70,24 @@ plt.figure(figsize=(20, 16))
 plt.subplot(221)
 kmf_pre_ww1.plot(ci_show=True)
 kmf_post_ww1.plot(ci_show=True)
+
+# WW1 중앙값 표시
+median_pre_ww1 = kmf_pre_ww1.median_survival_time_
+median_post_ww1 = kmf_post_ww1.median_survival_time_
+plt.axvline(x=median_pre_ww1, color="blue", linestyle="--", alpha=0.5)
+plt.axvline(x=median_post_ww1, color="orange", linestyle="--", alpha=0.5)
+plt.axhline(y=0.5, color="gray", linestyle="--", alpha=0.3)
+plt.text(
+    median_pre_ww1, 0.55, f"Median: {median_pre_ww1:.1f}y", rotation=90, color="blue"
+)
+plt.text(
+    median_post_ww1,
+    0.55,
+    f"Median: {median_post_ww1:.1f}y",
+    rotation=90,
+    color="orange",
+)
+
 plt.title("Wars Before and After WW1")
 plt.xlabel("Duration (Years)")
 plt.ylabel("Survival Probability")
@@ -79,6 +97,24 @@ plt.grid(True)
 plt.subplot(222)
 kmf_pre_ww2.plot(ci_show=True)
 kmf_post_ww2.plot(ci_show=True)
+
+# WW2 중앙값 표시
+median_pre_ww2 = kmf_pre_ww2.median_survival_time_
+median_post_ww2 = kmf_post_ww2.median_survival_time_
+plt.axvline(x=median_pre_ww2, color="blue", linestyle="--", alpha=0.5)
+plt.axvline(x=median_post_ww2, color="orange", linestyle="--", alpha=0.5)
+plt.axhline(y=0.5, color="gray", linestyle="--", alpha=0.3)
+plt.text(
+    median_pre_ww2, 0.55, f"Median: {median_pre_ww2:.1f}y", rotation=90, color="blue"
+)
+plt.text(
+    median_post_ww2,
+    0.55,
+    f"Median: {median_post_ww2:.1f}y",
+    rotation=90,
+    color="orange",
+)
+
 plt.title("Wars Before and After WW2")
 plt.xlabel("Duration (Years)")
 plt.ylabel("Survival Probability")
@@ -87,18 +123,48 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 
+# 중앙값 출력
+print("\nMedian Survival Times:")
+print(f"Pre-WW1:  {median_pre_ww1:.2f} years")
+print(f"Post-WW1: {median_post_ww1:.2f} years")
+print(f"Pre-WW2:  {median_pre_ww2:.2f} years")
+print(f"Post-WW2: {median_post_ww2:.2f} years")
+
 # 지역별 분석을 위한 새로운 그래프
 plt.figure(figsize=(15, 10))
+
+# 그래프를 위한 서브플롯 생성 및 여백 조정
+plt.subplots_adjust(right=0.80)  # 오른쪽 여백을 더 늘림
+
 for region in regions:
     regional_kmf[region].plot(ci_show=False)
+
+    # 각 지역의 중앙값 위치에 수직선만 표시
+    median = regional_kmf[region].median_survival_time_
+    plt.axvline(x=median, linestyle="--", alpha=0.3)
+
+plt.axhline(y=0.5, color="gray", linestyle="--", alpha=0.3)
 plt.title("Wars by Region")
 plt.xlabel("Duration (Years)")
 plt.ylabel("Survival Probability")
 plt.grid(True)
 plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
-plt.tight_layout()
+
+# 중앙값 정보를 그래프 오른쪽에 텍스트로 표시
+medians_text = "Median Survival Times:\n"
+for region in regions:
+    median = regional_kmf[region].median_survival_time_
+    medians_text += f"{region.replace('_', ' ').title():15}: {median:.1f} years\n"
+
+plt.figtext(0.83, 0.5, medians_text, fontsize=10, family="monospace", va="center")
+
 plt.show()
 
+# 지역별 중앙값 출력
+print("\nMedian Survival Times by Region:")
+for region in regions:
+    median = regional_kmf[region].median_survival_time_
+    print(f"{region.replace('_', ' ').title():15} {median:.2f} years")
 
 # WW1 Life Table 출력
 print("\nLife Table with Confidence Intervals for Pre-WW1 Wars:")
@@ -252,7 +318,7 @@ cph.fit(
     show_progress=True,
 )
 
-# Cox 모델 결과 출력
+# Cox 모델 결과 력
 print("\nCox Proportional Hazard Model Results:")
 print(cph.print_summary())
 
