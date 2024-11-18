@@ -5,19 +5,26 @@ from gurobipy import GRB
 # 최적화 모델 생성
 model = gp.Model("fac-ware")
 
-# 각 도시별 연간 수요량 설정 (단위: 개)
-demand_c = [28611, 118732, 14211, 8750, 11465]
+# 각 도시별, 기간별 수요량 설정 (단위: 개)
+demand_ct = [
+    [4787, 8739, 2225, 8148, 4712],  # Caplopeia (c=0)의 각 기간별 수요
+    [3682, 6937, 10192, 13447, 14757],  # Sorange (c=1)의 각 기간별 수요
+    [2842, 2842, 2842, 2842, 2842],  # Tyran (c=2)의 각 기간별 수요
+    [1750, 1750, 1750, 1750, 1750],  # Entworpe (c=3)의 각 기간별 수요
+    [2293, 2293, 2293, 2293, 2293],  # Fardo (c=4)의 각 기간별 수요
+]
 
 # 도시 위치 인덱스 정의
 locations = range(5)  # 0: Caplopeia, 1: Sorange, 2: Tyran, 3: Entworpe, 4: Fardo
-periods = 4  # 2년을 4분기로 나눔
-period_days = 365 * 2 / periods  # 분기당 일수 계산
+periods = 5  # 2년을 5기간으로 나눔
+period_days = 365 * 2 / periods  # 기간당 일수 계산
 
 # 비용 관련 상수 정의
 fixed_factory_cost = 500_000  # 공장 설립 고정비용 (원)
 variable_factory_cost = 50_000  # 공장 용량 단위당 비용 (원/단위)
 fixed_warehouse_cost = 100_000  # 창고 설립 기본 비용 (원)
 sales_price = 1_450  # 제품 단위당 판매 가격 (원)
+production_cost = 1000  # 제품 단위당 생산 비용 (원)
 
 # 의사결정 변수 초기화
 x_fw = {}  # 공장에서 창고로의 운송량 (단위: 개)
@@ -70,7 +77,8 @@ for w in locations:
 for t in range(periods):
     for c in locations:
         model.addConstr(
-            gp.quicksum(x_wc[w, c, t] for w in locations) <= demand_c[c] / periods
+            gp.quicksum(x_wc[w, c, t] for w in locations) <= demand_ct[c][t],
+            name=f"demand_{c}_{t}",
         )
 
 # 2. 각 창고의 입고량과 출고량이 균형을 이루도록 제한
@@ -104,11 +112,11 @@ for t in range(1, periods):
 for t in range(periods):
     for f in locations:
         for w in locations:
-            model.addConstr(x_fw[f, w, t] <= y_f[f, t] * sum(demand_c) / periods)
+            model.addConstr(x_fw[f, w, t] <= y_f[f, t] * 1_000_000)
 
     for w in locations:
         for c in locations:
-            model.addConstr(x_wc[w, c, t] <= y_w[w, t] * sum(demand_c) / periods)
+            model.addConstr(x_wc[w, c, t] <= y_w[w, t] * 1_000_000)
 
 # 7. 현금 흐름 관련 제약조건
 cumulative_profit = {}
@@ -122,13 +130,20 @@ for t in range(periods):
     period_cost = (
         # 공장 관련 비용 (신규 설치 비용 + 용량 증설 비용)
         gp.quicksum(
-            fixed_factory_cost * (y_f[f, t] - (y_f[f, t - 1] if t > 0 else 0))
-            + variable_factory_cost * (cap_f[f, t] - (cap_f[f, t - 1] if t > 0 else 0))
+            fixed_factory_cost
+            * (y_f[f, t] - (y_f[f, t - 1] if t > 0 else (1 if f == 0 else 0)))
+            + variable_factory_cost
+            * (cap_f[f, t] - (cap_f[f, t - 1] if t > 0 else (70.02 if f == 0 else 0)))
             for f in locations
+        )
+        # 생산 비용 추가
+        + gp.quicksum(
+            production_cost * x_fw[f, w, t] for f in locations for w in locations
         )
         # 창고 신규 설치 비용
         + gp.quicksum(
-            fixed_warehouse_cost * (y_w[w, t] - (y_w[w, t - 1] if t > 0 else 0))
+            fixed_warehouse_cost
+            * (y_w[w, t] - (y_w[w, t - 1] if t > 0 else (1 if w == 0 else 0)))
             for w in locations
         )
         # 공장-창고 간 운송비
@@ -167,13 +182,30 @@ if model.status == GRB.OPTIMAL:
     print("\n최적해를 찾았습니다!")
     print(f"총 누적 이익: {model.objVal:,.0f}원")
 
+    # 창고 신설 정보 출력
+    print("\n기간별 창고 신설 정보:")
+    city_names = ["Caplopeia", "Sorange", "Tyran", "Entworpe", "Fardo"]
+
+    for t in range(periods):
+        print(f"\n[기간 {t+1}]")
+        for w in locations:
+            # 첫 기간에는 이전 기간과 비교할 수 없으므로 특별 처리
+            if t == 0:
+                # Caplopeia는 초기에 이미 설치되어 있으므로 제외
+                if w != 0 and y_w[w, t].x > 0.5:
+                    print(f"신설 창고: {city_names[w]}")
+            else:
+                # 이전 기간에는 없었다가 현재 기간에 생긴 창고 확인
+                if y_w[w, t].x > 0.5 and y_w[w, t - 1].x < 0.5:
+                    print(f"신설 창고: {city_names[w]}")
+
     # 공장 설치 및 용량 출력
     print("\n기간별 공장 설치 및 용량:")
     for t in range(periods):
         print(f"\n[기간 {t+1}]")
         for f in locations:
             if y_f[f, t].x > 0.5:
-                print(f"위치 {f}: 용량 = {cap_f[f,t].x:.1f}")
+                print(f"위치 {f}: 용량 = {cap_f[f,t].x:.2f}")
 
     # 물량 흐름 출력
     print("\n기간별 주요 물량 흐름:")
@@ -190,7 +222,7 @@ if model.status == GRB.OPTIMAL:
         print(f"\n[기간 {t+1}]")
         for c in locations:
             total_delivery = sum(x_wc[w, c, t].x for w in locations)
-            fulfillment_rate = total_delivery / (demand_c[c] / periods) * 100
+            fulfillment_rate = total_delivery / demand_ct[c][t] * 100
             print(f"고객{c}: {total_delivery:,.0f} ({fulfillment_rate:.2f}% 충족)")
 
     # 기간별 현금 흐름 출력
