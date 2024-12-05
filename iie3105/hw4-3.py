@@ -43,8 +43,9 @@ for i in points:
 
 model.optimize()
 
-print("\n=== 최적 경로 ===")
 print(f"총 이동 거리: {model.objVal:.0f}")
+
+print()
 
 current = 0
 route = [0]
@@ -57,6 +58,5 @@ while len(route) < len(points):
 
 route.append(0)
 
-print("\n상세 경로:")
 for i in range(len(route) - 1):
     print(f"지점 {route[i]} -> 지점 {route[i+1]}: {dist[route[i],route[i+1]]}")

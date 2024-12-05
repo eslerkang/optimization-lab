@@ -39,7 +39,6 @@ print(f"총 비용: ${model.objVal:,.2f}")
 
 print()
 
-print("센터 개설 여부:")
 for i in centers:
     if y_i[i].x == 1:
         print(f"센터 {i+1}: 개설")
@@ -48,7 +47,6 @@ for i in centers:
 
 print()
 
-print("운송량:")
 for i in centers:
     for j in cities:
         if x_ij[i, j].x > 0:
