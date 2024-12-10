@@ -311,6 +311,28 @@ files = [
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
+name = "cmdstanpy"
+version = "1.2.4"
+description = "Python interface to CmdStan"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "cmdstanpy-1.2.4-py3-none-any.whl", hash = "sha256:ad60f8ca17050216ab7140e13aa493628d88af8a689f17253a5ad294a9826c78"},
+    {file = "cmdstanpy-1.2.4.tar.gz", hash = "sha256:ad586be0b9f4c654ecbdc4af4541f4d282f99175956cda88cc5eb873719356cc"},
+]
+
+[package.dependencies]
+numpy = ">=1.21"
+pandas = "*"
+stanio = ">=0.4.0,<2.0.0"
+tqdm = "*"
+
+[package.extras]
+all = ["xarray"]
+docs = ["ipykernel", "ipython", "ipywidgets", "matplotlib", "nbsphinx", "pydata-sphinx-theme (<0.9)", "sphinx (>5,<6)", "sphinx-copybutton", "xarray"]
+test = ["flake8", "mypy", "pylint", "pytest", "pytest-cov", "pytest-order", "xarray"]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -831,6 +853,20 @@ files = [
 matrixapi = ["numpy", "scipy"]
 
 [[package]]
+name = "holidays"
+version = "0.62"
+description = "Open World Holidays Framework"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "holidays-0.62-py3-none-any.whl", hash = "sha256:4db5019092279716276a9fdaa65d4edd066257a6b8caecbfde7e4af520b349f2"},
+    {file = "holidays-0.62.tar.gz", hash = "sha256:85020562b176f19bb83779d0aa9926ea1dd7fe00568ec119d6e8c907afbdc22c"},
+]
+
+[package.dependencies]
+python-dateutil = "*"
+
+[[package]]
 name = "idna"
 version = "3.7"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -870,6 +906,25 @@ zipp = ">=0.5"
 docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
 perf = ["ipython"]
 testing = ["flufl.flake8", "importlib-resources (>=1.3)", "jaraco.test (>=5.4)", "packaging", "pyfakefs", "pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-mypy", "pytest-perf (>=0.9.2)", "pytest-ruff (>=0.2.1)"]
+
+[[package]]
+name = "importlib-resources"
+version = "6.4.5"
+description = "Read resources from Python packages"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "importlib_resources-6.4.5-py3-none-any.whl", hash = "sha256:ac29d5f956f01d5e4bb63102a5a19957f1b9175e45649977264a1416783bb717"},
+    {file = "importlib_resources-6.4.5.tar.gz", hash = "sha256:980862a1d16c9e147a59603677fa2aa5fd82b87f223b6cb870695bcfce830065"},
+]
+
+[package.extras]
+check = ["pytest-checkdocs (>=2.4)", "pytest-ruff (>=0.2.1)"]
+cover = ["pytest-cov"]
+doc = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
+enabler = ["pytest-enabler (>=2.2)"]
+test = ["jaraco.test (>=5.4)", "pytest (>=6,!=8.1.*)", "zipp (>=3.17)"]
+type = ["pytest-mypy"]
 
 [[package]]
 name = "interface-meta"
@@ -1406,40 +1461,6 @@ files = [
 
 [[package]]
 name = "numpy"
-version = "1.25.1"
-description = "Fundamental package for array computing in Python"
-optional = false
-python-versions = ">=3.9"
-files = [
-    {file = "numpy-1.25.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:77d339465dff3eb33c701430bcb9c325b60354698340229e1dff97745e6b3efa"},
-    {file = "numpy-1.25.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:d736b75c3f2cb96843a5c7f8d8ccc414768d34b0a75f466c05f3a739b406f10b"},
-    {file = "numpy-1.25.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4a90725800caeaa160732d6b31f3f843ebd45d6b5f3eec9e8cc287e30f2805bf"},
-    {file = "numpy-1.25.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6c6c9261d21e617c6dc5eacba35cb68ec36bb72adcff0dee63f8fbc899362588"},
-    {file = "numpy-1.25.1-cp310-cp310-musllinux_1_1_x86_64.whl", hash = "sha256:0def91f8af6ec4bb94c370e38c575855bf1d0be8a8fbfba42ef9c073faf2cf19"},
-    {file = "numpy-1.25.1-cp310-cp310-win32.whl", hash = "sha256:fd67b306320dcadea700a8f79b9e671e607f8696e98ec255915c0c6d6b818503"},
-    {file = "numpy-1.25.1-cp310-cp310-win_amd64.whl", hash = "sha256:c1516db588987450b85595586605742879e50dcce923e8973f79529651545b57"},
-    {file = "numpy-1.25.1-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:6b82655dd8efeea69dbf85d00fca40013d7f503212bc5259056244961268b66e"},
-    {file = "numpy-1.25.1-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:e8f6049c4878cb16960fbbfb22105e49d13d752d4d8371b55110941fb3b17800"},
-    {file = "numpy-1.25.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:41a56b70e8139884eccb2f733c2f7378af06c82304959e174f8e7370af112e09"},
-    {file = "numpy-1.25.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d5154b1a25ec796b1aee12ac1b22f414f94752c5f94832f14d8d6c9ac40bcca6"},
-    {file = "numpy-1.25.1-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:38eb6548bb91c421261b4805dc44def9ca1a6eef6444ce35ad1669c0f1a3fc5d"},
-    {file = "numpy-1.25.1-cp311-cp311-win32.whl", hash = "sha256:791f409064d0a69dd20579345d852c59822c6aa087f23b07b1b4e28ff5880fcb"},
-    {file = "numpy-1.25.1-cp311-cp311-win_amd64.whl", hash = "sha256:c40571fe966393b212689aa17e32ed905924120737194b5d5c1b20b9ed0fb171"},
-    {file = "numpy-1.25.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:3d7abcdd85aea3e6cdddb59af2350c7ab1ed764397f8eec97a038ad244d2d105"},
-    {file = "numpy-1.25.1-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:1a180429394f81c7933634ae49b37b472d343cccb5bb0c4a575ac8bbc433722f"},
-    {file = "numpy-1.25.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:d412c1697c3853c6fc3cb9751b4915859c7afe6a277c2bf00acf287d56c4e625"},
-    {file = "numpy-1.25.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:20e1266411120a4f16fad8efa8e0454d21d00b8c7cee5b5ccad7565d95eb42dd"},
-    {file = "numpy-1.25.1-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:f76aebc3358ade9eacf9bc2bb8ae589863a4f911611694103af05346637df1b7"},
-    {file = "numpy-1.25.1-cp39-cp39-win32.whl", hash = "sha256:247d3ffdd7775bdf191f848be8d49100495114c82c2bd134e8d5d075fb386a1c"},
-    {file = "numpy-1.25.1-cp39-cp39-win_amd64.whl", hash = "sha256:1d5d3c68e443c90b38fdf8ef40e60e2538a27548b39b12b73132456847f4b631"},
-    {file = "numpy-1.25.1-pp39-pypy39_pp73-macosx_10_9_x86_64.whl", hash = "sha256:35a9527c977b924042170a0887de727cd84ff179e478481404c5dc66b4170009"},
-    {file = "numpy-1.25.1-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0d3fe3dd0506a28493d82dc3cf254be8cd0d26f4008a417385cbf1ae95b54004"},
-    {file = "numpy-1.25.1-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:012097b5b0d00a11070e8f2e261128c44157a8689f7dedcf35576e525893f4fe"},
-    {file = "numpy-1.25.1.tar.gz", hash = "sha256:9a3a9f3a61480cc086117b426a8bd86869c213fc4072e606f01c4e4b66eb92bf"},
-]
-
-[[package]]
-name = "numpy"
 version = "1.26.4"
 description = "Fundamental package for array computing in Python"
 optional = false
@@ -1843,6 +1864,34 @@ files = [
 
 [package.dependencies]
 wcwidth = "*"
+
+[[package]]
+name = "prophet"
+version = "1.1.6"
+description = "Automatic Forecasting Procedure"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "prophet-1.1.6-py3-none-macosx_10_11_x86_64.whl", hash = "sha256:f4bd565e6ff5f04d74dbf338c99d0aa353e00849c522f6e6663fdaf026bd0b46"},
+    {file = "prophet-1.1.6-py3-none-macosx_11_0_arm64.whl", hash = "sha256:29f69a98dbb4b96580decf773034b18639009c13c2f67c59a7e59a6eb2b92b0e"},
+    {file = "prophet-1.1.6-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c0bdf573b1d89b0c0e3dc09778816a35dece000f195b2f032ff0ff8076ae0d6a"},
+    {file = "prophet-1.1.6-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5860990c7a6da33a4381a6adab1b35f7d2ed465eeeb364c3b0f663ff69a78eca"},
+    {file = "prophet-1.1.6-py3-none-win_amd64.whl", hash = "sha256:222ec247e60e0e62fa42572bba27bd82590c7f5225f36b41a3d1762ae2ed96fd"},
+    {file = "prophet-1.1.6.tar.gz", hash = "sha256:92238aa584da69abe5c43e9426e6a4176064465e8424196655915ff86316a680"},
+]
+
+[package.dependencies]
+cmdstanpy = ">=1.0.4"
+holidays = ">=0.25,<1"
+importlib-resources = "*"
+matplotlib = ">=2.0.0"
+numpy = ">=1.15.4"
+pandas = ">=1.0.4"
+tqdm = ">=4.36.1"
+
+[package.extras]
+dev = ["jupyterlab", "nbconvert", "plotly", "pytest", "setuptools (>=64)", "wheel"]
+parallel = ["dask[dataframe]", "distributed"]
 
 [[package]]
 name = "protobuf"
@@ -2318,6 +2367,58 @@ files = [
 ]
 
 [[package]]
+name = "ruptures"
+version = "1.1.9"
+description = "Change point detection for signals in Python."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "ruptures-1.1.9-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:8ab2569b94f6e6fb397379c4085516817ac51101970f4392d5f9f383ba45b02f"},
+    {file = "ruptures-1.1.9-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:aebd937375305d5247e3559158dbb1249f358540a11903a174a68fd2ce7ffeb9"},
+    {file = "ruptures-1.1.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b8071bd94c3acb09de3ddc09f88e002442e233a9431f1964d7949cf06c4fb315"},
+    {file = "ruptures-1.1.9-cp310-cp310-win_amd64.whl", hash = "sha256:06da516a38ac9ab0525f0c3791feaf1fb2c4704d85df6197578f8e1b8b808113"},
+    {file = "ruptures-1.1.9-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:ec33c2e42156b4de8fa52f2b1194c94d9b36b5e68b49984b2103c40c24606267"},
+    {file = "ruptures-1.1.9-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4aaf893069368957a29883c209f57a782278cc6a85a2e1fb6193477a45ae115c"},
+    {file = "ruptures-1.1.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2f8899fc23c762245b3b2bf532ee366d285c98c3ffc4a66746a4daf524997cd0"},
+    {file = "ruptures-1.1.9-cp311-cp311-win_amd64.whl", hash = "sha256:4759f0b3decd8ee3c2bc5104247aedb9c06d51a2055e40961d5389dbeb7b9075"},
+    {file = "ruptures-1.1.9-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:28d242c961a2b486e36b25a4df3f26fabee0607ae8c80b2e65e73a9db491ce76"},
+    {file = "ruptures-1.1.9-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9df414e3952e1d6b26dc02515d28b9adfc821ef2c6459c196a3ae751dd7d1813"},
+    {file = "ruptures-1.1.9-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8466857f4d5c957b050bead1bb0e7d5f2807c60c5bdc30fc533f36ae0234583f"},
+    {file = "ruptures-1.1.9-cp312-cp312-win_amd64.whl", hash = "sha256:92adde29b24b3ad94d8cd9421634a5f8dd729ae74d3b88bdca4bbc5cfd450c11"},
+    {file = "ruptures-1.1.9-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:e93ddfd7a5c7930fb2a0b3e9af63f5b802c084117ceb00e8c3e1c3084128277b"},
+    {file = "ruptures-1.1.9-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1b04359d3b74d33175ee76218572ac8d6947aa76bd5db9646aa5feb4b9c6b81a"},
+    {file = "ruptures-1.1.9-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:439f200518ac5e67974cd82348eaa9a4bdb8d460019765d16619bf4aed6612ee"},
+    {file = "ruptures-1.1.9-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:a7c2d8d7d60a5063d28a3faea0fef2e988e3e24774974da8827fa6a3b43d7e8a"},
+    {file = "ruptures-1.1.9-cp36-cp36m-win32.whl", hash = "sha256:b3b036e9a34734db789ca2490119319845d4fa7fa127b2e824313a074c58b5b9"},
+    {file = "ruptures-1.1.9-cp36-cp36m-win_amd64.whl", hash = "sha256:8ca334bdb810acee3c7adab1b8dc99d40f7d9e75b2f972adce9e69fddeef4e0e"},
+    {file = "ruptures-1.1.9-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:1d2bf983c70f680beafced8b279dcc15eabf706f4e0efa32d87a3d42c3e9c30e"},
+    {file = "ruptures-1.1.9-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:73f728f4b2de60483347464b811287b3a8cc44f5bcd905c32dd2b5e5e23c68a3"},
+    {file = "ruptures-1.1.9-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6978aa528b36c9a683b061231539393b392f5f3ab52b511f2f3912a37d74667d"},
+    {file = "ruptures-1.1.9-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:4547e7611c97eb818c6dc8054c25ed84fb5060951541d3ef8602575b43487e87"},
+    {file = "ruptures-1.1.9-cp37-cp37m-win32.whl", hash = "sha256:3934bffd4f424de3a6ef73931fe9f4d84ff905f8ceef12c5f87b94006d90cc78"},
+    {file = "ruptures-1.1.9-cp37-cp37m-win_amd64.whl", hash = "sha256:31c8699b6fd7ec20ea31bf2a1a5dbeb52a79cad4f51615694f6cf5b443fc8af2"},
+    {file = "ruptures-1.1.9-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:14e2bf1d3453c67a7b11dcc7a34c20beebcd60401af35f18de8a4cad3fde30d7"},
+    {file = "ruptures-1.1.9-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:981fc93f7093b4d7522e148be61635eae39ab46b2e20afb6b736d1235c38b053"},
+    {file = "ruptures-1.1.9-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:732a9a06d46f52a9ce76c8fa1a799718f019d7431cd018ea54fe6b39ac13e3b3"},
+    {file = "ruptures-1.1.9-cp38-cp38-win_amd64.whl", hash = "sha256:49d42f06a755664f660ab326a887ecd1ec8fe4d3bdf78c1e233fb43029c8ee32"},
+    {file = "ruptures-1.1.9-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:829e7623364287c87607f01b62c799396bbdd3c4c2d0c9757e6252960fa51de2"},
+    {file = "ruptures-1.1.9-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8cf9597804d1cd227f16021b24e0619c0747247b9de268e436ec8c317a846aca"},
+    {file = "ruptures-1.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:03fd112accfff518ab191ebac78d2d3cf2eca341a41363bfd95f3db907a6a7b1"},
+    {file = "ruptures-1.1.9-cp39-cp39-win_amd64.whl", hash = "sha256:55d7f20088153ebc2d4d2528dc3b6f7bdcdc8638153e84bfe1393e89001535ce"},
+    {file = "ruptures-1.1.9.tar.gz", hash = "sha256:aa940f3c02235dab94753ff15689f8ebaca10c83da71cb29cbb7f981dfa362dc"},
+]
+
+[package.dependencies]
+numpy = "*"
+scipy = "*"
+
+[package.extras]
+dev = ["pre-commit"]
+display = ["matplotlib"]
+docs = ["jupyter", "librosa", "matplotlib", "mkdocs", "mkdocs-macros-plugin", "mkdocs-material", "mkdocs-section-index", "mkdocstrings[python] (>=0.18)", "mknotebooks", "nltk", "pymdown-extensions"]
+test = ["pytest", "pytest-cov"]
+
+[[package]]
 name = "scikit-learn"
 version = "1.5.2"
 description = "A set of python modules for machine learning and data mining"
@@ -2523,6 +2624,24 @@ pure-eval = "*"
 
 [package.extras]
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
+
+[[package]]
+name = "stanio"
+version = "0.5.1"
+description = "Utilities for preparing Stan inputs and processing Stan outputs"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "stanio-0.5.1-py3-none-any.whl", hash = "sha256:99ad590daa5834681245c2b651716ec2e06223853661ada21430c621521c849f"},
+    {file = "stanio-0.5.1.tar.gz", hash = "sha256:348d52f947dec431e118f4b601c4c5296929b86401d4d4dd5aa9373b0d4ae4ac"},
+]
+
+[package.dependencies]
+numpy = "*"
+
+[package.extras]
+test = ["pandas", "pytest", "pytest-cov"]
+ujson = ["ujson (>=5.5.0)"]
 
 [[package]]
 name = "statsmodels"
@@ -2833,4 +2952,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "jaraco.test", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "1be2f08b02b6fe51b220d550c79f3b1c8d40144cbeee8583a2a15d38c7bc479e"
+content-hash = "add3a6644a3400e358950cf3c2f7e550d79d481746f3328eab6f7e022ffb836a"
