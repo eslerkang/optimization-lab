@@ -29,6 +29,7 @@ scipy = "^1.14.1"
 lifelines = "^0.29.0"
 prophet = "^1.1.6"
 ruptures = "^1.1.9"
+pmdarima = "^2.0.4"
 
 
 [tool.poetry.group.dev.dependencies]

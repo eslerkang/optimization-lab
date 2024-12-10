@@ -32,38 +32,23 @@ plt.rcParams["font.family"] = "Malgun Gothic"
 def load_and_preprocess_data():
     """데이터 로드 및 전처리"""
     # 데이터 로드
-    elder_worker = pd.read_csv("elder_worker.csv")
-
-    # 첫 번째 행을 제외하고 실제 데이터만 사용
-    elder_worker = elder_worker.iloc[1:]
+    elder_worker = pd.read_csv("datas/elder_worker.csv")
 
     # '소계' 행 제외
-    elder_worker = elder_worker[elder_worker["구분별"] != "소계"]
+    elder_worker = elder_worker[elder_worker["구분"] != "소계"]
 
     trend_data = []
 
     # 각 연도별 데이터 처리
     for year in range(2012, 2024):
-        # 해당 연도의 컬럼들 찾기
-        year_cols = [
-            col for col in elder_worker.columns if str(year) == col.split(".")[0]
-        ]
-        if not year_cols or len(year_cols) < 3:  # 필요한 컬럼이 없으면 스킵
-            continue
+        # 해당 연도의 데이터 필터링
+        year_data = elder_worker[elder_worker["연도"] == year]
 
-        # 전체 근로자와 55세 이상 근로자 컬럼 선택
-        total_workers_col = year_cols[1]  # 전체 근로자
-        elder_workers_col = year_cols[2]  # 55세 이상 근로자
-
-        for _, row in elder_worker.iterrows():
+        for _, row in year_data.iterrows():
             # 숫자 데이터 변환
             try:
-                total_workers = pd.to_numeric(
-                    str(row[total_workers_col]).replace(",", ""), errors="coerce"
-                )
-                elder_workers = pd.to_numeric(
-                    str(row[elder_workers_col]).replace(",", ""), errors="coerce"
-                )
+                total_workers = row["전체근로자수"]
+                elder_workers = row["고령근로자수"]
 
                 if (
                     pd.notna(total_workers)
@@ -73,7 +58,7 @@ def load_and_preprocess_data():
                     trend_data.append(
                         {
                             "연도": year,
-                            "산업": row["구분별"],
+                            "산업": row["구분"],
                             "고령화율": (elder_workers / total_workers) * 100,
                             "전체근로자": total_workers,
                             "고령근로자": elder_workers,

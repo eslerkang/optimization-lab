@@ -15,32 +15,23 @@ import matplotlib.pyplot as plt
 plt.rcParams["font.family"] = "Malgun Gothic"
 
 # 1. 데이터 로드 및 전처리
-elder_worker = pd.read_csv("elder_worker.csv")
-foreign_worker = pd.read_csv("foreign_worker_by_year.csv")
+elder_worker = pd.read_csv("datas/elder_worker.csv")
+foreign_worker = pd.read_csv("datas/foreign_worker_by_year.csv")
 
 # 2023년 데이터 추출
-columns_2023 = elder_worker.columns[-5:]
-elder_2023 = elder_worker[["구분별"] + list(columns_2023)].copy()
-elder_2023 = elder_2023[
-    ~elder_2023["구분별"].str.contains("소계|구분별|사업장", na=False)
-]
+elder_2023 = elder_worker[elder_worker["연도"] == 2023].copy()
+elder_2023 = elder_2023[elder_2023["구분"] != "소계"]
 
 # 컬럼명 변경
-elder_2023.columns = [
-    "산업",
-    "사업장수",
-    "전체근로자",
-    "55세이상근로자",
-    "55세이상남성",
-    "55세이상여성",
-]
-
-# 데이터 전처리
-numeric_columns = ["전체근로자", "55세이상근로자", "55세이상남성", "55세이상여성"]
-for col in numeric_columns:
-    elder_2023[col] = pd.to_numeric(
-        elder_2023[col].str.replace(",", ""), errors="coerce"
-    )
+elder_2023 = elder_2023.rename(
+    columns={
+        "구분": "산업",
+        "전체근로자수": "전체근로자",
+        "고령근로자수": "55세이상근로자",
+        "고령남성근로자수": "55세이상남성",
+        "고령여성근로자수": "55세이상여성",
+    }
+)
 
 # 2. 산업별 지표 계산
 elder_2023["고령화율"] = (elder_2023["55세이상근로자"] / elder_2023["전체근로자"]) * 100
@@ -82,11 +73,31 @@ plt.tight_layout()
 plt.show()
 
 # 4. 외국인 근로자 현황
-current_foreign = (
-    float(foreign_worker["합계"].iloc[-1]) * 10000
-)  # 만명 단위를 명 단위로 변환
+current_foreign = float(foreign_worker[foreign_worker["year"] == 2023]["total"]) * 10000
 total_workers = elder_2023["전체근로자"].sum()
 foreign_ratio = current_foreign / total_workers * 100
+
+# 외국인 근로자 추이 시각화
+plt.figure(figsize=(12, 6))
+
+# 연도별 외국인 근로자 수 추출 (만명 단위를 명 단위로 변환)
+years = foreign_worker["year"].astype(str)
+workers = foreign_worker["total"].astype(float) * 10000
+
+# 선 그래프 그리기
+plt.plot(years, workers, marker="o", linewidth=2, markersize=8)
+
+# 각 포인트에 값 표시
+for i, v in enumerate(workers):
+    plt.text(i, v + 10000, f"{v:,.0f}명", ha="center", va="bottom")
+
+plt.title("연도별 외국인 근로자 현황")
+plt.xlabel("연도")
+plt.ylabel("외국인 근로자 수 (명)")
+plt.grid(True, linestyle="--", alpha=0.7)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
 
 # 5. 분석 결과 출력
 print("\n=== 산업별 고령화 현황 분석 (2023년) ===")
@@ -115,4 +126,6 @@ for _, row in top_5_size.iterrows():
 print(f"\n3. 외국인 근로자 현황")
 print(f"- 전체 외국인 근로자 수: {current_foreign:,.0f}명")
 print(f"- 전체 근로자 대비 비율: {foreign_ratio:.1f}%")
-print(f"- 전년 대비 증감률: {float(foreign_worker['증감(전년대비)'].iloc[-1]):.1f}%")
+print(
+    f"- 전년 대비 증감률: {float(foreign_worker[foreign_worker['year'] == 2023]['change'].iloc[0]):.1f}%"
+)

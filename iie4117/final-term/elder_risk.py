@@ -57,19 +57,11 @@ def calculate_risk_scores(trend_df):
         current_data[["전체근로자"]].values
     )
 
-    # 4. 대체인력 확보 위험도 (0-100점)
-    risk_factors["대체인력_위험도"] = scaler.fit_transform(
-        (current_data["고령근로자"] / current_data["전체근로자"] * 100).values.reshape(
-            -1, 1
-        )
-    )
-
     # 종합 위험도 계산 (가중치 적용)
     weights = {
         "현재_고령화_위험도": 0.3,
         "변화_속도_위험도": 0.3,
         "규모_위험도": 0.2,
-        "대체인력_위험도": 0.2,
     }
 
     risk_factors["종합_위험도"] = sum(
@@ -100,7 +92,7 @@ def visualize_risk_assessment(risk_factors):
     # 2. 위험도 요인별 방사형 차트 (상위 5개 산업)
     top_industries = risk_factors.nlargest(5, "종합_위험도")
 
-    categories = ["현재 고령화", "변화 속도", "산업 규모", "대체인력"]
+    categories = ["현재 고령화", "변화 속도", "산업 규모"]
     fig, ax = plt.subplots(figsize=(10, 10), subplot_kw=dict(projection="polar"))
 
     angles = np.linspace(0, 2 * np.pi, len(categories), endpoint=False)
@@ -111,7 +103,6 @@ def visualize_risk_assessment(risk_factors):
             scores["현재_고령화_위험도"],
             scores["변화_속도_위험도"],
             scores["규모_위험도"],
-            scores["대체인력_위험도"],
         ]
         values = np.concatenate((values, [values[0]]))
 
@@ -158,12 +149,6 @@ def generate_recommendations(risk_factors, current_data):
             )
         elif scores["규모_위험도"] > 50:
             strategies.append("생산성 향상 방안 모색")
-
-        # 4. 대체인력 대응
-        if scores["대체인력_위험도"] > 75:
-            strategies.append("외국인력 활용 검토")
-        elif scores["대체인력_위험도"] > 50:
-            strategies.append("교육훈련 체계 개선")
 
         recommendations[industry] = strategies
 
